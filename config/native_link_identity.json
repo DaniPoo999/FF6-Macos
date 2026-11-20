@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "scope": "Frozen native compiler-output compatibility profile. Only SDK/linker/current-dependency versions and content-derived build UUID may normalize. Every other signed-prefix byte, including instructions, data, imports, deployment requirement and structure, must already match. No original game material is stored. Developer tools updated during the audit; original baseline remains unchanged.",
+  "images": {
+    "ff6-game": {
+      "image_size": 7441728,
+      "signed_prefix_size": 7426928,
+      "masked_prefix_sha256": "a80c6ff7b8092468ae994fb6ec22abcdc4d0f212e83a92faa1717601ca0ba531",
+      "restored_prefix_sha256": "b6adab39b766e0318aa313f71515cb5e82e422d2f84a0335e3fc7611b0e6bd4f",
+      "fields": {
+        "uuid": "74f72ffe58b73992882ab360e345f5da",
+        "sdk": 1769472,
+        "linker": 1771897088,
+        "dependency:/usr/lib/libSystem.B.dylib": 89063424,
+        "dependency:/System/Library/Frameworks/CoreMedia.framework/Versions/A/CoreMedia": 219565317,
+        "dependency:/System/Library/Frameworks/CoreVideo.framework/Versions/A/CoreVideo": 49683200,
+        "dependency:/System/Library/Frameworks/Cocoa.framework/Versions/A/Cocoa": 1572864,
+        "dependency:/System/Library/Frameworks/UniformTypeIdentifiers.framework/Versions/A/UniformTypeIdentifiers": 46465024,
+        "dependency:/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit": 18022400,
+        "dependency:/System/Library/Frameworks/ForceFeedback.framework/Versions/A/ForceFeedback": 65538,
+        "dependency:/System/Library/Frameworks/Carbon.framework/Versions/A/Carbon": 11141120,
+        "dependency:/System/Library/Frameworks/CoreAudio.framework/Versions/A/CoreAudio": 65536,
+        "dependency:/System/Library/Frameworks/AudioToolbox.framework/Versions/A/AudioToolbox": 65536000,
+        "dependency:/System/Library/Frameworks/AVFoundation.framework/Versions/A/AVFoundation": 131072,
+        "dependency:/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation": 329449541,
+        "dependency:/System/Library/Frameworks/GameController.framework/Versions/A/GameController": 917528,
+        "dependency:/System/Library/Frameworks/Metal.framework/Versions/A/Metal": 25036035,
+        "dependency:/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore": 80151042,
+        "dependency:/System/Library/Frameworks/CoreHaptics.framework/Versions/A/CoreHaptics": 65536,
+        "dependency:/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit": 181865063,
+        "dependency:/usr/lib/libc++.1.dylib": 144186112,
+        "dependency:/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation": 329449541,
+        "dependency:/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics": 134348800,
+        "dependency:/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices": 80347136,
+        "dependency:/usr/lib/libobjc.A.dylib": 14942208
+      }
+    },
+    "ff6-inspector": {
+      "image_size": 7475040,
+      "signed_prefix_size": 7460176,
+      "masked_prefix_sha256": "3ecde50d3c6ab93631dbba7849d8823bbabf8d4c961248405d8e9d890e0c02bf",
+      "restored_prefix_sha256": "8f0125155860630043a9b91dfa90a46b4a43eacb35c523e55e75a42d6b56b462",
+      "fields": {
+        "uuid": "94a610f4d34d355ab0bd8ce4039315a8",
+        "sdk": 1769472,
+        "linker": 1771897088,
+        "dependency:/usr/lib/libSystem.B.dylib": 89063424,
+        "dependency:/System/Library/Frameworks/CoreMedia.framework/Versions/A/CoreMedia": 219565317,
+        "dependency:/System/Library/Frameworks/CoreVideo.framework/Versions/A/CoreVideo": 49683200,
+        "dependency:/System/Library/Frameworks/Cocoa.framework/Versions/A/Cocoa": 1572864,
+        "dependency:/System/Library/Frameworks/UniformTypeIdentifiers.framework/Versions/A/UniformTypeIdentifiers": 46465024,
+        "dependency:/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit": 18022400,
+        "dependency:/System/Library/Frameworks/ForceFeedback.framework/Versions/A/ForceFeedback": 65538,
+        "dependency:/System/Library/Frameworks/Carbon.framework/Versions/A/Carbon": 11141120,
+        "dependency:/System/Library/Frameworks/CoreAudio.framework/Versions/A/CoreAudio": 65536,
+        "dependency:/System/Library/Frameworks/AudioToolbox.framework/Versions/A/AudioToolbox": 65536000,
+        "dependency:/System/Library/Frameworks/AVFoundation.framework/Versions/A/AVFoundation": 131072,
+        "dependency:/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation": 329449541,
+        "dependency:/System/Library/Frameworks/GameController.framework/Versions/A/GameController": 917528,
+        "dependency:/System/Library/Frameworks/Metal.framework/Versions/A/Metal": 25036035,
+        "dependency:/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore": 80151042,
+        "dependency:/System/Library/Frameworks/CoreHaptics.framework/Versions/A/CoreHaptics": 65536,
+        "dependency:/usr/lib/libc++.1.dylib": 144186112,
+        "dependency:/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit": 181865063,
+        "dependency:/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation": 329449541,
+        "dependency:/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics": 134348800,
+        "dependency:/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices": 80347136,
+        "dependency:/usr/lib/libobjc.A.dylib": 14942208
+      }
+    }
+  }
+}

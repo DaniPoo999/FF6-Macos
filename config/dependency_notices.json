@@ -1,0 +1,371 @@
+{
+  "schema": 1,
+  "dependency": "SDL 3.4.16",
+  "source_url": "https://github.com/libsdl-org/SDL/tree/release-3.4.16",
+  "archive_sha256": "7322236cd12090c3eb40b9728be4d49c76f66ad17d04369584d4ecad5cf77c68",
+  "notice_sha256": "acdc742f94b604ff10ccb0e951a4aedfc642b0b86bd7507297418ed74930e15e",
+  "unique_notices": 33,
+  "scope": "Reviewed actual macOS compiler dependency inputs; code bodies excluded. Includes conservative optional-source/header notices, not a claim all backends are linked.",
+  "external_license": {
+    "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+    "sha256": "50e6751797c50dedd75ef1b8a0d9e42f5f8472e9fbce91f34718e9f97b0c780a"
+  },
+  "sources": [
+    {
+      "path": "include/SDL3/SDL.h",
+      "sha256": "6985a5d648e45b9e71be852ab7bcece191d748c4c2fc273535f56e1c3f0bd62d",
+      "sections": [
+        {
+          "start": 0,
+          "end": 938,
+          "sha256": "9ffcfd798ec40121bd85b12780a83b4638b7bd4e382d554aa243e870d352bdf5"
+        }
+      ]
+    },
+    {
+      "path": "include/SDL3/SDL_egl.h",
+      "sha256": "f477f952afad531447dc644d95fb564505d4c2c11d3e246a1affbceabaf779bc",
+      "sections": [
+        {
+          "start": 1422,
+          "end": 2568,
+          "sha256": "438187dca092de4032c1a16524aa4c34c71a0f985a71251a675aad54e77ed561"
+        },
+        {
+          "start": 12555,
+          "end": 12645,
+          "sha256": "f2c9d0f0439ff7ed39eeb730f319d85fcbbf7637436e3aeacc433d09facf4098"
+        },
+        {
+          "start": 17607,
+          "end": 18019,
+          "sha256": "43405c469bf810216f1bcb79b5764e57dd1c4e81fe9cfbfe2feec322d618b1b3"
+        },
+        {
+          "start": 36928,
+          "end": 37340,
+          "sha256": "43405c469bf810216f1bcb79b5764e57dd1c4e81fe9cfbfe2feec322d618b1b3"
+        }
+      ]
+    },
+    {
+      "path": "include/SDL3/SDL_opengl.h",
+      "sha256": "a8e7681bfff83d2156b4f088b792789c30da791ce4581c7ae64545e80a3522a1",
+      "sections": [
+        {
+          "start": 1267,
+          "end": 2501,
+          "sha256": "fa3a0e12fbb5191e878f786df28e77140949d10185d9bde9e7f53b95c286b19a"
+        }
+      ]
+    },
+    {
+      "path": "include/SDL3/SDL_time.h",
+      "sha256": "db6dd02434f0b099748e728d1145486888659087e7742f7367da9e4d1120c771",
+      "sections": [
+        {
+          "start": 0,
+          "end": 908,
+          "sha256": "9681bc9e899c24652dac78e3ff42b237f4ead89872c6fbc0c8963364689d1836"
+        }
+      ]
+    },
+    {
+      "path": "include/SDL3/SDL_vulkan.h",
+      "sha256": "a0d1b8c6a2a7982e419dbdb8ea60fce09e99390238634ca117d82442953a4e1c",
+      "sections": [
+        {
+          "start": 0,
+          "end": 912,
+          "sha256": "20a9284b2f86c2d7f3924ec4fc821457fc25057a46b0cbc3a1362adcee98df05"
+        }
+      ]
+    },
+    {
+      "path": "src/events/imKStoUCS.c",
+      "sha256": "af7b4ebf300d3c38c93196f00e9da5a9c91bf66d8bb017639c21f8a52e7a3387",
+      "sections": [
+        {
+          "start": 0,
+          "end": 1245,
+          "sha256": "8367d77c7fb6ed9927aef635fab6d0950d43cd610703582d6c8f4a449e6506b7"
+        }
+      ]
+    },
+    {
+      "path": "src/haptic/hidapi/SDL_hidapihaptic.c",
+      "sha256": "c899aa46a71282b5dd5bb0b7efbd4f8945b043b451beac5e0dc9fffff04b711c",
+      "sections": [
+        {
+          "start": 0,
+          "end": 941,
+          "sha256": "ec516f491c1ae3a2503b372a2f1b2697798e5565c40f8359e9f55e4b4556fb14"
+        }
+      ]
+    },
+    {
+      "path": "src/haptic/hidapi/SDL_hidapihaptic_lg4ff.c",
+      "sha256": "bfa9bd7b54b8903e32ca4a6378933cbf620f4c8850b71d960c281cce572382ab",
+      "sections": [
+        {
+          "start": 0,
+          "end": 1121,
+          "sha256": "f9fb3ee48adcc4392e314a6a370f333fe2f5f117bafbe9183a8994e451cfdf76"
+        }
+      ]
+    },
+    {
+      "path": "src/hidapi/hidapi/hidapi.h",
+      "sha256": "eb0dab071c8398a0f0187b64cf83b686dcd2d395d65c738a1825090c40d415dd",
+      "sections": [
+        {
+          "start": 0,
+          "end": 731,
+          "sha256": "c904c45b7a248f41bf6f8f26f32e065effec0d21c80d9e69bdc7e558e3bd72e6"
+        }
+      ]
+    },
+    {
+      "path": "src/hidapi/mac/hid.c",
+      "sha256": "8f1ec426a744885896e0d8a37f75538a08307d67070f40088e8fa4009220d9f9",
+      "sections": [
+        {
+          "start": 0,
+          "end": 731,
+          "sha256": "4f2482daadb0d561d22ad4cf9ab59bae3b0af0941ffb0cdf3d0ec578f7e1f7e6"
+        }
+      ]
+    },
+    {
+      "path": "src/hidapi/mac/hidapi_darwin.h",
+      "sha256": "49ccf766295b46737d9a9a355449534111160dcd50c769d1cdeca7d40442f55e",
+      "sections": [
+        {
+          "start": 0,
+          "end": 700,
+          "sha256": "38ebf7eb32b02c8ff7528443a7ed1286678e351c7fa6aad7f42814aa6f9256cf"
+        }
+      ]
+    },
+    {
+      "path": "src/joystick/controller_list.h",
+      "sha256": "2cebec9ad712ca2e7bb83826de4a5142d8b8fa4d7243343dd6546f9144e621f7",
+      "sections": [
+        {
+          "start": 0,
+          "end": 885,
+          "sha256": "7041d7326f6ed4875be06d12e8d9dc52e0670c1cdf356076bf52a0b178b9ae1c"
+        }
+      ]
+    },
+    {
+      "path": "src/joystick/hidapi/SDL_hidapi_lg4ff.c",
+      "sha256": "1d76f4c204ca8335d258340d12cec6083d1a0401149fea204351121401a4b189",
+      "sections": [
+        {
+          "start": 0,
+          "end": 1062,
+          "sha256": "ac46c6bcbba6f9824d0ea5375c7c97c5455b3ad446decce9274b1eaae5f53541"
+        }
+      ]
+    },
+    {
+      "path": "src/joystick/hidapi/SDL_hidapi_sinput.c",
+      "sha256": "c76565e40adc6bc074720dcc439d48c463b0c027ed722bc6c1e203a09b02839f",
+      "sections": [
+        {
+          "start": 0,
+          "end": 949,
+          "sha256": "8484d19ff29153c2064c4dc10bb4883f0f724e6775dd122ff2426f93c005f898"
+        }
+      ]
+    },
+    {
+      "path": "src/joystick/hidapi/SDL_hidapi_steamdeck.c",
+      "sha256": "fc746697ff17feefafea773104c866c573d743d856095b556a9d1edb5956ee72",
+      "sections": [
+        {
+          "start": 0,
+          "end": 933,
+          "sha256": "0cc7422ae2f912958c390d994d924e5d330adbbefa8e5ba4f61d9c4f6d10ee3a"
+        }
+      ]
+    },
+    {
+      "path": "src/joystick/hidapi/SDL_hidapi_zuiki.c",
+      "sha256": "c27629ab6366853a07e03e6f9a18eb7fff764d7bf888b4996dda637bbd02a6fc",
+      "sections": [
+        {
+          "start": 0,
+          "end": 970,
+          "sha256": "8075f50a1f56991226eb516adab9bb9905c7901aa1658d2e183c2bb0af0c294b"
+        }
+      ]
+    },
+    {
+      "path": "src/joystick/hidapi/steam/controller_constants.h",
+      "sha256": "d6d4bf60e9f8d47d9a1371aa0390cd0adfff95e596d15111a5eaf6ad2c7bc761",
+      "sections": [
+        {
+          "start": 0,
+          "end": 917,
+          "sha256": "a5c6505c55e97781a6e33d3d2fb72482054ec63ffab4f9c53508ae96845e75d2"
+        }
+      ]
+    },
+    {
+      "path": "src/joystick/hidapi/steam/controller_structs.h",
+      "sha256": "6217267bfa7e2b446edd6c45ac78e7603ac937960e7585831423d94d2a10c3b8",
+      "sections": [
+        {
+          "start": 0,
+          "end": 917,
+          "sha256": "1e26e73d15d7fcae27052f41bb9bace0be353eb087df21017d742dfd169c3fe1"
+        }
+      ]
+    },
+    {
+      "path": "src/libm/e_atan2.c",
+      "sha256": "8a2d246e2090ba5b64a5cc146a6615c2ed13ec8414eb3070503a21c83dfb63fe",
+      "sections": [
+        {
+          "start": 26,
+          "end": 405,
+          "sha256": "565eff8b979411888b4fc163ba49daf7ad9beba47ee485942f032edcefd17948"
+        }
+      ]
+    },
+    {
+      "path": "src/stdlib/SDL_qsort.c",
+      "sha256": "edfdd99506d8e71ed7d53ba485daf9240b7669786755f086c58a25245c122760",
+      "sections": [
+        {
+          "start": 3480,
+          "end": 4409,
+          "sha256": "3841982ebbf6579f1f473f7de0f173210b7c32d14808db97148ceb1114b9b534"
+        }
+      ]
+    },
+    {
+      "path": "src/video/SDL_egl.c",
+      "sha256": "f832742b61098464f3d21dc36e6d9d66f67b68f9e6d57cd0b75d1e3120c6f779",
+      "sections": [
+        {
+          "start": 0,
+          "end": 975,
+          "sha256": "813485c555aa6e4d143ad5f1345cfe23d38c9dd29e4a7c52faffa57750326934"
+        }
+      ]
+    },
+    {
+      "path": "src/video/SDL_rotate.c",
+      "sha256": "5cfd02459d7bbc384564331dc2883a3ee67525c58a55c7eccd340440e283d10d",
+      "sections": [
+        {
+          "start": 0,
+          "end": 1065,
+          "sha256": "03d540a657f11249f5a1a92209efe03f7876fee272910e98ddc6664ecefe4b69"
+        }
+      ]
+    },
+    {
+      "path": "src/video/khronos/EGL/egl.h",
+      "sha256": "f5f41711f5d7517eb50d63726d786d471a3e84a52b94fd9aca9b6262b629347c",
+      "sections": [
+        {
+          "start": 77,
+          "end": 489,
+          "sha256": "6c3496f5aa0b62e19f5c34a86bf84174473c6cf991176af62f36b4a034bc7211"
+        }
+      ]
+    },
+    {
+      "path": "src/video/khronos/GLES2/gl2platform.h",
+      "sha256": "f5da0747540a50be5f44aad264aae45bdf157a192c40f17487dd9a2f99c71b6c",
+      "sections": [
+        {
+          "start": 51,
+          "end": 141,
+          "sha256": "a7f96466f9d19975ad134f2fe638eabcd75fe48f707189fc09670c55527943da"
+        }
+      ]
+    },
+    {
+      "path": "src/video/khronos/vk_video/vulkan_video_codec_av1std.h",
+      "sha256": "f3ab53dbfdeb36a349f674656d50bd507f2e4b3c883343da74aace0df4f02a02",
+      "sections": [
+        {
+          "start": 77,
+          "end": 170,
+          "sha256": "6a83c64d3193a9392ea48517d81a86a005e74a401db53fef1c4387d138bebbd2"
+        }
+      ]
+    },
+    {
+      "path": "src/video/khronos/vulkan/vk_platform.h",
+      "sha256": "c4cabbcf699c90cde344095ae54da9435d117951aad114ba3a540c5997d7906f",
+      "sections": [
+        {
+          "start": 29,
+          "end": 122,
+          "sha256": "dd6f4e6cfae0e633e86c5fe2b8c5459019c7b806f83a7b238dadbebf884d1cef"
+        }
+      ]
+    },
+    {
+      "path": "src/video/stb_image.h",
+      "sha256": "6741ecbd17740f45aa2fac0c9dc82d3079fe28860630a2755fe001827cc06ba5",
+      "sections": [
+        {
+          "start": 289697,
+          "end": 292370,
+          "sha256": "7587efcca32db8f95bf5860dea6dfa4be410ee723e1964db3689c8ddf2a2e4a9"
+        }
+      ]
+    },
+    {
+      "path": "src/hidapi/LICENSE-bsd.txt",
+      "sha256": "30eb1bef29b46f8ba7ab8b416035dbd93cb034a45481dd97815b944284582cd2",
+      "sections": [
+        {
+          "start": 0,
+          "end": 1534,
+          "sha256": "30eb1bef29b46f8ba7ab8b416035dbd93cb034a45481dd97815b944284582cd2"
+        }
+      ]
+    },
+    {
+      "path": "src/hidapi/LICENSE-orig.txt",
+      "sha256": "fb5436aa63d1b71a8dfbf74ecaf1a5b4e1ec4df7f80074d11fec99284f69ca5f",
+      "sections": [
+        {
+          "start": 0,
+          "end": 264,
+          "sha256": "e6d7e7cb685c597ad8f0b839d374deb157d6aca82973e2f3ff8672d76b29e8df"
+        }
+      ]
+    },
+    {
+      "path": "src/video/yuv2rgb/LICENSE",
+      "sha256": "f7d74004cc75778cae46c5f0139f244d67c07ef64cf51937e8272352197dcb18",
+      "sections": [
+        {
+          "start": 0,
+          "end": 1480,
+          "sha256": "f7d74004cc75778cae46c5f0139f244d67c07ef64cf51937e8272352197dcb18"
+        }
+      ]
+    },
+    {
+      "path": "src/video/miniz.h",
+      "sha256": "caedfea041a85a868245f044cb9c17b3d3c69e3d92242e62757f6c120bb2d3fc",
+      "sections": [
+        {
+          "start": 231227,
+          "end": 232483,
+          "sha256": "6a872e74952f8f332fc8eec087bf08ada61c4ef5cab5266de3a6dfb3e0ee309e"
+        }
+      ]
+    }
+  ]
+}

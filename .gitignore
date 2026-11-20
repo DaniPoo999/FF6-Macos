@@ -1,0 +1,14 @@
+/build/
+/.local/
+.DS_Store
+__pycache__/
+*.pyc
+*.app/
+*.sfc
+*.smc
+*.srm
+*.sav
+*.ff6save*
+*.ff6pack
+*.icns
+*.png

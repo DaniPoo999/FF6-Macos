@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "artifacts": {
+    "Contents/Resources/BuilderIcon.icns": {
+      "sha256": "208bfe21fd96c0063ac61ee2a979052b407fb1c5f1d73848d1afc5ac0b077d78",
+      "producers": {
+        "src/builder_icon.mm": "c3598dce07eaea42a058f37539a5223a18f558d4748ef518642637a1528199e1",
+        "tools/builder_icon_main.cpp": "fcefb8b18dd89f5e6367f2f5774583f81b7372bf5db45fd71049fb70175b6d95"
+      },
+      "matches": [
+        {
+          "material": "opening_armor_x",
+          "offset": 170461,
+          "length": 3
+        },
+        {
+          "material": "opening_armor_x",
+          "offset": 335062,
+          "length": 3
+        }
+      ],
+      "evidence": "Both three-byte matches lie inside PNG IDAT compressed data in the ic14 and ic09 renditions of the independently drawn procedural crystal/forge icon. Reviewed generator has no ROM input or original artwork on this path; optional artwork is not selected. Complete icon hash, producer hashes, material identities, lengths and positions are pinned. This incidental equality does not waive any source, native-template or executable check; changed artwork/producer/output requires new review."
+    }
+  }
+}

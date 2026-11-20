@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleExecutable</key><string>FFVI Builder</string>
+<key>CFBundleIdentifier</key><string>org.ff6native.builder</string>
+<key>CFBundleName</key><string>FFVI Builder</string>
+<key>CFBundleIconFile</key><string>BuilderIcon.icns</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>CFBundleShortVersionString</key><string>${FF6_BUILDER_VERSION}</string>
+<key>CFBundleVersion</key><string>${FF6_BUILDER_BUILD}</string>
+<key>LSMinimumSystemVersion</key><string>13.0</string>
+<key>NSHighResolutionCapable</key><true/>
+<key>NSPrincipalClass</key><string>NSApplication</string>
+</dict></plist>
