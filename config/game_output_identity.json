@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "scope": "Expected generated application file hashes for the frozen 0.5 game output. No game data.",
+  "bundles": {
+    "Final Fantasy VI.app": {
+      "Contents/Info.plist": "6082e80a29dc6645d57ef0cbe2082db7ccff23af1308cd5fd161725a154ebc51",
+      "Contents/MacOS/ff6-game": "818626702cee65c0af92b64672996347aa2165ca58e2aedd527874263b36b9e9",
+      "Contents/Resources/GameIcon.icns": "4b29a99f34cc56b05eacd1511d905a72db87d12446673f52b43f294bb160bb9a",
+      "Contents/Resources/LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "Contents/Resources/SDL-LICENSE.txt": "1c040b8271b37e5076359f8fd54240e371114112924d2df81ef87c7d6a1dfdfd",
+      "Contents/Resources/THIRD_PARTY.md": "b873cdf1fd10d96c95f1d0d9f20939c0f3401b1b6462ffc588ad090dbcd0881b",
+      "Contents/Resources/content-manifest.json": "e8e600f376c126aa05149fba83a1ea96c7aabbf1fe4c3a97f26f48276465ba07",
+      "Contents/Resources/content.ff6pack": "23c3688c654ed0306b03505b61e28051bddf126ec021b96430ea5ea0f0f5fbc2",
+      "Contents/Resources/crt.metallib": "210e7063ede33fcaf45e4254561b18df0737d2bc2ffee40ea42b4176281fda27",
+      "Contents/_CodeSignature/CodeResources": "60ecedc843fc4db770c8bbb33a1676fb00eb25ec3eca4d30bedc1e27a460efd1"
+    },
+    "FFVI Content Inspector.app": {
+      "Contents/Info.plist": "bede9bee205a6ef6f0e72eebc7ea96dc0b93596f8e9be7e0a61b601fce2dfd94",
+      "Contents/MacOS/ff6-inspector": "c1b482b8faeb7827495699d63c21635f95b1359556936847145c0307d07a74a9",
+      "Contents/Resources/LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "Contents/Resources/SDL-LICENSE.txt": "1c040b8271b37e5076359f8fd54240e371114112924d2df81ef87c7d6a1dfdfd",
+      "Contents/Resources/THIRD_PARTY.md": "b873cdf1fd10d96c95f1d0d9f20939c0f3401b1b6462ffc588ad090dbcd0881b",
+      "Contents/Resources/content-manifest.json": "e8e600f376c126aa05149fba83a1ea96c7aabbf1fe4c3a97f26f48276465ba07",
+      "Contents/Resources/content.ff6pack": "23c3688c654ed0306b03505b61e28051bddf126ec021b96430ea5ea0f0f5fbc2",
+      "Contents/_CodeSignature/CodeResources": "6cde1ef66799c2f2d8595c8c7fef8a9356270835b7bf78fa501b8ca081954a22"
+    }
+  }
+}
