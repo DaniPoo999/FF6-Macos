@@ -363,7 +363,7 @@ FieldSessionTick FieldSession::advance(const ContentPack& pack, Buttons buttons,
             }
             if (battle_menus_->victory_complete() || battle_menus_->escape_complete() ||
                 battle_menus_->defeat_complete() ||
-                battle_state_->end_event == 8 || battle_state_->end_event == 10 ||
+                battle_menus_->scripted_return_ready() ||
                 battle_menus_->leap_complete())
                 return_from_battle(pack);
             return tick;
@@ -782,8 +782,10 @@ void FieldSession::enter_field_menu(const ContentPack& pack, Buttons buttons) {
     values.steps = retained.player.effects.steps;
     for (unsigned i = 0; i < values.rare_items.size(); ++i)
         values.rare_items[i] = retained.state.flags.story[0x1d0 + i];
+    // WorldMain replaces $0201 with $80: rest/save are allowed, Warp is not.
+    // The dormant field map's permissions must not leak into the world menu.
     values.permissions = {retained.world.has_value() || retained.state.flags.story[0x1bf],
-                          (scene_.assets_.menu_permissions & 2U) != 0};
+                          !retained.world && (scene_.assets_.menu_permissions & 2U) != 0};
     field_menu_.emplace(pack, std::move(values), buttons);
 }
 void FieldSession::return_from_field_menu(const ContentPack& pack) {
@@ -801,7 +803,7 @@ void FieldSession::return_from_field_menu(const ContentPack& pack) {
     if (retained.world) {
         const auto handoff = field_menu_->item_handoff();
         if (handoff && *handoff != FieldItemResult::tent)
-            throw std::runtime_error("World Warp event presentation is not implemented yet");
+            throw std::logic_error("World menu returned a prohibited item handoff");
         if (handoff) {
             // WorldMain's Tent menu return selects WorldTent_ext. Its authored
             // world commands enter the ordinary field rest map, whose tile

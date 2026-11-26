@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "scope": "Expected generated app file hashes for main/public HDR television defaults (2026-11-26). Hashes only; no game data.",
+  "scope": "Expected main/public battle completion and field-return fixes (2026-11-26). Hashes and link metadata only; original extraction/restoration remains authoritative.",
   "bundles": {
     "FFVI Content Inspector.app": {
       "Contents/Info.plist": "bede9bee205a6ef6f0e72eebc7ea96dc0b93596f8e9be7e0a61b601fce2dfd94",
-      "Contents/MacOS/ff6-inspector": "1b30319dc03e2623c003566154bc5012880ecf7370a4b39e8e9cf36b50a36b43",
+      "Contents/MacOS/ff6-inspector": "d3e39992fd87e627a284abbb9dba776f23920821659a9610c2968068978c5a57",
       "Contents/Resources/LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
       "Contents/Resources/SDL-LICENSE.txt": "1c040b8271b37e5076359f8fd54240e371114112924d2df81ef87c7d6a1dfdfd",
       "Contents/Resources/THIRD_PARTY.md": "b873cdf1fd10d96c95f1d0d9f20939c0f3401b1b6462ffc588ad090dbcd0881b",
@@ -14,7 +14,7 @@
     },
     "Final Fantasy VI.app": {
       "Contents/Info.plist": "6082e80a29dc6645d57ef0cbe2082db7ccff23af1308cd5fd161725a154ebc51",
-      "Contents/MacOS/ff6-game": "5be8cdd037ee3c48e443cd94a6cc91d60ec75f0c2477f55223f8bb7730056b32",
+      "Contents/MacOS/ff6-game": "9598c4cf4e5a9b8411a37fcc5fa32a6ff5a23ba04592f2cc9cfefba6dd6d96e4",
       "Contents/Resources/GameIcon.icns": "4b29a99f34cc56b05eacd1511d905a72db87d12446673f52b43f294bb160bb9a",
       "Contents/Resources/LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
       "Contents/Resources/SDL-LICENSE.txt": "1c040b8271b37e5076359f8fd54240e371114112924d2df81ef87c7d6a1dfdfd",

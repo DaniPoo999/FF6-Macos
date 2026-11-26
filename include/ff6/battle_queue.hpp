@@ -68,7 +68,8 @@ bool queue_veldt_gau_appearance(BattleState&, BattleQueueContext&,
 // authored event runs before rewards; the return owner commits roster changes.
 bool queue_shadow_departure(BattleState&, const BattleQueueContext&,
                             const std::array<std::uint8_t, 256>& random);
-enum class BattleConclusion { ongoing, escaped, defeated, victorious, interrupted, engulfed };
+enum class BattleConclusion { ongoing, escaped, defeated, victorious, interrupted, engulfed,
+                              scripted_return };
 // Query at every completed presentation/queue boundary, including after an
 // immediate pose/status action. Death of both sides resolves as party defeat.
 BattleConclusion battle_conclusion_at_rest(const BattleState&, const BattleQueueContext&);

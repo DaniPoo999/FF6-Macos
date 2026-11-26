@@ -13,9 +13,14 @@
 #include <algorithm>
 
 namespace ff6 {
+namespace {
+bool pending_battle_priority_work(const BattleState& battle, const BattleQueueContext& context) {
+    return !battle.immediate_actions.empty() || context.continuing_retaliation ||
+        std::ranges::any_of(battle.turns, [](const auto& turn) { return !turn.retaliation.empty(); });
+}
+} // namespace
 void publish_battle_loop_display(BattleState& battle, const BattleQueueContext& context) {
-    if (battle.immediate_actions.empty() && !context.continuing_retaliation &&
-        std::ranges::none_of(battle.turns, [](const auto& turn) { return !turn.retaliation.empty(); }))
+    if (!pending_battle_priority_work(battle, context))
         update_battle_display(battle);
 }
 bool queue_battle_ai_retaliation(BattleState& battle, std::uint8_t target) {
@@ -124,12 +129,20 @@ void record_battle_conclusion(BattleQueueContext& context, BattleConclusion conc
     case BattleConclusion::defeated: flags = 0x01; break;
     case BattleConclusion::engulfed: flags = 0x80; break;
     case BattleConclusion::ongoing:
+    case BattleConclusion::scripted_return:
     case BattleConclusion::victorious: break;
     }
     context.ai.variables[12] |= flags;
 }
 BattleConclusion battle_conclusion_at_rest(const BattleState& battle,
                                            const BattleQueueContext& context) {
+    // BattleLoop C2/0033..0085 reaches CheckBattleEnd only after immediate
+    // work and all counters drain. This applies to every ending, not just
+    // victory: a remaining response can revive someone or set story state.
+    if (pending_battle_priority_work(battle, context))
+        return BattleConclusion::ongoing;
+    if (battle.end_event == 4 || battle.end_event == 8 || battle.end_event == 10)
+        return BattleConclusion::scripted_return;
     // C2/47FB: an event timer ends combat before ordinary victory/defeat tests.
     // A selected special battle event retains precedence over the timer.
     if (battle.event_timer_expired && !battle.end_event)
@@ -141,19 +154,17 @@ BattleConclusion battle_conclusion_at_rest(const BattleState& battle,
     // ordinary escape/defeat. One swallowed survivor plus a fallen ally is not
     // enough, even though both cases leave no active characters on screen.
     if (!battle.end_event && !battle.participation.ally_count &&
-        battle.immediate_actions.empty() && battle.engulfed_characters.any() &&
+        battle.engulfed_characters.any() &&
         battle.engulfed_characters == battle.potential_engulf_targets)
         return BattleConclusion::engulfed;
     if (battle.end_event == 2 ||
         (!battle.end_event && !battle.participation.ally_count &&
-         battle.departed_characters.any() && battle.immediate_actions.empty()))
+         battle.departed_characters.any()))
         return BattleConclusion::escaped;
     if (battle.end_event == 6 ||
-        (!battle.participation.ally_count && battle.immediate_actions.empty()))
+        !battle.participation.ally_count)
         return BattleConclusion::defeated;
-    if (!battle.participation.enemy_count && battle.immediate_actions.empty() &&
-        !context.continuing_retaliation &&
-        std::ranges::none_of(battle.turns, [](const auto& turn) { return !turn.retaliation.empty(); }))
+    if (!battle.participation.enemy_count)
         return BattleConclusion::victorious;
     return BattleConclusion::ongoing;
 }

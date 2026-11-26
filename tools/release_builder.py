@@ -13,8 +13,8 @@ import zipfile
 from audit_builder_payload import inspect, private_pack
 from check_repository import ROOT
 
-VERSION = '0.5.2'
-BUILD = '7'
+VERSION = '0.5.3'
+BUILD = '8'
 NOTICES = 'FFVI Dependency Notices.txt'
 
 def sha(path):

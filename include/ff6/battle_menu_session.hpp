@@ -284,7 +284,9 @@ class BattleMenuPreview {
     bool defeat_complete() const {
         return defeat_ && defeat_message_started_ && !message_;
     }
-    bool ending() const { return victory_ready_ || escape_ready_ || defeat_ || leap_pending_; }
+    bool scripted_return_ready() const { return scripted_return_ready_; }
+    bool ending() const { return victory_ready_ || escape_ready_ || defeat_ ||
+                                 leap_complete_ || scripted_return_ready_; }
     bool escape_held() const { return menus_.escape_held() && !seed_.actors.animation.run_animation_blocked &&
                                       !event_ && !ending(); }
     bool victory_ready() const {
@@ -370,7 +372,7 @@ class BattleMenuPreview {
     bool live_ = false, victory_ready_ = false, escape_ready_ = false, immediate_event_ = false;
     bool immediate_attack_ = false;
     bool defeat_ = false, defeat_message_started_ = false;
-    bool leap_pending_ = false, leap_complete_ = false;
+    bool leap_complete_ = false, scripted_return_ready_ = false;
     unsigned defeat_waits_ = FF6_ROM_VALUE_BATTLE_DEFEAT_MESSAGE_WAITS_0;
     unsigned completed_actions_ = 0;
     bool victory_animation_ = true;

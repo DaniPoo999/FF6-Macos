@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "scope": "Expected native output for main/public HDR television defaults (2026-11-26). Only SDK/linker/dependency versions and build UUID may normalize; every other runtime and structural byte must match. Hashes and link metadata only; no game content.",
+  "scope": "Expected main/public battle completion and field-return fixes (2026-11-26). Hashes and link metadata only; original extraction/restoration remains authoritative.",
   "images": {
     "ff6-game": {
-      "image_size": 7467088,
-      "signed_prefix_size": 7452256,
-      "masked_prefix_sha256": "8a9f38508408e1ced36902f0592b4238050f2531edb1c0f3c684a8be8410b66d",
-      "restored_prefix_sha256": "27298a23f17fa350e2b04194048c38546fd9dc0fefe32c7b62ea6107f29c2894",
+      "image_size": 7467152,
+      "signed_prefix_size": 7452320,
+      "masked_prefix_sha256": "92b64d47d9b852c47d35fd98db989f989e4f61a1b180629ef05c5e921dfcccd3",
+      "restored_prefix_sha256": "9149e0c8626de60b5df3c25fa255b563f848a8a986e8da1e1013a0cafebcf0e2",
       "fields": {
-        "uuid": "cd731c6d92be3608902cf1e1a67c44d6",
+        "uuid": "c04f197776fe36a1ba545d162c7061e7",
         "sdk": 1769984,
         "linker": 1776419072,
         "dependency:/usr/lib/libSystem.B.dylib": 89073667,
@@ -36,12 +36,12 @@
       }
     },
     "ff6-inspector": {
-      "image_size": 7493552,
-      "signed_prefix_size": 7478656,
-      "masked_prefix_sha256": "9dc7921e0e618f71d868698cbe7b128c392d3f1f2ce2020d4a5e8be90646e1d1",
-      "restored_prefix_sha256": "5d14e0416354807386b8281508a7b45b140a2fe918ddbd7d119a0d5f9dd77d5c",
+      "image_size": 7493616,
+      "signed_prefix_size": 7478720,
+      "masked_prefix_sha256": "a1b8888314c235ba1ed3a6067d3d11c7f47ae5242d40b34eca29faa9d2be4dde",
+      "restored_prefix_sha256": "f6c6461eac848e7de22e1d459dfd99328965e668c279181ecd997cb72627194b",
       "fields": {
-        "uuid": "c6550f06a92a3a978f46a104208c4fdf",
+        "uuid": "00a40a2f23c23654865ae82ba0546263",
         "sdk": 1769984,
         "linker": 1776419072,
         "dependency:/usr/lib/libSystem.B.dylib": 89073667,

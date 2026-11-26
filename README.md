@@ -4,13 +4,13 @@ A native C++20 port of the SNES game for **Apple Silicon and macOS 13 or later**
 using SDL3 for input, audio and display. It runs native game logic rather than a
 SNES emulator. This is an unofficial fan project, not affiliated with Square Enix.
 
-**Version 0.5.2 is a prerelease.** Stability is not established. Bugs, incomplete
+**Version 0.5.3 is a prerelease.** Stability is not established. Bugs, incomplete
 behavior and audiovisual differences remain; keep backups of your saves.
 
 ## Build your game
 
-1. Download **FFVI-Builder-0.5.2-macOS-arm64.zip** from the
-   [0.5.2 prerelease](https://github.com/DaniPoo999/FF6-Macos/releases/tag/v0.5.2).
+1. Download **FFVI-Builder-0.5.3-macOS-arm64.zip** from the
+   [0.5.3 prerelease](https://github.com/DaniPoo999/FF6-Macos/releases/tag/v0.5.3).
 2. Unzip it and open **FFVI Builder.app**.
 3. Select your legally obtained **Final Fantasy III (USA) (Rev 1)** SNES ROM.
 4. Choose an empty output folder and click **Build Apps**.

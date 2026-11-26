@@ -137,7 +137,10 @@ FieldLoop restore_saved_game(const ContentPack& pack, const SavedGame& game) {
         actor.ride = saved.ride;
         actor.rider_visible = saved.rider_visible;
     }
-    field.party_selectors[game.roster.active_party - 1] = game.leader;
+    // InitSavedGame writes the saved leader to $07FB and clears $07FD..$0801.
+    // These are the four visible character slots, not one slot per party.
+    // Party IDs name groups, not slots; IDs 5..7 exceed this array.
+    field.party_selectors = {game.leader, {}, {}, {}};
     sort_field_objects(seed.state);
     seed.transition.pending = plan;
     auto entry = prepare_field_map_entry(std::move(assets), std::move(seed));

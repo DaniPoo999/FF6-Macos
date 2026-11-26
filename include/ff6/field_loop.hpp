@@ -77,8 +77,8 @@ struct FieldLoopSeed {
     FieldActionContext actions{};
     FieldPlayerContext player{};
     FieldEventRunner events;
-    // Runtime-only, like the original unsaved field counters. Retained across
-    // map/menu/battle handoffs, cleared when constructing a new or loaded game.
+    // Persistent countdowns/callbacks: C3/PushTimers and PopTimers retain all
+    // four across save/load. Native schemas before 10 had no timer records.
     std::array<FieldEventTimer, 4> timers{};
     FieldMapTransition transition;
     FieldEntranceMemory travel;

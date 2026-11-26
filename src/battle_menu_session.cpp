@@ -1385,6 +1385,7 @@ BattleEffectContext BattleMenuPreview::effect_context(const BattleState& battle)
     return context;
 }
 void BattleMenuPreview::advance_selected_action(BattleState& battle, const BattleParty& party) {
+    if (scripted_return_ready_ || leap_complete_) return;
     if (status_animation_) {
         if (animation_active())
             return;
@@ -1401,13 +1402,8 @@ void BattleMenuPreview::advance_selected_action(BattleState& battle, const Battl
                 if (departing_characters_[i]) seed_.rules.shown_characters[i] = false;
             departing_characters_.reset();
             update_battle_participation(battle);
-            if (!battle.participation.ally_count && (!battle.end_event || battle.end_event == 2)) {
-                record_battle_conclusion(queue_context_, BattleConclusion::escaped);
-                battle.end_event = 2;
-                escape_ready_ = true;
-                menus_.close_for_victory();
-                return;
-            }
+            // Departure graphics finish here; the common loop boundary below
+            // still owns counter completion and the eventual escape decision.
         }
     }
     if (event_) {
@@ -1578,11 +1574,6 @@ void BattleMenuPreview::advance_selected_action(BattleState& battle, const Battl
         pending_attacker_.reset();
         result_frames_ = 0;
     }
-    if (leap_pending_) {
-        leap_complete_ = true;
-        menus_.close_for_victory();
-        return;
-    }
     // CheckBattleEnd is a loop boundary, not a one-shot consequence of a
     // damage result. Death queues pose restoration; checking only before that
     // immediate queue drained stranded a mutual KO after a death counter.
@@ -1593,9 +1584,15 @@ void BattleMenuPreview::advance_selected_action(BattleState& battle, const Battl
         const auto conclusion = battle_conclusion_at_rest(battle, queue_context_);
         record_battle_conclusion(queue_context_, conclusion);
         switch (conclusion) {
+        case BattleConclusion::scripted_return:
+            leap_complete_ = battle.end_event == 4;
+            scripted_return_ready_ = !leap_complete_;
+            menus_.close_for_victory();
+            return;
         case BattleConclusion::interrupted:
         case BattleConclusion::engulfed:
             battle.end_event = 8; // Common immediate return, no victory rewards.
+            scripted_return_ready_ = true;
             menus_.close_for_victory();
             return;
         case BattleConclusion::escaped:
@@ -2732,7 +2729,6 @@ void BattleMenuPreview::execute_selected_attack(BattleState& battle, const Battl
     if (mimic_command_) mimic_command_->parameters = physical_result
         ? physical_result->selected_targets : request.command.parameters;
     action_result_ = std::move(result);
-    leap_pending_ = battle.end_event == 4;
     for (unsigned i = 0; i < 6; ++i)
         if (action_result_->departures[i + 4]) pending_hide_.set(i);
     if (repeated_hit_ + 1 == repeated_count_ &&
