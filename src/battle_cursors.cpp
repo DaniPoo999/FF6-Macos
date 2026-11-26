@@ -152,8 +152,10 @@ BattleCursorFrame prepare_battle_cursors(const BattleCursorRequest& request,
     return out;
 }
 void publish_battle_cursors(BattleCursorPublication& state, const BattleCursorAssets& assets,
-                            std::uint8_t clock, bool hide_characters) {
-    state.visible = state.prepared;
+                            std::uint8_t clock, bool hide_characters, bool publish_descriptions) {
+    if (publish_descriptions) state.visible = state.prepared;
+    // BattleNMI uploads status/indicator images before CheckPause; z98 keeps
+    // advancing even when DrawCursorSprites and actor/menu updates are skipped.
     if (hide_characters)
         return;
     if ((clock % FF6_ROM_VALUE_BATTLE_CURSOR_IMAGE_SCHEDULE_8) == FF6_ROM_VALUE_BATTLE_CURSOR_IMAGE_SCHEDULE_9)

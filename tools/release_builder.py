@@ -13,7 +13,8 @@ import zipfile
 from audit_builder_payload import inspect, private_pack
 from check_repository import ROOT
 
-VERSION = '0.5'
+VERSION = '0.5.1'
+BUILD = '6'
 NOTICES = 'FFVI Dependency Notices.txt'
 
 def sha(path):
@@ -52,7 +53,7 @@ def check_builder(builder):
     if set(actual) != builder_files():
         raise ValueError('Unexpected or missing Builder files: ' + str(sorted(set(actual) ^ builder_files())))
     info = plistlib.loads(actual['Contents/Info.plist'].read_bytes())
-    if info['CFBundleShortVersionString'] != VERSION or info['CFBundleVersion'] != '5':
+    if info['CFBundleShortVersionString'] != VERSION or info['CFBundleVersion'] != BUILD:
         raise ValueError('Builder version mismatch')
     review = json.loads((ROOT / 'config/artifact_probe_reviews.json').read_text())
     icon = 'Contents/Resources/BuilderIcon.icns'

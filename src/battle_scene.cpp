@@ -21,6 +21,20 @@ void initialize_battle_background_motion(const ContentPack& pack, BattleBackgrou
             battle_sine16(sine, wrap8(FF6_ROM_VALUE_BATTLEFIELD_WAVE_PHASE_TERMS_0 / 2U +
                                     i * (FF6_ROM_VALUE_BATTLEFIELD_WAVE_PHASE_TERMS_1 / 2U)), amplitude) - 2);
 }
+void advance_battle_background_motion(BattleBackgroundMotion& motion, std::uint8_t background,
+                                      std::uint8_t random) {
+    // UpdateBattleBG runs outside the active-battle pause gate. Scroll values
+    // wrap at sixteen bits; the renderer handles the source plane's period.
+    switch (background) {
+    case 7: case 31: motion.y = wrap16(std::uint32_t{motion.y} + 6U); break;
+    case 15: case 33: motion.x = wrap16(std::uint32_t{motion.x} + 65532U); break;
+    case 44:
+        motion.x = wrap16(std::uint32_t{motion.x} + 65528U);
+        motion.y = wrap16(65536U - (random & 3U));
+        break;
+    default: break;
+    }
+}
 RasterScene compose_battle_scene(const BattleBackground& background,
                                  const BattleReadoutAssets& readout_assets,
                                  const BattleReadoutView& readout,
@@ -63,5 +77,11 @@ RasterScene compose_battle_scene(const BattleBackground& background,
         line.right = FF6_ROM_VALUE_BATTLEFIELD_HORIZONTAL_WINDOW_1 + 1;
     }
     return scene;
+}
+void apply_battle_background_motion(RasterScene& scene, const BattleBackgroundMotion& motion) {
+    for (auto& line : scene.layers.front().lines) {
+        line.offset_x += signed16(motion.x);
+        line.offset_y += signed16(motion.y);
+    }
 }
 } // namespace ff6

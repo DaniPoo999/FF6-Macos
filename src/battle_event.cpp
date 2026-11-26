@@ -308,6 +308,12 @@ void BattleScriptedEvent::advance_script(BattleActorScene& actors, BattleActorSc
 BattleActorPaletteOverrides BattleScriptedEvent::actor_palettes() const {
     return attack_ ? attack_->actor_palettes() : animation_->actor_palettes();
 }
+void BattleScriptedEvent::publish_suspended(const BattleActorPublication& actors) {
+    auto& effect = attack_ ? *attack_ : *animation_;
+    effect.update_character_frames(actors.character_frames);
+    effect.update_status_tiles(actors.status_tiles);
+    effect.publish_suspended();
+}
 void BattleScriptedEvent::compose_effects(RasterScene& scene, std::span<const BattleActorSpriteGroup> groups) const {
     if (attack_) attack_->compose(scene, groups);
     else animation_->compose(scene, groups);

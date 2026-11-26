@@ -154,6 +154,11 @@ void set_battle_character_colors(BattleActorScene& state,
 // image postpones the extra forced character image, preserving that request.
 void publish_battle_actor_scene(BattleActorScene& state, const BattleActorSceneAssets& assets,
                                 bool hide_characters);
+// A paused display still publishes prepared images/palettes/descriptions and
+// cycles status strips. It does not prepare new poses, statuses or palette waves.
+void publish_suspended_battle_actor_scene(BattleActorScene& state,
+                                         const BattleActorSceneAssets& assets,
+                                         bool hide_characters);
 // Scoped ordinary/Magitek actor pass with explicit visibility. Rejects overlays
 // whose separate owners are not implemented. Does not advance game/battle time,
 // run animation commands, stage a new draw order, or service menus/fades.

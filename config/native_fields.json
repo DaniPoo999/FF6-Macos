@@ -7,8 +7,8 @@
       "start": 560,
       "size": 1276,
       "sha256": {
-        "ff6-game": "1586b7c0c7a452da4de691b76e32545bbd78a3fdca8d71a8f8d994d80ff0350e",
-        "ff6-inspector": "2bdf7acb0d98b804304a6a4d7e5f2890889da16b354b1001ff082dbc0c78ef71"
+        "ff6-game": "5d9efa76e482d19409c77e4b629b261ca64a40f1d0a35eb0e9e3c62ce6611c8c",
+        "ff6-inspector": "9c29cc196bb78dd63e3edd05b4dd98bb9c64c2afc748f50eabdc9758bc26031c"
       },
       "fields": [
         {
@@ -209,8 +209,8 @@
       "start": 320,
       "size": 1684,
       "sha256": {
-        "ff6-game": "e301b51f6401f15a6ec04af1484484cc0c200349ad6c6f3795b558ef611ef627",
-        "ff6-inspector": "8e056aecf577f59e7e37b63f935be0c8ad94d8131847d18b42b432c4c9c8c028"
+        "ff6-game": "82ea650227c60f4f474792750e7f7a138d540c5f41ef012b9ddec038fc24ba0c",
+        "ff6-inspector": "5ad89e4df90002d21a2b394ff1a829bad6dc2860c051e1a5c0598e8affae0dfd"
       },
       "fields": [
         {
@@ -793,8 +793,8 @@
       "start": 2020,
       "size": 916,
       "sha256": {
-        "ff6-game": "294579c36a59eb1e89d9d84f97ee6120e90baf3d0872fe55b2c2684dc3450f82",
-        "ff6-inspector": "8e3ae85a6c0cc17045a8b5a6ab134f938bc05d40e132966878c81c70974a3fcc"
+        "ff6-game": "d97f817cdf170b05ef60c930b7e81f32a4eb8e7130a541d13737d1f1219e0525",
+        "ff6-inspector": "af4dbdbb84c8b48b5e727e76afac280171e6e60522c959df96ef90b0f8e2c14f"
       },
       "fields": [
         {
@@ -1500,10 +1500,10 @@
     {
       "symbol": "__ZN3ff618default_button_mapEv",
       "start": 0,
-      "size": 32,
+      "size": 28,
       "sha256": {
-        "ff6-game": "8f105542bf046a3e3943a214d8e191d999733dae04213142b6bbbb692cbee073",
-        "ff6-inspector": "8f105542bf046a3e3943a214d8e191d999733dae04213142b6bbbb692cbee073"
+        "ff6-game": "ebf2b1664d65559b1b441acfe5a578263562dffea44cbeffd7f5c6464e4f628f",
+        "ff6-inspector": "ebf2b1664d65559b1b441acfe5a578263562dffea44cbeffd7f5c6464e4f628f"
       },
       "fields": [
         {
@@ -1760,8 +1760,8 @@
       "start": 420,
       "size": 2588,
       "sha256": {
-        "ff6-game": "a98fe959d25fcbc239e44ae529bf5585bb674245fd11e34dbf83cca601a8f7c7",
-        "ff6-inspector": "d006467d1cec68b7ca6aa298807dd8c76193c5f3e7226934e86b25c21d8bd1d2"
+        "ff6-game": "ae6d0b0d4ae7ecf39dd22d5aa04adf2546022996fbceb06ba0f35d93cb49fca6",
+        "ff6-inspector": "1adb346e4af7704c504c5c59f1d5e15c4caa27463c3ffbcfb89851c59ba9676a"
       },
       "fields": [
         {
@@ -2309,8 +2309,8 @@
       "start": 16,
       "size": 412,
       "sha256": {
-        "ff6-game": "80c058ebb510d4b30a0be470407c4e333ba0ee1f2aa6b0ab6af4868423184745",
-        "ff6-inspector": "274ea977d910c0aeea203a4f6bb7fc9476eb198efcb832b71d6aa0d7ff9b3348"
+        "ff6-game": "125418419b60fd0f5a2a6e7f046af001dc80a3f0b85dcce00240109ee5383ae3",
+        "ff6-inspector": "751b2760ee54cc0f3af5b1357661fe8f0bd236a74cb3f6d1d1fbb48c973ea659"
       },
       "fields": [
         {
@@ -2584,15 +2584,15 @@
     },
     {
       "symbol": "__ZN3ff612FieldSession7advanceERKNS_11ContentPackEtmbtbNSt3__18optionalIhEE",
-      "start": 1548,
-      "size": 11520,
+      "start": 1552,
+      "size": 11436,
       "sha256": {
-        "ff6-game": "a766d8675d54bc0645c1674031689eb0e38bb52f1cca7b5ae98c0c69d6bed7db",
-        "ff6-inspector": "6b4dd2f99601f37da7cf52e1fa52c137b56d5c4bc8b497c9a15b46d507a22347"
+        "ff6-game": "cbcb6767ac802654b1a237b314f4fb9203583b0eba266ab1197da91217b7475e",
+        "ff6-inspector": "1c86114e653942903b55e6424090c64dc1fd621c34f6a55d437606fddcf33215"
       },
       "fields": [
         {
-          "offset": 1548,
+          "offset": 1552,
           "material": "final_battle_schedule",
           "first": 6,
           "count": 1,
@@ -2605,7 +2605,7 @@
           "projection": "sum"
         },
         {
-          "offset": 6876,
+          "offset": 6816,
           "material": "ruin_phase_waits",
           "first": 0,
           "count": 4,
@@ -2618,7 +2618,7 @@
           "projection": "sum"
         },
         {
-          "offset": 8880,
+          "offset": 8948,
           "material": "battle_timer_refresh",
           "first": 0,
           "count": 1,
@@ -2631,7 +2631,7 @@
           "projection": "sum"
         },
         {
-          "offset": 9312,
+          "offset": 9308,
           "material": "field_battle_mosaic_end",
           "first": 0,
           "count": 1,
@@ -2644,7 +2644,7 @@
           "projection": "sum"
         },
         {
-          "offset": 9456,
+          "offset": 9448,
           "material": "field_battle_mosaic_end",
           "first": 0,
           "count": 1,
@@ -2657,7 +2657,7 @@
           "projection": "sum"
         },
         {
-          "offset": 10976,
+          "offset": 10052,
           "material": "audio_loading_choices",
           "first": 10,
           "count": 1,
@@ -2668,7 +2668,7 @@
           "width": 8
         },
         {
-          "offset": 11028,
+          "offset": 10100,
           "material": "field_battle_mosaic_end",
           "first": 0,
           "count": 1,
@@ -2681,7 +2681,7 @@
           "projection": "sum"
         },
         {
-          "offset": 11204,
+          "offset": 11132,
           "material": "field_transition_brightness",
           "first": 0,
           "count": 1,
@@ -2694,7 +2694,7 @@
           "projection": "sum"
         },
         {
-          "offset": 13064,
+          "offset": 12984,
           "material": "input_repeat_initializers",
           "first": 0,
           "count": 1,
@@ -2713,8 +2713,8 @@
       "start": 1536,
       "size": 6644,
       "sha256": {
-        "ff6-game": "6072542eee2bc815d0a7841dcdafae8b23ba690710575d97c3ea318c2a8c19ae",
-        "ff6-inspector": "e42cfee5ea9d5c746eae0dea04429c5ece180de6c8d30f6442d2112d6ae88807"
+        "ff6-game": "1e0232e9dea3dd74cb8294b432eed3d9b2e9f336ce98fc477d1fe6addd28fc69",
+        "ff6-inspector": "28f30a3362b7e793869be78d8c6565af23c19c73ba9c11f8b2542218cc0a505f"
       },
       "fields": [
         {
@@ -3109,8 +3109,8 @@
       "start": 940,
       "size": 432,
       "sha256": {
-        "ff6-game": "9b44f9044a0b51fadd8e7d2421bb79004caa79ef26093759ba4e942676c7d7da",
-        "ff6-inspector": "bc14fa4b26d4b62aef29c4cf1bacc4eb4c12d2e3c6f24c48c32107048da61ffa"
+        "ff6-game": "136530a7af6c1db2e1295fa018fec0af64c24f8e83042e83a7d152120ed40b7e",
+        "ff6-inspector": "bda9c2229a6f3590f7af3149d4a51dad64979e803ab50088b94213fe47a71e6a"
       },
       "fields": [
         {
@@ -3365,8 +3365,8 @@
       "start": 28,
       "size": 96,
       "sha256": {
-        "ff6-game": "a309ffe1e5ae7cf71fed62f3e2cdfc83646656a2f4aae7411a7ffd818a953c25",
-        "ff6-inspector": "003f063c540d67c7e1127d29753c89d6c3e04f1c17b28b2cd135a8b82984bd15"
+        "ff6-game": "9b814a1ec35f46958049bb69f4f3eee1f4959152ca5df5c5cdcb11f47aec3dc0",
+        "ff6-inspector": "9b64e83917a147f09707bf9ec701e988f497f83ac1917f29040cbfab58494b71"
       },
       "fields": [
         {
@@ -3426,8 +3426,8 @@
       "start": 764,
       "size": 352,
       "sha256": {
-        "ff6-game": "b7c9fb7dfabb1e96d9c2a4c614a54e17270636676d30141b125b0f7e114b93d4",
-        "ff6-inspector": "a11f56471bfe2b10fd32e5b666cb907274e2d2047335bb72dcf49d7dcd446e0b"
+        "ff6-game": "1f3f8249bf804a3a4d02160708fa0dbbec8af2383971e8ce27d0e0d74bf3744f",
+        "ff6-inspector": "f1795fb2abcfd65fe39e21acdb8858d7227a2ba71c7a6f9d30c4f48a4c3807c4"
       },
       "fields": [
         {
@@ -3880,8 +3880,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "84320dc3317a384378d90a18d992d59f5a40f2730f6b462c3c7e21fb8197e95c",
-        "ff6-inspector": "e18f3f0313dd52061d978f07dc1a717659fab5189d97c0419e6d5b6af98ae444"
+        "ff6-game": "0ddc5a717c4876d9da61880dbea31e5e2ee1b209ecc705ea550244dce31e1eed",
+        "ff6-inspector": "26b43cea43966345297374bf5423bce56cec23aec50cec54ef885166bbeb892c"
       }
     },
     {
@@ -3973,11 +3973,11 @@
     },
     {
       "symbol": "__ZN3ff625begin_battle_summon_jumpsERNS_11BattleStateERNS_18BattleQueueContextENSt3__16bitsetILm10EEE",
-      "start": 180,
-      "size": 16,
+      "start": 188,
+      "size": 4,
       "sha256": {
-        "ff6-game": "993ac90c826dc14ce72dd91f9d60a8feb447c04a1584f4a7b45f1b2918308849",
-        "ff6-inspector": "993ac90c826dc14ce72dd91f9d60a8feb447c04a1584f4a7b45f1b2918308849"
+        "ff6-game": "4f6c11d4a30c4fa649ce8f767c615dee241586762bbefb12dc0828d11cfbda0e",
+        "ff6-inspector": "4f6c11d4a30c4fa649ce8f767c615dee241586762bbefb12dc0828d11cfbda0e"
       },
       "fields": [
         {
@@ -3995,11 +3995,11 @@
     },
     {
       "symbol": "__ZN3ff622refresh_battle_actionsERNS_11BattleStateERKNS_17BattleCommandDataERKNSt3__15arrayIhLm256EEEh",
-      "start": 1664,
-      "size": 16,
+      "start": 1672,
+      "size": 4,
       "sha256": {
-        "ff6-game": "454bdda48994b2565c7aaca773dc986e899141e70505c70b92b6e8a79ccccde6",
-        "ff6-inspector": "454bdda48994b2565c7aaca773dc986e899141e70505c70b92b6e8a79ccccde6"
+        "ff6-game": "4f6c11d4a30c4fa649ce8f767c615dee241586762bbefb12dc0828d11cfbda0e",
+        "ff6-inspector": "4f6c11d4a30c4fa649ce8f767c615dee241586762bbefb12dc0828d11cfbda0e"
       },
       "fields": [
         {
@@ -4055,8 +4055,8 @@
       "start": 156,
       "size": 1728,
       "sha256": {
-        "ff6-game": "16fdeaa7f073b4a423b9f358cfac6f1afe2ba6d16f242edc0f2aa7ffbf8580dd",
-        "ff6-inspector": "eaaca5f3950f4e26cb48c47e60fbf88537a67d4ccbb4082f75c5d318091317eb"
+        "ff6-game": "4b9a5f8722024e9ce4a8923ba43b0b00b3ed74ff82779d27530c352d8fb43bc9",
+        "ff6-inspector": "fb6e1c8d4fefaa0ed18c6815e28b24fcb9815aade5e1a9d76b955a352b70d9e9"
       },
       "fields": [
         {
@@ -4389,8 +4389,8 @@
       "start": 308,
       "size": 3420,
       "sha256": {
-        "ff6-game": "28232945a05d8133df9e6736eac5a8f57c33233597d172fa9aea8d987270acff",
-        "ff6-inspector": "d0c09c6c358de669f0b1df0e708f1257f660549951706362c1002d22fd832498"
+        "ff6-game": "b7b267e896441372323ab7626cbb0de011a7f8dc8113c2817725fe75d436679c",
+        "ff6-inspector": "419fdc6d7ba31ecb7db16ef7cacfde792eca4ab56eb2dd931e939146a9055d8b"
       },
       "fields": [
         {
@@ -4655,11 +4655,11 @@
     },
     {
       "symbol": "__ZN3ff612FieldSession12enter_battleERKNS_11ContentPackE",
-      "start": 848,
-      "size": 16,
+      "start": 856,
+      "size": 4,
       "sha256": {
-        "ff6-game": "601fc6559a222649750f3122a4e2aea7fbbf4b57fd282f41ee1520d694feaa54",
-        "ff6-inspector": "e24ccfd03b2f34b5f3a8040cbf13ab79af0915c008f6d44061cfbdc4fbf25eeb"
+        "ff6-game": "3a66e6f92c2d5dec794e571151d983066c8261b5b2bc381d7fc46acffe2d0c62",
+        "ff6-inspector": "3a66e6f92c2d5dec794e571151d983066c8261b5b2bc381d7fc46acffe2d0c62"
       },
       "fields": [
         {
@@ -4680,8 +4680,8 @@
       "start": 1292,
       "size": 8436,
       "sha256": {
-        "ff6-game": "b13d249829e19b3e2be0064061c645bbc01c9646b96947ecaa9725de9cc7c54f",
-        "ff6-inspector": "16dfaeda58ff964a9634aa6c6c92cfae7aafe78e7293fe161d1afc2f1413ac35"
+        "ff6-game": "7a74fa17ac55d9b22b7d7f8cb1c327dcf691de55e82c0976b6203ad7fb0a09d9",
+        "ff6-inspector": "b7d7e2fb29c18c35c6aa873c7d24c6a5890ce512f391a3713bc4399e0330d9c8"
       },
       "fields": [
         {
@@ -8370,8 +8370,8 @@
       "start": 1144,
       "size": 212,
       "sha256": {
-        "ff6-game": "5c27750049d1066916550793c8da127c8ba33ddbb60982aa4b6ac6570fe75c7b",
-        "ff6-inspector": "229c2e75f52d4cfcab7abf8f5e2fe372fe1b2cc9e4efe509c5e1feb8e2a876b7"
+        "ff6-game": "7ccdfdc990a52d41e661b18a14398187b33637069d97c95808d5f4d503e0c2c6",
+        "ff6-inspector": "cb1065fb1ef35302ffa3f0a98ebf0d69955e28e8c0310dd22f29aebc54c5c825"
       },
       "fields": [
         {
@@ -8433,8 +8433,8 @@
       "start": 524,
       "size": 8812,
       "sha256": {
-        "ff6-game": "7c4b0e72d1300266e60a536223db91c6db59f4386f963828458d677d9ec8a472",
-        "ff6-inspector": "e2a0b3e8f17c7c4b9cebd87f08c3365d55f60c7698f885e9e39a66b8b79a7725"
+        "ff6-game": "b6303a0d9e9d802fe097b7cd96a9aaff9a47bdf347d18f665225e99518fb49ce",
+        "ff6-inspector": "c9cbdf7e0022555eb539aa08a8bc0bf7dd848bdd5479b644e7e18346ace329ed"
       },
       "fields": [
         {
@@ -8626,8 +8626,8 @@
       "start": 132,
       "size": 288,
       "sha256": {
-        "ff6-game": "8bd689c04664c33fcdd2e19a179226d81e4e8767b6b5d206fe379014a278db3f",
-        "ff6-inspector": "c0e41a49eb94e5f42f484dbeb60b8e44a7cdd6d384742785573e6c1b79d7dd6f"
+        "ff6-game": "e80d8ef3d94aee039c43f3f44a02c81c7829ec817690f47e7c46c3a892ba9f13",
+        "ff6-inspector": "f496bd4b30eccdf6440d6ff441cc4d6a969672503e92aa3c079d4174a7caee2e"
       },
       "fields": [
         {
@@ -8702,8 +8702,8 @@
       "start": 48,
       "size": 1272,
       "sha256": {
-        "ff6-game": "0e2b826e3a842cbc789aa27310657223c81d6161500c07c28334e5e99801bb6b",
-        "ff6-inspector": "eaaf0049d738b4a4011ce7fb1a38f16d7c8493bfdc5faea8c37cba3f2f697f75"
+        "ff6-game": "fd8695d74668c50fcf119028a15aba33ecd319e711951692bb715f69fe42a63e",
+        "ff6-inspector": "1ceaffe60d8ac678ca4ef51809268b44515de94407a0990f1f5a13417ef7daa8"
       },
       "fields": [
         {
@@ -8776,8 +8776,8 @@
       "start": 204,
       "size": 120,
       "sha256": {
-        "ff6-game": "ec9afc6f03efb472f98730936ec7617b007cb39b01041db5b8ca9dac3ec3680d",
-        "ff6-inspector": "d356918549113aaf4da98d6339c8e9ec6ec77d730989fc1469a4cefdcfeddecc"
+        "ff6-game": "176073eab727eed36a265dc04f1837fa3a05bfd1b2cff56a22669fcf9f6c1247",
+        "ff6-inspector": "50e92582fe7b6b93d587dc607adcf1a2b5b177111afdd2cd8d546063b037c859"
       },
       "fields": [
         {
@@ -8878,8 +8878,8 @@
       "start": 96,
       "size": 5444,
       "sha256": {
-        "ff6-game": "bc7b6e141aa2d8204744261cede1c1f82e400af164f2fedd10c17976f379b264",
-        "ff6-inspector": "2c827c4f02d845b159628b9564e700492113245aa738313deb33725cee3aebff"
+        "ff6-game": "886bced867a51bf46acefec94bc9c48ceea8df364ab5da187d42a2f9480e0910",
+        "ff6-inspector": "a0abf700472c86421e4b7b0395ec1f024ab13ec0c6458be6f191188e225b0c8e"
       },
       "fields": [
         {
@@ -9238,8 +9238,8 @@
       "start": 44,
       "size": 808,
       "sha256": {
-        "ff6-game": "3b4a8bd6d72869006a4ede666f193b59f0448e846e6bb07a703019bea5ac8731",
-        "ff6-inspector": "3bd062bf5a241fdb5d9ec0ac186eb490ae9c96a9f3489d5aac52e7cd1c30e8ec"
+        "ff6-game": "9c5aeb7d1f30986b25f27ee3f5895b2cf8426c8261ba5b1455c841cb2e5a81ce",
+        "ff6-inspector": "56332ee60362900aaca991714982daa95b3bb6c24c3d574a66638cf7d808a989"
       },
       "fields": [
         {
@@ -10185,8 +10185,8 @@
       "start": 348,
       "size": 3392,
       "sha256": {
-        "ff6-game": "5957126e2d8a9ca101a7f0cd93a8b239770b04da682aea9b7efdcdf125637797",
-        "ff6-inspector": "7be3f0a2719cb68ccdb79f57b5d79609183c9e4ded14553fb4f6c1961b85da14"
+        "ff6-game": "a322b0cd8186db779b2cbbd3d71990efbc6eae90d9b62450bc89cb4d64010064",
+        "ff6-inspector": "5dbacdbd2e19f52dd46cd64d00118a9452fc44db48746dac0727126ca8c79cd8"
       },
       "fields": [
         {
@@ -10750,8 +10750,8 @@
           1680
         ],
         "sha256": {
-          "ff6-game": "d4314420ecd12ee10e584a25f49a2f436b719eb1b0ad46420f70c8fc2c8db92c",
-          "ff6-inspector": "f9fd509ccaaf017c84389b01296180d77049ea1b96a37a6a45940849ced3f150"
+          "ff6-game": "01ad56080384e947d62022f30ae18a299662c277fa2ccc9e1f9be75bc447509c",
+          "ff6-inspector": "b4fb14e8afb74804dc64f8c31daef5ab2969d89d271ce928fb1943526cc05ed3"
         }
       }
     },
@@ -10808,8 +10808,8 @@
           96
         ],
         "sha256": {
-          "ff6-game": "2ddef47a7d5f25d59753f8f0ad29e0ef2a1d16e6f9b2659a627c890def547a64",
-          "ff6-inspector": "8eb688c9a51e25734c358dd5e8ef2adf0d21165fe37738583d877cd634dd0386"
+          "ff6-game": "de2a2652c5019b1b327fa9212ae618cc6ae0d79f8f8b3b68c313677e3cba957a",
+          "ff6-inspector": "d49a11a31f6ce23d4c3cb6e496f44549631fb20cd87a42d8c44f2b127af741f4"
         }
       }
     },
@@ -10842,8 +10842,8 @@
           840
         ],
         "sha256": {
-          "ff6-game": "90cd234a921dd15409799924df98ce26bd9c7485ca42cfedfd9ba7a417c7554c",
-          "ff6-inspector": "a83417c382172171386e4a1bb0fe6ae2b22db7386fc97b56deae738ffab5bde3"
+          "ff6-game": "8d345ff0203ad4369f53858dcdacd4248754bcd2dfcddd870e8369e219301437",
+          "ff6-inspector": "58a2bcd6673d238f74c034c81bedf2ba30c3f56b2a59f23a02393d7dc61d00d1"
         }
       }
     },
@@ -10889,8 +10889,8 @@
       "start": 36,
       "size": 428,
       "sha256": {
-        "ff6-game": "8d39d2471146be1f192fd42c33de01d2a884d8e74cfe2e3e67ea81864d1fd933",
-        "ff6-inspector": "26ae71e8d2d375f42133a72c19ac49d3e0f40cd959230b1fa16825dbb756cf2e"
+        "ff6-game": "ac1b1b352432643c5526146d2f327e52c1591e17ea5abdc976d8fdd4d6645f90",
+        "ff6-inspector": "adb62e321c801200a72c2a44837d80543b31a836387b66d64037385fd3af63f8"
       },
       "fields": [
         {
@@ -11004,8 +11004,8 @@
       "start": 332,
       "size": 1004,
       "sha256": {
-        "ff6-game": "762c416ae88c8b2ac44795b647a6cea6d83dff796076dfb82a8a4add670a9840",
-        "ff6-inspector": "2b9dd3a81e41a77f26314661ec374ef104b8c6222b7ae197056e692c326cb305"
+        "ff6-game": "2de671e5214c6cc0ed0eec1f9dc21fe3ffbfad367ddc2da9c995322544168172",
+        "ff6-inspector": "1cc2797cf938885b94110b644093a9899dfde283c2ed5445cd2864f4c7798b32"
       },
       "fields": [
         {
@@ -11301,8 +11301,8 @@
       "start": 516,
       "size": 2156,
       "sha256": {
-        "ff6-game": "09e17bf34254a0ee77b8d29fb3826bfdbeaa2f4988e37f770f654f794ed824ab",
-        "ff6-inspector": "a216a67766248bf19405fced193282ed7b88dfe51137c7bad09700b5b65c24ca"
+        "ff6-game": "e71639eec6bade179195d9118d9eb5523745bf4cac481d532ae82c4c63f10840",
+        "ff6-inspector": "37f6c714452e389446189698e51b52bfbb362df364fb53c523a9b89382ceed83"
       },
       "fields": [
         {
@@ -12129,8 +12129,8 @@
           392
         ],
         "sha256": {
-          "ff6-game": "a92132d285471435067bdc4fb371e58171b568436cb16c69b8097ed6d89d0c0f",
-          "ff6-inspector": "5b93cb02b0a131751870c33d78ddc5a13650199811d27d4d0ab3d045b2a9faa3"
+          "ff6-game": "5ebcdf2951b0d386c3739910a6f9b885ab83880195d81ca22b91afaaa015bf84",
+          "ff6-inspector": "7891a677b477f0f3a6ea252aaa205c3e1ab4f1d556ab25ec7ee9bffb63f15d0d"
         },
         "load_width": 16
       }
@@ -12190,8 +12190,8 @@
           400
         ],
         "sha256": {
-          "ff6-game": "80c94be4b39054466f14f0218b44e53303bf592d0e20a57473350a098b6d2437",
-          "ff6-inspector": "7313f3a27b90f6114c8ef49712e5e694c49c3a6972486190eb1794733bed920b"
+          "ff6-game": "93ad954eb4bd063da647504d99e057784707926363a22ad7cee27d7820d2aad6",
+          "ff6-inspector": "d0eab07dbe910368cdf642392322abaccaaf362663e47fad3feaf769e64ca25c"
         },
         "load_width": 16
       }
@@ -12225,8 +12225,8 @@
           412
         ],
         "sha256": {
-          "ff6-game": "61c0eba0be003c1b3eb0012d71b88cfa7ae972da56c4ed2b387ce023e168d088",
-          "ff6-inspector": "2737a725c009348e730124a80a3b10df50eec9fd154f5feddbcb34774029111d"
+          "ff6-game": "665d16797dcd553f3608b9d3e58734b2c99615eca6d28f3dd682da545caeb6f8",
+          "ff6-inspector": "d3b1e9502ee0d71348284a65af74ebc6aa9f45e79934e93c27b0ad82fb09b011"
         }
       }
     },
@@ -12298,8 +12298,8 @@
           164
         ],
         "sha256": {
-          "ff6-game": "6c7aa34dab94238d89940fd48b929a7f0eb25da66bc2f6f50af689831c5a0ad8",
-          "ff6-inspector": "080919d24856dfd183026d3884b3d27318dcf674e47d6fee04137eeb993d22c0"
+          "ff6-game": "fca1166b3cbdc49abded9fe3276abd78685387fdc59574c350f7d11ea403d4df",
+          "ff6-inspector": "c56cd24ce257e06acfaa086b5f33ba37088a600f04ba4f0447692d5303ad8e56"
         },
         "load_width": 16
       }
@@ -12359,8 +12359,8 @@
           172
         ],
         "sha256": {
-          "ff6-game": "a316cc79b785f239d2b93a52c40e05e17efdb851696b8a30e127e8dae7118096",
-          "ff6-inspector": "23fc9856b78a97636131bc33b14f70f082401db97dc9219f4cad652e3ce50f6b"
+          "ff6-game": "9072221cf283d5a1746bafd40e5b17cd0ea7e2ad1a208da3101fc7d6a89b0f92",
+          "ff6-inspector": "7a03fddb9a887e3eb7ddc9cd81f4b244b26d3abb9c6764da617894a565f237b7"
         },
         "load_width": 16
       }
@@ -12394,8 +12394,8 @@
           184
         ],
         "sha256": {
-          "ff6-game": "cb451ef78189a19c4b694a9cf866022a046341b7be55f2d7c46b67454dc64ed9",
-          "ff6-inspector": "bbb7d9159e156f231f90afb2e213141b0b2254c2acb197e3265f30a62df171ff"
+          "ff6-game": "6ab6dc6547e11d724fd210e7edec12e09615e2b52170c64814dfc4a31bb41f31",
+          "ff6-inspector": "aecee3bbd52c09c333d02bda5902d71d4cc025626bbfe545db0b9442804d2e48"
         }
       }
     },
@@ -12404,8 +12404,8 @@
       "start": 752,
       "size": 952,
       "sha256": {
-        "ff6-game": "b654372fabca0e3a98dbaa0d29a025e94c92e0e789b779a04686c42e61e79968",
-        "ff6-inspector": "0a8ec44a74ec1de306801dec166d25efa471e45a4baf23ab97007929e11e1288"
+        "ff6-game": "3e0d18e385b635c802c4dd7366eaca7714361d3ea4a2d19cfccd6b366a33ae1d",
+        "ff6-inspector": "f11f40430aa68058ca88eb75e44c373167e56d4508dd819106f74a5900575b4c"
       },
       "fields": [
         {
@@ -12543,8 +12543,8 @@
           1556
         ],
         "sha256": {
-          "ff6-game": "3b6812d8ca1e3458c8889401f5a2b3f0d444f39aff3f484d449bbc0e2523885f",
-          "ff6-inspector": "4bc6929a1bd62be86aa4df01f84aa068f2a492a87f974b01005d6e823586b566"
+          "ff6-game": "c479a98fb9893b739e354b61d8e785871aab0a1e850074e72e2ca2f2c7264874",
+          "ff6-inspector": "728b3bf466fcd5fe26624fbf1684d35875c9c518cc71b9259b1f0d15aace2074"
         }
       }
     },
@@ -12651,8 +12651,8 @@
       "start": 32,
       "size": 1000,
       "sha256": {
-        "ff6-game": "ac72527818f65bf9d4c1fd88feb59756ed5a87312157b918bc8cd55b18012448",
-        "ff6-inspector": "8ef7e7ad37e24dcfdf64e9bd44ead2d763505d916fa2a6c20d6322bfb4f94ea7"
+        "ff6-game": "95b1a1452c78bacc6aee76bb7e1a3334802d27359e8fcbf929ce2ffaecf43a06",
+        "ff6-inspector": "2680dd2f63b14cf5dc4bd5dc97c4d56d042785d6c8580368cd55ce10f05ff7f7"
       },
       "fields": [
         {
@@ -14461,8 +14461,8 @@
           1020
         ],
         "sha256": {
-          "ff6-game": "4fd7964237d94ce2ad721fbf731f43fdb8052139e65024eb2cdeda1a5cfb7c55",
-          "ff6-inspector": "90fbdecf7ece98cd8d1f280d09fd49d5a1cb379935fddfb2ee8e7ebcc519ac18"
+          "ff6-game": "7cf17beda41f89db068734f835992e41e84e26fea511c87c74fb400861af97a1",
+          "ff6-inspector": "398d8c5313c365ce53a7fa52344aa8af4db56db20d7dc2a49d1a8537c31e3e07"
         }
       }
     },
@@ -14471,8 +14471,8 @@
       "start": 8,
       "size": 44,
       "sha256": {
-        "ff6-game": "ff8822fc9eed012a6a3561272108ef62beb7aa26b52a265e7cbece1505958afa",
-        "ff6-inspector": "c5cc26d15cfc2a3565f6338e46763277077d1b7dd08eeadcd7b881c38db70686"
+        "ff6-game": "8cb003357a80cd4f69655b2f911559d396dc03fbcdd4cf7a92f97d73692101bf",
+        "ff6-inspector": "9853a815d2a0cea180fd70de0b2d056b190481f186a6163ee9cd0be2f86f79e3"
       },
       "fields": [
         {
@@ -14573,8 +14573,8 @@
       "start": 4,
       "size": 68,
       "sha256": {
-        "ff6-game": "59f61d2e311def3c75620ea59cb13344ad23fceb298f9d34e0c80bca9d3a2003",
-        "ff6-inspector": "6964bbc08a55412ec7d0d5e318c0db2cf3221b46ed666d832af559e74ce940f4"
+        "ff6-game": "35fd44b72d2c0d6d77313f60153a54badbe237e346b07895a5ec96949e9e2f6d",
+        "ff6-inspector": "cedb81efba50781b306a0e190441a452584b321b6d6a22fa4ff1de63340596ea"
       },
       "fields": [
         {
@@ -14727,8 +14727,8 @@
       "start": 912,
       "size": 624,
       "sha256": {
-        "ff6-game": "8a06693df22c3ef1f6142bd96d17dceabd1e2bc80c1a79c6e48004db72e8fd0f",
-        "ff6-inspector": "182cda060d69cb7d47f2980cf5095dbe8564f0101545d74b5a4329a561d925cb"
+        "ff6-game": "b897f0d588d1e5074b035a61760873880faff36ca14f7c14221d9656e79f1dd4",
+        "ff6-inspector": "9b26ac5480a8275860122dc76ea38f4077d11c5b3dbead4c13205387019accc4"
       },
       "fields": [
         {
@@ -15140,8 +15140,8 @@
       "start": 332,
       "size": 232,
       "sha256": {
-        "ff6-game": "316071be902f0b2be57bf28992e2ea353a64b23284783f015da7c00b60a3d5b8",
-        "ff6-inspector": "ef91ce0686c4b321ab2815e633819b89409371778a051e3e422e12128e3b7bc8"
+        "ff6-game": "a99855e48b5bcdc631660257e91d4546f052f554dee875dcfcfdc50ee10b8d96",
+        "ff6-inspector": "2692351e9e03a28a3b6e0e461c4e4e36728d1d778c8a2d34bb051e4c9579c768"
       }
     },
     {
@@ -15288,8 +15288,8 @@
       "start": 16,
       "size": 40,
       "sha256": {
-        "ff6-game": "c1d22e2d458032f8945746764ac6b9066ecf91f7ded92bc94f63c22df434e1f7",
-        "ff6-inspector": "3aec28fcf26c3717f2c36cf9b584ef3c84cf83fa83570ddf2973f9a94a3a9a4d"
+        "ff6-game": "6e49be2711c520fb4f4b38fffc91a4863155b9740fe2b3881c931e1a9bba727e",
+        "ff6-inspector": "57d7058472b23f8769dec4d60cfe104848e0bf639ac90ec60c15028ec69c9a9e"
       }
     },
     {
@@ -15325,8 +15325,8 @@
       "start": 16,
       "size": 40,
       "sha256": {
-        "ff6-game": "c1d22e2d458032f8945746764ac6b9066ecf91f7ded92bc94f63c22df434e1f7",
-        "ff6-inspector": "3aec28fcf26c3717f2c36cf9b584ef3c84cf83fa83570ddf2973f9a94a3a9a4d"
+        "ff6-game": "6e49be2711c520fb4f4b38fffc91a4863155b9740fe2b3881c931e1a9bba727e",
+        "ff6-inspector": "57d7058472b23f8769dec4d60cfe104848e0bf639ac90ec60c15028ec69c9a9e"
       }
     },
     {
@@ -16526,8 +16526,8 @@
       "start": 140,
       "size": 2576,
       "sha256": {
-        "ff6-game": "711000818436bb66c16cd347b31911298bb46eff959c9661658e07c03a2bb6b5",
-        "ff6-inspector": "c09f9913a45eca1cea2f945424ad21e1a61488cb874e3c43c2e5318000a203f3"
+        "ff6-game": "d7b36cb78f74f96640a502725e1fcf19d21fbaec4dacdb46506d3a48d4915abd",
+        "ff6-inspector": "f94292d7d76ee78b2d4e9aa9b82c676485e1e81bf41e5a451c5126619737b72b"
       }
     },
     {
@@ -16538,8 +16538,8 @@
           44
         ],
         "sha256": {
-          "ff6-game": "8f31f21f846479669268125125ec77c00e0d151e688219c36b95f2e61ada7961",
-          "ff6-inspector": "142f94eca7e01a1596473a053496e2fa0bbe8edb7c85f60fe9966132e42d3a18"
+          "ff6-game": "b66f967bfa60934959cc240469756cee15f5c4141c55d11d220fdb3778a60d86",
+          "ff6-inspector": "ec244e2091333ecdabbc453f799bba2a8c1b011eeda14b0080ce492d8d3b377f"
         }
       },
       "fields": [
@@ -16585,8 +16585,8 @@
           1084
         ],
         "sha256": {
-          "ff6-game": "f439d0e8925e4a239a2454120eb954dfb495fb32f128a59928f16051c7faf82f",
-          "ff6-inspector": "166f19ed80bbac4876efcd59b0e9e01576359c1447ee88a47ff4aebb58947776"
+          "ff6-game": "14e1eb230b0e0e4f1a6d0342f1ac52887d04f8e7c74dffd1a0fd61fcabbe9c55",
+          "ff6-inspector": "bf04bc2169cba72d4e1165d5002bc5a662ee69f57799af1763772ac936311ade"
         }
       },
       "fields": [
@@ -16619,8 +16619,8 @@
           2420
         ],
         "sha256": {
-          "ff6-game": "36dc473440605ee75d65e2936a9d3bea054c7535c939870a91a8ad68a343d324",
-          "ff6-inspector": "bc7bd42b08ccbda3d8e45cdf26f8f991f38e4e2e92addc9f526325311883035a"
+          "ff6-game": "41e5bbcebc4b281937953dee7313808d474c4491988c47fb1949dc79e54874c2",
+          "ff6-inspector": "8dda6a77d2f054b8effe53323c9e14ae2cebac857aabd72ead7dadd86af80df1"
         }
       },
       "fields": [
@@ -16962,8 +16962,8 @@
       "start": 12,
       "size": 300,
       "sha256": {
-        "ff6-game": "deb2119cbac15d7bada4c9912b90cc86698d4ddb67a74f189e8ed83f899df148",
-        "ff6-inspector": "e31541bece1b595c26222b92655396887b4787cdefc20facbbc1ae77c5780eae"
+        "ff6-game": "7910b863d2e2a2a97a1a2e090108242834e4b0e92448fe399fe0800d2340642e",
+        "ff6-inspector": "e445d415790031beaf156c036690a35fac0aad9ba793de653c47f4bb0e895225"
       }
     },
     {
@@ -17218,8 +17218,8 @@
       "start": 44,
       "size": 1212,
       "sha256": {
-        "ff6-game": "5a315b69c7421b8dcf87de488ebfd2740e15117f958fae3645db03fcb894f274",
-        "ff6-inspector": "5f39432ce37bc7a3e3ed31693d05d19a6a34c7d358e6ad39102a8c7ae709c547"
+        "ff6-game": "f0fe77bbf6cab2f80d8b6a90145dda75f85225f32937de1e5effb6a97cc7d6d1",
+        "ff6-inspector": "9d628f1e4b77c3099378038c4b583ed4af99403f3b63d540ea3dc624eedb151e"
       }
     },
     {
@@ -17409,8 +17409,8 @@
       "start": 8,
       "size": 620,
       "sha256": {
-        "ff6-game": "4ff0b58be23a6f20f77e63cce76ccfd668349fec8f46508d1d33c6f3eb9f4a24",
-        "ff6-inspector": "d237792ef2fa1aaca228c53fd328346ef9e6aaf62d2f74293a029cf1e910b4aa"
+        "ff6-game": "4b1ea5630b024a8cf731394f53050dbb21f229d758bbad659a3eb617f8bf2a92",
+        "ff6-inspector": "643f11cb85230ffb564489d9194c360750bb66f65769ff920ea783df6b2c09ef"
       }
     },
     {
@@ -17472,8 +17472,8 @@
         ],
         "load_width": 16,
         "sha256": {
-          "ff6-game": "d2c9953147814d55b9b4d05ec1bc2bc018efb73aaefc8ecf9008235bb700e259",
-          "ff6-inspector": "51b5bc35a8dc76e313049be279c95206614aa26a4aa7ce92ac772314d8a1ab18"
+          "ff6-game": "3b0e2df94efcd4c54283e5d89585db8e0b7b73bfab47f88e3c74e56e1ad7f50b",
+          "ff6-inspector": "cd71904fc6ea020b6b38834d18cdb65c01ade2be8e69a5226873505fc3237bf7"
         }
       },
       "fields": [
@@ -17581,15 +17581,15 @@
       "start": 32,
       "size": 44,
       "sha256": {
-        "ff6-game": "5bf883dc03409565489a12c4b323cbfa8722c26979503098973ec6d61f929b32",
-        "ff6-inspector": "8726594a0ff8d525be9ef9afb0ca8be1a1f387ad12ad7e40ef159b4c238260e9"
+        "ff6-game": "e9fc53a561491426891c339d64ff0874a23fb7043075b51121ec5e450819b4d6",
+        "ff6-inspector": "878b2582ea75b7f93efc69fa51adadbc15c2dc8a17b8aef23d6c90a2dbf3d10c"
       }
     },
     {
-      "symbol": "__ZN3ff617BattleMenuPreview7advanceERNS_11BattleStateERKNS_11BattlePartyEtt",
+      "symbol": "__ZN3ff617BattleMenuPreview7advanceERNS_11BattleStateERKNS_11BattlePartyEttb",
       "fields": [
         {
-          "offset": 252,
+          "offset": 692,
           "material": "battle_dance_fade_limit",
           "first": 0,
           "count": 1,
@@ -17602,7 +17602,7 @@
           "projection": "sum"
         },
         {
-          "offset": 260,
+          "offset": 700,
           "material": "battle_dance_fade_total",
           "first": 0,
           "count": 1,
@@ -17615,7 +17615,7 @@
           "projection": "sum"
         },
         {
-          "offset": 1484,
+          "offset": 2024,
           "material": "monster_death_palette_steps",
           "first": 0,
           "count": 1,
@@ -17628,7 +17628,7 @@
           "projection": "sum"
         },
         {
-          "offset": 2016,
+          "offset": 2548,
           "material": "final_battle_viewport",
           "first": 0,
           "count": 2,
@@ -17641,7 +17641,7 @@
           "projection": "sum"
         },
         {
-          "offset": 2236,
+          "offset": 2952,
           "material": "monster_death_palette_steps",
           "first": 0,
           "count": 1,
@@ -17654,7 +17654,7 @@
           "projection": "sum"
         },
         {
-          "offset": 3352,
+          "offset": 4168,
           "material": "monster_death_palette_steps",
           "first": 0,
           "count": 1,
@@ -17667,7 +17667,7 @@
           "projection": "sum"
         },
         {
-          "offset": 3476,
+          "offset": 4292,
           "material": "monster_death_palette_steps",
           "first": 0,
           "count": 1,
@@ -17680,7 +17680,7 @@
           "projection": "sum"
         },
         {
-          "offset": 5640,
+          "offset": 6472,
           "material": "battle_sprite_default_priority",
           "first": 0,
           "count": 1,
@@ -17693,7 +17693,7 @@
           "projection": "sum"
         },
         {
-          "offset": 5648,
+          "offset": 6480,
           "material": "battle_character_default_status",
           "first": 0,
           "count": 1,
@@ -17704,9 +17704,20 @@
           "width": 16,
           "source_stride": 1,
           "projection": "sum"
-        },
+        }
+      ],
+      "start": 692,
+      "size": 5792,
+      "sha256": {
+        "ff6-game": "c5111f6e6ab1e7bca8726c1315890d5484e1ac406f1438c937554ebdadb1b1da",
+        "ff6-inspector": "f99adb52e729d61d5cba72dbd8aef9f53fdd272942e2a6d6205506cbf113a297"
+      }
+    },
+    {
+      "symbol": "__ZN3ff617BattleMenuPreview15compose_pictureEv",
+      "fields": [
         {
-          "offset": 8168,
+          "offset": 348,
           "material": "final_battle_viewport",
           "first": 0,
           "count": 2,
@@ -17719,7 +17730,7 @@
           "projection": "sum"
         },
         {
-          "offset": 8236,
+          "offset": 432,
           "material": "battle_dance_fade_total",
           "first": 0,
           "count": 1,
@@ -17732,7 +17743,7 @@
           "projection": "sum"
         },
         {
-          "offset": 8244,
+          "offset": 440,
           "material": "battle_dance_fade_limit",
           "first": 0,
           "count": 1,
@@ -17745,7 +17756,7 @@
           "projection": "sum"
         },
         {
-          "offset": 11048,
+          "offset": 3172,
           "material": "battlefield_horizontal_window",
           "first": 1,
           "count": 1,
@@ -17758,7 +17769,7 @@
           "projection": "sum"
         },
         {
-          "offset": 11052,
+          "offset": 3176,
           "material": "battlefield_horizontal_span",
           "first": 0,
           "count": 1,
@@ -17771,7 +17782,7 @@
           "projection": "sum"
         },
         {
-          "offset": 11068,
+          "offset": 3192,
           "material": "final_battle_viewport",
           "first": 0,
           "count": 2,
@@ -17784,7 +17795,7 @@
           "projection": "sum"
         },
         {
-          "offset": 11072,
+          "offset": 3196,
           "material": "final_battle_viewport",
           "first": 1,
           "count": 1,
@@ -17797,11 +17808,11 @@
           "projection": "sum"
         }
       ],
-      "start": 252,
-      "size": 10824,
+      "start": 348,
+      "size": 2852,
       "sha256": {
-        "ff6-game": "9a031c4db8f6b7573e93b89324e3d71b33b4eb647d60b44407923321c416bdd6",
-        "ff6-inspector": "93a7f3fca9920827941efa6e398842c94d379dc1873718dbbb82ec67436c3266"
+        "ff6-game": "117695ec8ef663be994abbcd975e4518fe7b4822986089284bac015468810c9a",
+        "ff6-inspector": "d9a531f7510f46d15afeef570df259c803c692dcc3748be8a435deb9d888988a"
       }
     },
     {
@@ -17813,8 +17824,8 @@
         ],
         "load_width": 8,
         "sha256": {
-          "ff6-game": "58e1c0b23934036168475c9e0800c4521d373122b409767e1430bca42a98f02c",
-          "ff6-inspector": "941e9eb83751fc9519b06275460f95ea11bf3f4d16a39b1698e5e5a5891ccfbe"
+          "ff6-game": "4ab1addb8fc7686cd47a2511b41c6cbf83c2ccb323c2659c82ee88177fbf922a",
+          "ff6-inspector": "7f4593ccfe917bd507e5800c76adeaa29d1d65253f5adf81aae2a5f9c79d2a20"
         }
       },
       "fields": [
@@ -17896,8 +17907,8 @@
       "start": 48,
       "size": 516,
       "sha256": {
-        "ff6-game": "ffd8566df0794cf6c7073e3fc874ca78988856b8358f386a1a751e7f3648b8ac",
-        "ff6-inspector": "bc95fbbe7e564c904c515071333c9ee401d93eef13b3dee0e2ff03114a515163"
+        "ff6-game": "7b8fdb1c72388202785de97d5d5e42a40d105f9aa9934979fef07e2c9ed69e70",
+        "ff6-inspector": "a92d4610eab2d1f09fbe8944e53cb82b930614563e6f537112da9864a648e5a8"
       }
     },
     {
@@ -19309,8 +19320,8 @@
       "start": 36,
       "size": 1660,
       "sha256": {
-        "ff6-game": "5e9be571bc8e40e89df5b9a9d45595906915f72cf3c1879396f251c83c34f28e",
-        "ff6-inspector": "e014cae14aa766d0d1f6eab5de5b21b6e96a8dc0bb52ce8d82b880f7ca2cd600"
+        "ff6-game": "ee875383c51520279b146024a86961a0e156198982ceeca8f8acd153be181492",
+        "ff6-inspector": "467b9820b572d6da3fa3b77a462b3d8e61d3ebbfaa4a373f84684c3b3a532ea5"
       }
     },
     {
@@ -19762,8 +19773,8 @@
       "start": 96,
       "size": 768,
       "sha256": {
-        "ff6-game": "1c2421535b915f0caf45ec63de05334fc2012c0e364c6830af23e8342e180ada",
-        "ff6-inspector": "1c2421535b915f0caf45ec63de05334fc2012c0e364c6830af23e8342e180ada"
+        "ff6-game": "f57d542547b01197e0c2d869201b614603d042933e400af58e1d8c963e9237ed",
+        "ff6-inspector": "f57d542547b01197e0c2d869201b614603d042933e400af58e1d8c963e9237ed"
       }
     },
     {
@@ -20436,8 +20447,8 @@
       "start": 1388,
       "size": 26640,
       "sha256": {
-        "ff6-game": "1d41e684d3b321b0794172a84b8972755d9f55de60ebe42aef1ed47beb89c256",
-        "ff6-inspector": "b66800028ea08cecd3ebb56b47ddc65756cb37a34a97045e1fdb845b99033a6a"
+        "ff6-game": "9b1caa1a321d58693f8e2d459ebc7786954eaaf14024589e99e95477cf6021eb",
+        "ff6-inspector": "c9b992237dfcf365c014f12b1e7b898ccd8364a0c72bea13cfbbd7602f631d5a"
       }
     },
     {
@@ -20612,8 +20623,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "074a32fa5950265f5b76432862588a1f4356b1fee2026944606424bbcea8b364",
-        "ff6-inspector": "a79c0e62ba2ccc1bda4d2a83a5079bb9705bf5a5dccc599893a5a674b867e5e6"
+        "ff6-game": "5cf97fe19461ff1e2c65f152159df9387506bca8f4ed4395e029be48397f0405",
+        "ff6-inspector": "38d12cd46b77ef594b6be7eaf25dc23f67050e3fb16e4e46e4198bea81a67314"
       }
     },
     {
@@ -20658,8 +20669,8 @@
           36
         ],
         "sha256": {
-          "ff6-game": "8fe71cbda4a938edbd8b749ca049be44528aa58bda5c083d627653c436cfd465",
-          "ff6-inspector": "1dbd76dfd31851973263916972e70ebf6f84fb8a50e6352552205c1bc1796b4e"
+          "ff6-game": "93e7a28b9e4c870c6b4d82f1dbc85917696fa860b2f16f9312edc23d116bfe87",
+          "ff6-inspector": "8f8b38e473fecb150fe1669268aa4170fdf60b5891999fb632e3784006a30af5"
         }
       }
     },
@@ -20813,8 +20824,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "234e0631c773409d15ed5b5c03822201014bb567f652324c24170a6b9889bf23",
-        "ff6-inspector": "55506ecd881cab5c9eb37e01c3ee94a8d0b946fccee2593e253e12860931aa87"
+        "ff6-game": "87c841e268bc8ad60432b1243332f7b9b0b4500602653d15f0dffee0875df5c8",
+        "ff6-inspector": "58e3ea7b93e2145d94e9ea6ebafeb52405564ded87a4f12ca80985455a9b6c30"
       }
     },
     {
@@ -21108,8 +21119,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "ea24b19385860f2d82693ff847f8ee8515a00395825f67683e7ccefd3d4320f1",
-        "ff6-inspector": "d93a195521d1bb20dea37d6e95606b854084433c293a28b7735775be794b48fa"
+        "ff6-game": "4bd20bee211dc90e8ebc2067d6641f6d2c2a5abca6f483f8ebd67341f8b36173",
+        "ff6-inspector": "49743b574a7a9901df8380a8ecd2a981123e8c41b8ad2d56c892eb0de81429a5"
       }
     },
     {
@@ -21405,8 +21416,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "7f2f55cd5baf56c93e5bf085a13a4ce034d9636cfc3b1d999c92fd67b5a11910",
-        "ff6-inspector": "908dbce3cc9bdb9394140dbc69ea5dfb3749a595fd75201ad0d9f350390712f3"
+        "ff6-game": "0108183e1c47f428d7b8702141bcd03027666102dc98c790d668222da6d93c92",
+        "ff6-inspector": "6652b256a25e4b2e88c4cd6c0e0ae9a2afa0be4c5b263cd10103861580597075"
       }
     },
     {
@@ -21507,8 +21518,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "3eda07bdf79e66cbf4d1feb597d194a3abe2d765bdc1efbcf73909650af24a6a",
-        "ff6-inspector": "767024fc49f9f456f3aa3a614b6bd1340ce14811788c6dbe5756cb0662e85664"
+        "ff6-game": "9ea075cef66ed3efb500c26002b0d0e5c952c5df07b66825e9ad327e6b95dc42",
+        "ff6-inspector": "9a3bf559bf53f6a8cd2ad135f839df84a1fbefc20d62e087cfd27b947f3ddb5f"
       }
     },
     {
@@ -21554,8 +21565,8 @@
           868
         ],
         "sha256": {
-          "ff6-game": "b397abbcfe0cba293a653f4c52395872c97dc3d6205c7c994db82fe377d78710",
-          "ff6-inspector": "540eb1098f0c1d531e3d2841975b5ae33abea5f8041da4f4a6a2490e5fd13b5f"
+          "ff6-game": "55fac6fe7f90dc05517c89b1643eaa356d25d0a8a80ab6cd93239f84315a9565",
+          "ff6-inspector": "ccd9e43c8bd3db0e0fd8b1a923f5a8211a9af6bb7811efb6097120c90e77adef"
         }
       }
     },
@@ -22762,8 +22773,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "d35939cb6e9d0b64df3df038c756cf8def2676c676552b76baa024a90f041c40",
-        "ff6-inspector": "76066ef67719cfaf2defe2d7e7a7ce27a7265caa1c61299af53bee23acc6efdc"
+        "ff6-game": "6beb3085ee0bcd0c5a3c810b9af3775ce7de166bc993a90f6c02cf0e51fd3c1f",
+        "ff6-inspector": "5fedc26a045bab2f4126d1e5677c79f26d74c2b7c45c33d41a2bd161a18258d5"
       }
     },
     {
@@ -22851,8 +22862,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "ccc8ed9bf2fe9b6eb135270543bf05258ae582f7723540310ec75f66120d64ea",
-        "ff6-inspector": "d89e94e6a30dd27fcbbd38445cb2d8b64516a5b3789c69f84e07dcc552de9543"
+        "ff6-game": "64f80dec26d5499334561321b69afcdd288680e72444af0ad4c16f402a77be98",
+        "ff6-inspector": "79fd730965dba3bfd07c1d75a4bd44c701fc39bccb1f0c03fcee1089c0046786"
       }
     },
     {
@@ -23265,8 +23276,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "2036c4f394c35f54bcac24ca33ddb6ca51501304be4997d413f212ac0f539f4c",
-        "ff6-inspector": "74224054a764063598f9d8cfa0140db3d2222c11367693a766e930d50ba1e26e"
+        "ff6-game": "8e648d4a482b17c1af9c3cb0eae952acba1362efdeacde4427424bfaba3ac8da",
+        "ff6-inspector": "cb883b111952436b71354f4ca2232270a0e2b63b3596832d930ccf0f747cd380"
       }
     },
     {
@@ -23335,8 +23346,8 @@
       "start": 144,
       "size": 480,
       "sha256": {
-        "ff6-game": "7720cd36cfa045e16f6ba17474117bd667b4b073fc118e48a36464c26a2f646b",
-        "ff6-inspector": "ebe890162b99768d7c3b90cfbf2d3e0220301fc40d49ce32968be6e11039dc1b"
+        "ff6-game": "a352631453a3bab87b0f8ccbe170d771e37daa84766f855bc34ceb79a809c18e",
+        "ff6-inspector": "b07c2216505bf9c15bba4872308f8d072b71dec4ee1a488fef7e5283efdfaa4b"
       },
       "fields": [
         {
@@ -23448,8 +23459,8 @@
       "start": 176,
       "size": 600,
       "sha256": {
-        "ff6-game": "8f47fa52f087f8cd7d06add1608098ac0727a3c7a52ce0b9e39ab3b02169da1a",
-        "ff6-inspector": "3b37b363710566188924748e8d4c555bd46072ce4fc2c553ce50a64641e6186c"
+        "ff6-game": "5543e580a3cf65bc9342efeb7f1875bfe810046930ce3cc40ae17b7cadf00719",
+        "ff6-inspector": "3a4f377e725c1ea0b3149e5bc8b5f872d4e8d3ac7927f82a4cea366bd185f46b"
       },
       "fields": [
         {
@@ -23745,8 +23756,8 @@
       "start": 180,
       "size": 576,
       "sha256": {
-        "ff6-game": "0cb77f40527da96220615fc39d92244d2d4d85e87a089cc6cf38e5fc2889aa88",
-        "ff6-inspector": "7756056dc97b146414499049bfe0433a6f533a16a9f9bc856d7a0d01e3c59f3d"
+        "ff6-game": "262d194cd64527c3f6757434c4a2138b69f3b81539e79c662373998c02882e6c",
+        "ff6-inspector": "ac1a190714012e113a517bd90ab78af6c8604b95ac31c264048ef4b9436ac394"
       },
       "fields": [
         {
@@ -23795,8 +23806,8 @@
       "start": 1196,
       "size": 1480,
       "sha256": {
-        "ff6-game": "9cd6ffecb270ab893402495866d1347855108cae14e8d9dc9217f6b60979aa68",
-        "ff6-inspector": "8ca656475298ca1782c3144ed532d3fb1732fbbbdc6568ecd5952bc8923c38b9"
+        "ff6-game": "924bde09266f30a04bec6c8dcd600740cd4c76371ceb8492b408ac224936d6f1",
+        "ff6-inspector": "2e02f07cbc26f2a5a4abb6efdad979f415cd492cb7f7e02c110ea97025262b85"
       },
       "fields": [
         {
@@ -26931,8 +26942,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "ddbb1e7ac3d2198fe0248e66a8bd4cf16e22231e9c1ded3c8621166704d38936",
-        "ff6-inspector": "d1a24d552946fe8bc1bdfafc28d1caeeb94b630000658b4ddf788d26e00478a3"
+        "ff6-game": "0db7b90aaedc9071f6283f4d001647f07a6f050451757b38e8aeca1a95e8e862",
+        "ff6-inspector": "51eb7aa9844a3dd627bce51cf7252cd7734a4e1df628e22aa078a18837724821"
       },
       "start": 976,
       "size": 13652
@@ -26966,8 +26977,8 @@
           2432
         ],
         "sha256": {
-          "ff6-game": "daebe632e2387175dcd229d15c1600aaab52ea1d0fa568e257bc0f051ff1a5c5",
-          "ff6-inspector": "794f12f94f7336184c814d216e8bb1e0d98b4549c1808d42c46bb3c2f101ae39"
+          "ff6-game": "1e99d5e6af8817e9c2e8b8b8e024e5a73beb8a9160103cb8060cbc19ef0d28e7",
+          "ff6-inspector": "64163264cb0ab66c8540b46479dbeabc28de1777a7733bd5e578edf5bd03c4d8"
         }
       }
     },
@@ -27496,8 +27507,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "6dc01da65e44688ee1d47ea684686765a86414dbf7ea2c7620cd85e1156190ac",
-        "ff6-inspector": "f7f83bca511c0b10715558dfc7d3ef1843a0a91631fa805746d4cd780df7a1a5"
+        "ff6-game": "2b56fd9bbccaad2c49c8c94a88afbc260838b6ac1d919322f23d9afcdc1058cb",
+        "ff6-inspector": "57fbb5d148ec70acf7c91abbba10d64844947fac5fb80dfd9751f8007090fa0f"
       },
       "start": 76,
       "size": 1780
@@ -27884,8 +27895,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "18183ea5dea8d4bfae0b74b9fcc703a8326164cf7f5b78476db716345e013a10",
-        "ff6-inspector": "4551666551886008600daa037e06221465c569998805242c60aa15cdfb92125c"
+        "ff6-game": "0c535e24c169066024effc1f52c441e47fadcb3c946584b7d865cefcb2f96ca0",
+        "ff6-inspector": "4b1e318ce89f9500760dd67dd82830ebf8a47bcf68e03463d7e69a3906732279"
       },
       "start": 64,
       "size": 2700
@@ -27932,8 +27943,8 @@
           2272
         ],
         "sha256": {
-          "ff6-game": "9ddc76c5d4ac7faae0a422af80c60be57b15c7588800b6770f18bb8aa54265bd",
-          "ff6-inspector": "d01dd4c07d9a84026995676467e21ec340ef430e4aa69f83ee27c8eadaa8f758"
+          "ff6-game": "c72903e708d87a325823d39f148b50215eb086bc806b580ac04e52ce40bf2d25",
+          "ff6-inspector": "0324d4c42b6f25414c11af02623299fcb1728ec4c803754b01a8447f6ce2bc49"
         }
       }
     },
@@ -27983,8 +27994,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "1f3374cd36c5ca5aea7bba13bc88b24aa28932d936164d99ab2df4f91f819c98",
-        "ff6-inspector": "472f23bcc151098c10a49cddff292925aa8a2de24c0e011dc149840f35cf4d85"
+        "ff6-game": "677a2c6e57a9d4a50b732b9d7df6d3cc876330c60ec8b5b8c5c9e2c30b6a8ac9",
+        "ff6-inspector": "3ea4ba3e26dead25234cda5b01b0ebc227ddf840470e7e693302298821ab0738"
       }
     },
     {
@@ -28029,8 +28040,8 @@
           472
         ],
         "sha256": {
-          "ff6-game": "2778867403b1630fcad67a5b8ab473a765c243dcf8064a399be151fa29076d86",
-          "ff6-inspector": "6fd1a649061bf7517f98def3d33fbeba85e280e7a3ba6f64733c2e72258e3ba4"
+          "ff6-game": "e68e2bb87102a26d217c723d041e48b09a14678d4248763d358263a5a2fc2862",
+          "ff6-inspector": "500a980d0733ebc4f7d8ad002babf07ee9d14651fed027df9c676e674fc7e21c"
         }
       }
     },
@@ -28063,8 +28074,8 @@
           656
         ],
         "sha256": {
-          "ff6-game": "70ea6986f9d791db37b5426bcac57d97f865dee35094fdb3bf021f4d60b9b1a1",
-          "ff6-inspector": "9cce1e35dd4a79014e9937a2f315bacd561f15a3c4c758e4b120ad97ee17394a"
+          "ff6-game": "892e994ce7d0c3b7251c0ffdea397bb4cd18f1779c8b724b818e418f0b93950b",
+          "ff6-inspector": "17b0c1ccce2f718ebe9d335c7ef6ca306e54d1cf0f4f143570bb7d44d48a44c4"
         }
       }
     },
@@ -28097,8 +28108,8 @@
           708
         ],
         "sha256": {
-          "ff6-game": "913213a77e711923fefaa997194fa1f018c7a90289b0cd2cd9c889f1d066ca0e",
-          "ff6-inspector": "76a323ec8471d3cb42e65f9189eabdfe64c60ec696a600a72af6d8c3b02ba696"
+          "ff6-game": "e5a94dce7098f2259970d6830f07a6c749934a1a4afc1750a79255244f63519a",
+          "ff6-inspector": "5eb0b4234f799a7d317e30d4bd4d3399eff43f287e243726ee5ff8f54827eea3"
         }
       }
     },
@@ -28447,8 +28458,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "5e1bc25263248aa3c117d5e3ebd483575f13b8814dad0a813c27b3aa3a666f1b",
-        "ff6-inspector": "b70ea6ef0354f4bfd0a6ab9c3d958abfd5f2352cdfee8053096dcb4f2f81ec64"
+        "ff6-game": "bac46c598a2885b40b76a08b523d67c6f480b21cf7c19e6b533890a65aa22fd9",
+        "ff6-inspector": "a020e679d311d27adc86b2662c74b152e3c817e956c18a021fff0bc74a97713b"
       }
     },
     {
@@ -28493,8 +28504,8 @@
           584
         ],
         "sha256": {
-          "ff6-game": "4e99deaba5d97e6f693c8dae286739a0ea3bd35098add9c4e6511511bead1b2b",
-          "ff6-inspector": "e89facee0bb0420ccff6ca46b7555efff9b9d0ced6ba5255eba94ba5bdde20b6"
+          "ff6-game": "5234b47d6a4fa5fdcb3ce4f2b8d142b8af8d324581035df0cfebd147665f0f9f",
+          "ff6-inspector": "93900dc33b3c0e5c13cb9085a11c3973a6b6949513aa246b0e4ae025afd70250"
         }
       }
     },
@@ -28527,8 +28538,8 @@
           436
         ],
         "sha256": {
-          "ff6-game": "74a4071a0664a7945941cfa2b1d1f92bfdd32d010afe2593309313d89e87087e",
-          "ff6-inspector": "ffaca9318966aedf623118348bf3c213dfa62ca41a6894f5eccbb5d0c8c27384"
+          "ff6-game": "17225a80d700a1e3037c5a25c53f6bfd0073fb8a2da11c6bdc586f0de7c9056e",
+          "ff6-inspector": "1059204aee8a866f59f6b0305683302e4a0175b844db9d3b48c7895de5037505"
         }
       }
     },
@@ -28602,8 +28613,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "7b16c259af1a3998bfc43e59249bf1adf03bf7a6519d335ba67136624065e63f",
-        "ff6-inspector": "13cb6e6e462b5885abd87a053b8ef579045d684f3c261dca917ddd17036ac274"
+        "ff6-game": "95680544c230e5e090ece93a6422317c74d0ba5c8093172712c42781b8f1e1a4",
+        "ff6-inspector": "0452c1d83481341a54ddfa9e619bda715b0676b38da8243c61607ccf6e4e11e8"
       },
       "start": 132,
       "size": 1052
@@ -28687,8 +28698,8 @@
           208
         ],
         "sha256": {
-          "ff6-game": "92c2cf0daa508d6390291b3cf5276e29d552de8dbc729f1e557399e73a59f735",
-          "ff6-inspector": "9958e4b65814328db15f522c54511fe95f6d223ee076b08ec0961b00c7a78d44"
+          "ff6-game": "4c48a9acf263080a7a7cee9b3e193e7b8fff3fc1bdca116b3ae51b7cd249dfd3",
+          "ff6-inspector": "7cd36066ee7c29a1e8e042d884d158ddd999b9af5f7fd29c53b6da48fd53a5a5"
         }
       }
     },
@@ -28721,8 +28732,8 @@
           68
         ],
         "sha256": {
-          "ff6-game": "6914149e8a5c15850415f7069755fc856d3eac917b1300ea14a2b5db1715391e",
-          "ff6-inspector": "4bbcb0f269b1ca16b9b300cfd36f3d2c9c1a289565c66994fc7188843816bfcf"
+          "ff6-game": "7310ff02715a4f2d53a2943d709230bfe5d6943b5b656fd0ea3c74202671b8ad",
+          "ff6-inspector": "edb0c14cacfa6469b0c2ca973e53b4994031ac66a8d9535f8859565700a7349a"
         }
       }
     },
@@ -28755,8 +28766,8 @@
           88
         ],
         "sha256": {
-          "ff6-game": "430eaaf7f2f275ae2c1496d2fb884a42029666469dccf9c1325443e2463b3c41",
-          "ff6-inspector": "a2f3163b4e73e1166e26299ff988dec73562e55bff9892fdc781b50518ea944f"
+          "ff6-game": "76afef5366d642977a6dbb950064b05003915b6b9284adfb721b1c150354ed45",
+          "ff6-inspector": "f0c4b3aba47e879d85a7993994963528b96c97e3fbf7a526d0cc3d6a0ae9b730"
         }
       }
     },
@@ -28789,8 +28800,8 @@
           104
         ],
         "sha256": {
-          "ff6-game": "8df9f63ba85e7ef9fdca92f2363e215f5947f23bd7bf726eb9cbf3b790cb4017",
-          "ff6-inspector": "611fa39faa8ebc5766287dc27bf94a67990dfebe84b430835b9cf1de9946f1b1"
+          "ff6-game": "b235655ffa79335baa944f1b1d528d1e6329e95fe38f0199f3f367bee181efde",
+          "ff6-inspector": "99b8c2a8de59bf0fa587b83fa1372a837138cd21c9599448a3cc7ed84c670cc3"
         }
       }
     },
@@ -28955,8 +28966,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "9e177bfe71113e2d0e10fde192afd673ef1be4c3f2a3617839ea813d24530b0b",
-        "ff6-inspector": "b32e25e1823addd030bc63e520d2f3c101873ce3008dc7a580e81b9386f331c2"
+        "ff6-game": "59e2fdaa48e827280826f78abc4e68f732e122c72185b8e4dcb5827a8e825fd2",
+        "ff6-inspector": "c006cd52ffbf4d638175b06605252413b8bbdfa942759f318702e20a0bf689bf"
       }
     },
     {
@@ -29663,8 +29674,8 @@
       "start": 300,
       "size": 68,
       "sha256": {
-        "ff6-game": "58c4531dd35e00f8e9a9a8e3c9264c59890b327b4671c752b6d1504014eb1293",
-        "ff6-inspector": "eea9c016855a8b77dfbbe5af1cc989de2c15cd86108b0df24051a6af95186fdf"
+        "ff6-game": "cdbd4f11418205135579c5dea90889d3eeacdbb3455d2aa6f623482225512ee3",
+        "ff6-inspector": "68dc50c57e8f6700144d83e69beaf7f6d876ae53d5cf80ed3a36bd2fef366bb8"
       },
       "fields": [
         {
@@ -29724,8 +29735,8 @@
           356
         ],
         "sha256": {
-          "ff6-game": "e08bba37ed1d2b832856c4585fdd283fdcc40bd7d0948d9f6495ac502a0fe8d4",
-          "ff6-inspector": "743f7115956457540cc29577c5a74788658b694579e55df2a684e2096106f7c4"
+          "ff6-game": "520239e40ec0b70137e2db20f0299091aeabd497f3553dd3d77f35b5506cac3e",
+          "ff6-inspector": "01665f2c959b071642cbb61fa15c720296ceda865f7910928f7675933d1cb637"
         }
       }
     },
@@ -29758,8 +29769,8 @@
           592
         ],
         "sha256": {
-          "ff6-game": "cf260d44df5573cc875d0990c9e055b5001dcff8833139e5812df1cee363a2ae",
-          "ff6-inspector": "fe19619e566cede2eb50e0ce81b3a5e6c829fe6dc85cd754456df388391f69cc"
+          "ff6-game": "5ab52efb37ce3afc4fc087907ca8d36efd4f8c55137b100a90b0e0e1047b69d6",
+          "ff6-inspector": "3a0e58027476d037db821b1cb0ea54bded1e7109f46b205d4316c70af8d7e594"
         }
       }
     },
@@ -29792,8 +29803,8 @@
           832
         ],
         "sha256": {
-          "ff6-game": "a85301d9798bccf7d0da2fabe2e5a386278d857bcaad96772c4730786d50150e",
-          "ff6-inspector": "cfce324bcb5553b21c39f65e9d169a76a45f67cf3897bb21bae47406f90564a8"
+          "ff6-game": "7fd30fe50d8173ad97dc400ad946e7044986e06000f4515f7a11b836d43632f8",
+          "ff6-inspector": "0b87af8e5cee0548cc5db3a290ce3e2d754f8536aaf9441af0896a6b3002d5db"
         }
       }
     },
@@ -29826,8 +29837,8 @@
           1072
         ],
         "sha256": {
-          "ff6-game": "21da8bdc98daed1734162d2affdb7cb81f75e7d704920f2473dc35dba75f666d",
-          "ff6-inspector": "d955728f79cc07cc5dc27e7a1a4c6b721fb249d835981a4d152cf8d6b7b27f58"
+          "ff6-game": "d967d387300f9211ede66e2e87d06f2f408cb10c11496357e0c0cc91e031ef9a",
+          "ff6-inspector": "faa9757f21f7b3a5934429eb905fc33bf1e238197b827f33523f331ec0cb7da4"
         }
       }
     },
@@ -29836,8 +29847,8 @@
       "start": 116,
       "size": 352,
       "sha256": {
-        "ff6-game": "9fe46f07e088ff5410ae1713ac5e0b6b8571dc23ea95074a3f5e4db2584c0fa4",
-        "ff6-inspector": "50b7488204d8056e9086dc113be88fcf86ab9af29212df288c4629d4bf7237b8"
+        "ff6-game": "bdf80e04884b29bd23cd8c8f609aa256097c1b1ba7eeba2288ea8f429d8e25c2",
+        "ff6-inspector": "343a377bc3e0d797efb3ccad49e366eedbfa69e2d073f87a81f0487c7933d58a"
       },
       "fields": [
         {
@@ -30320,8 +30331,8 @@
       "start": 372,
       "size": 2020,
       "sha256": {
-        "ff6-game": "16cc54da078d250387109f9bfa98de0fe6f9ee8226920cb7b30317ac29850d24",
-        "ff6-inspector": "7814f457345aa399f11ca796d7f466584106d51c9eb55e77774dc06c59656a08"
+        "ff6-game": "07209a425e35e47b07a050be3ef4082307a5417a586dd50cc90f14a0d65b4b75",
+        "ff6-inspector": "cd9bba64e8f801c515bece253d4627d67a0b8883e6366f82ac13eda44e3eeb31"
       },
       "fields": [
         {
@@ -31011,8 +31022,8 @@
       "start": 612,
       "size": 456,
       "sha256": {
-        "ff6-game": "68399a5370f83cb917c8f3bf93cd531b6bf2dd40654ed20ff2dc387708bd0fe5",
-        "ff6-inspector": "ca0c656c698d387886ee583299a32c420060eaf31d40186c6e23adf882ab23e1"
+        "ff6-game": "4df75753e65184e8c88f640a9c6ee28f1b36f0ee49e3fbb2d8853be410af8bc9",
+        "ff6-inspector": "026cf0ca9a7aa428e1902c412fc5d20a3f4c9757454c131bd10a626685b20009"
       },
       "fields": [
         {
@@ -31922,7 +31933,7 @@
       "size": 788,
       "sha256": {
         "ff6-game": "455cde8ccb3ea836e34cb744a70bb3d369c09c3344273b13206f1c700bb0ef60",
-        "ff6-inspector": "23b2f85bd7f8fb18bfc2befbbfa7454ff13e2da68b3add9849191d3819c163bf"
+        "ff6-inspector": "07026f6f0610d020c72d45e4c73abdbc1335ebf774ce8eb0ddbd0e6d4c163064"
       },
       "fields": [
         {
@@ -31984,8 +31995,8 @@
       "start": 264,
       "size": 1288,
       "sha256": {
-        "ff6-game": "9497f9d54ef57b421fb742857c3c6fa36e9929dd0a75a6b9a527e9749f233774",
-        "ff6-inspector": "b6937a17a95c4218f082c1a95d7ee2233f388142829e5ad469835d63940f7cbf"
+        "ff6-game": "089c9eaeb4611f8374ee71108c4cc5e66e7fc9efef743d84f19e24826c8fd928",
+        "ff6-inspector": "073ebb777550ccbcd1a72a2ef49a43bcb4a2cae52de30d660951187fe4e6623a"
       },
       "fields": [
         {
@@ -32853,8 +32864,8 @@
       "start": 212,
       "size": 3240,
       "sha256": {
-        "ff6-game": "5489d803e6e79a609c2bb68b60d3f7c1d196e3edd6e760d7609c706cf3e0ee01",
-        "ff6-inspector": "55afa1ff9e2e11bc7e1c88ba18b3dea164a9c5c5767f40f71b94dbb34629a265"
+        "ff6-game": "56cb181b85449fba809055e575e1da3130660889b374ec8940655e3dbf12a573",
+        "ff6-inspector": "7e13e9731b2f1ac6f6a636d98e8d53d953c213f7bb3708099efdb7ae3a355997"
       },
       "fields": [
         {
@@ -33944,7 +33955,7 @@
       "size": 2652,
       "sha256": {
         "ff6-game": "dbcf30bd84b4ef39dafec2931ac9bbc8d27750b1a4271e5b08cabfdbec7f79ac",
-        "ff6-inspector": "64c570ba6f65b23d703ec385c4a1986baac133e843624161baedd3a24751b231"
+        "ff6-inspector": "2abace52f56b69dc928db0b2e6f1912c2074e4f88a97db546824cef2249b2b6c"
       },
       "fields": [
         {
@@ -34877,8 +34888,8 @@
       "start": 216,
       "size": 7184,
       "sha256": {
-        "ff6-game": "15c510fdd89b81197d313631bc45eff2574d0b7bdab324e1755ee0794d78c8b6",
-        "ff6-inspector": "d94070a7853c62bcf3445df9549a0551d4c4ebebfcbc44e65d8ac89dbf30841b"
+        "ff6-game": "16f0a945c977b62dfcae401a33bd89af672f4f33f4eea6b1c68544b29e7a7d1e",
+        "ff6-inspector": "c8330e4be2f92deda1ff11619518d70656db94596ad160d842003d06efb58c96"
       },
       "fields": [
         {
@@ -37909,8 +37920,8 @@
       "start": 220,
       "size": 268,
       "sha256": {
-        "ff6-game": "32265995022e8af4a6f20b505ff8ef47f8a3a85a53f09a0034b6653fdc1dd977",
-        "ff6-inspector": "32e8862a943cef3d534d0d23b2bf361869b91dc199282f6814f0ed55d5329872"
+        "ff6-game": "c0926f2fb66e61d7f9bce4f33f0e5d5584dd3a05420dd07f89e67b4f6a7665e6",
+        "ff6-inspector": "dcbfcacbe2b5eca6c5612f8cdb3d0f6eccab0ee8b554d39b70d24fbdddaeb45a"
       },
       "fields": [
         {
@@ -38048,8 +38059,8 @@
       "start": 2760,
       "size": 4756,
       "sha256": {
-        "ff6-game": "3c179add8cac092567450206a96cea220c277cefd34a5055a519f927ead2eb89",
-        "ff6-inspector": "c16b73e230f2efad589da5c193a7decdf0cb8364cf8773d1ddf1d9e7344a7d1f"
+        "ff6-game": "c0a6c1e0d5413ac64733ba417e345fdcf634743fc420d3806a749c08194ef8a2",
+        "ff6-inspector": "f966a385de73d834236248713d63b832f246d51c5b3884bc52b506799d4014c5"
       },
       "fields": [
         {
@@ -38163,8 +38174,8 @@
       "start": 328,
       "size": 448,
       "sha256": {
-        "ff6-game": "b429cca977abbf9a0da925b24d4c78284b59977a518302fb5cdc558c336497d3",
-        "ff6-inspector": "90a457d135d4d4ad2afe3eb19e566c1603cd8f7bf907629adc67988b1d235492"
+        "ff6-game": "1a3ba25918fc837fae3da459413c3bd15e1d6e8a5a2bd9504cf0ec45edd0da42",
+        "ff6-inspector": "ffdfa1d27d19020ee337445710cc007097e75f97835a15f6fe2d323889694344"
       },
       "fields": [
         {
@@ -39466,8 +39477,8 @@
       "start": 168,
       "size": 1540,
       "sha256": {
-        "ff6-game": "6d5aa4964863563f5a72b609c62e4d40c806cd44b05038a9120c4a7cdf49da0b",
-        "ff6-inspector": "7baefde054d498ce936f59c2a5a45cca750a013d967274ec7711d46ea53171b2"
+        "ff6-game": "bf91857e93385cfecd46cc7209a1725bdf2ac2318850f89d8826a83b85e7b246",
+        "ff6-inspector": "98121aec04221dec450a04642bf2b2a0ffa3f981559ad212f3e62c738974cf1f"
       },
       "fields": [
         {
@@ -39750,8 +39761,8 @@
       "start": 84,
       "size": 1120,
       "sha256": {
-        "ff6-game": "e444ca7a23e32ca6ff475b0a8afa2846fb5807629e5bc2941bd1e68f5a1e9a7d",
-        "ff6-inspector": "ffb4b0fd68aec5949a1a82447611b812fcee67dceb180156b926c1f5aef75a55"
+        "ff6-game": "a48f98708c884d52e5a47a6ed7852490f016e6123c971036dfb4816a3c97f134",
+        "ff6-inspector": "e4ed0e500d5799660da25494725317aba5a87b219328d28b0af28a2f637411d4"
       },
       "fields": [
         {
@@ -40268,8 +40279,8 @@
       "start": 72,
       "size": 72,
       "sha256": {
-        "ff6-game": "5c285119d3bda7a42848ef686c52819692db3e85116ea1d3755a03c805392ee1",
-        "ff6-inspector": "916ceabfe3a124784784eb6532bd7d410e4acdaeb218c56f67ed1f3a8612ddfd"
+        "ff6-game": "dcdf97db22c2ecd207e792c3ccdb494bf7497a2727be570e6409907bd5101eec",
+        "ff6-inspector": "e4541cc0258c9961b5037c888f7051f2f9f55cc45e6c03ef21389465818e851b"
       },
       "fields": [
         {
@@ -40704,8 +40715,8 @@
       "start": 536,
       "size": 1040,
       "sha256": {
-        "ff6-game": "71e9d497907459542a6258b7661c1fb8d1eb1c706f4764ac2682f29c24baca08",
-        "ff6-inspector": "a8f5f12934ab848ca97d696d50cbe0f99d3b8bab0c103e8473166c35726b4578"
+        "ff6-game": "2e602e64512e7f9eee29b41f9b26091d5fbbb92cc2d974a654bc6ed98eed114b",
+        "ff6-inspector": "5f204ca720d3d10fb85c49af09e358838503f4bd7370c95133ffec775fe2bcff"
       },
       "fields": [
         {
@@ -41000,8 +41011,8 @@
         ],
         "load_width": 16,
         "sha256": {
-          "ff6-game": "7ef23731c343a8b10d70fbfd44a4b9111d0a88bbb65f011cf2f0994d9049f6de",
-          "ff6-inspector": "234c84515ca4a19fbd9ddd73802aef3663df5f1fa1e2350046b72c1b4cff7979"
+          "ff6-game": "b8e304e4f5742dea700f0d19e1b8c34a59c6b5fe00a12bc76db1809b6eb355de",
+          "ff6-inspector": "9f44ff6e650ccdd841f6e0b8b81b686f187a0388a28870db8a63e2a39b280317"
         }
       }
     },
@@ -41048,8 +41059,8 @@
         ],
         "load_width": 16,
         "sha256": {
-          "ff6-game": "9763cd7b22a7efb8753007c6caf4c96841e5e43b1a7e3b70c1bfa015a5f96ea4",
-          "ff6-inspector": "87387e763f694060ac60eee54bd792ea91501fcfda1984628f8180f1ee09ae11"
+          "ff6-game": "686d9455b3a2d958306d0d2b3c7171e7f4045e566625ea9f7b87323e169a3065",
+          "ff6-inspector": "641c0253c07889649fda6f2057708f8aa8d4c99c2dc42b20f966834da066e262"
         }
       }
     },
@@ -41242,8 +41253,8 @@
       "start": 156,
       "size": 1068,
       "sha256": {
-        "ff6-game": "9c758f10a85c9eee9d0e3b4928947f89ea63bb97b16201ca5ea46aa0eb66afe4",
-        "ff6-inspector": "41c16e97df954345fc52a73a493e0662a18ce62c754e016aeca968412bc82cf4"
+        "ff6-game": "6fbdc307a3352be83b1bd0f5bdf4ff6bc92cb86a23ca638b7a66fe3ec0067082",
+        "ff6-inspector": "a028b5241ce15e75c96e2b790220ac3d3fb6101a39c993c2a8c66cb9614b8f5a"
       }
     },
     {
@@ -41251,8 +41262,8 @@
       "start": 96,
       "size": 228,
       "sha256": {
-        "ff6-game": "8d93d785c488a023292fd959c8b29742278db804433ead3a4c4bd61c996bde3a",
-        "ff6-inspector": "e5e52ac009402a2c3d7e6bb66387f54dbb5d26e9adf202d4acb070598116ddc4"
+        "ff6-game": "d2685180bdb7a65bd0a79eccbc99b86845a871c85a7668facea453f35a427c9d",
+        "ff6-inspector": "b462efac466c4a424960eb3547310ff5b5fb644f09995132604252d027492f34"
       },
       "fields": [
         {
@@ -41713,8 +41724,8 @@
       "start": 28,
       "size": 804,
       "sha256": {
-        "ff6-game": "8056507f63da194a9415e37b20d74f3ec96635ed3f7f109a06841b4d359ec559",
-        "ff6-inspector": "163109c71aacb60ed03309f993a74943d3af31ac7d992d112d1d446e76881e49"
+        "ff6-game": "fa9070d3bb01a2dbbfceaea2d0780f49b3a5c9948a19930deb2bc0001b23a2e3",
+        "ff6-inspector": "68c60280b9796a0042543082dcfd9d9a375ca8b038fc7bd8d27db6159eb296f7"
       },
       "fields": [
         {
@@ -42178,8 +42189,8 @@
         ],
         "load_width": 8,
         "sha256": {
-          "ff6-game": "64394816a141ff88464995798c4cfc3af710a5a5cbcf7c328e86376f20f86319",
-          "ff6-inspector": "0d6e02a3918d29c68ca59193f017878c5590b5e03764c25118d0d066ecc70f1e"
+          "ff6-game": "7a733d8600706f9358dc2d176f6884ac4398b97b800b1bb6567a48900ef2d243",
+          "ff6-inspector": "454ede7ffec3186e14b465baaf44ff49b625f6794d5d009ebdc8800a40737343"
         }
       }
     },
@@ -43152,8 +43163,8 @@
       "start": 200,
       "size": 2844,
       "sha256": {
-        "ff6-game": "594be555c6022ea91ad37ba981a364719cb95a5c3cbc7d3f3fb3b08c042efd2c",
-        "ff6-inspector": "3d917642c312b81abf3ada3ba818f2a7d7afa46be61d2827ffd8079e496250f6"
+        "ff6-game": "847f85be839fd77bebbd2878350dd8dcf7f73ab79b607e429dd19209cef72554",
+        "ff6-inspector": "9c2b0651b59b488fb4618e438eef8268183245278b0ac1c0a34ce3fc2439db59"
       }
     },
     {
@@ -43186,8 +43197,8 @@
         ],
         "load_width": 16,
         "sha256": {
-          "ff6-game": "2562e8423b6c6536b7a0bae21984d8b97eb01dda3d17d447c1521945c8864652",
-          "ff6-inspector": "7bd0ab5d9b7b5bbf29ab078681737ff9000d4d65d3424ba78804ebaeffbea553"
+          "ff6-game": "e6103335e25927d8d201029acdbf2b3728559e7abf82a473dafb13d949d8e674",
+          "ff6-inspector": "29864463538c0b1e57f4bacdeec8311cc96ebd6c704b105921e9dfc10e418b7d"
         }
       }
     },
@@ -43250,8 +43261,8 @@
       "start": 60,
       "size": 76,
       "sha256": {
-        "ff6-game": "9756b550e7e21b787da3f9266abbfebd817209ddf41fe679f833a09a0c558dbd",
-        "ff6-inspector": "25bbea88e2a85c0b07b88b30e820db1cc84087bb2910b8ca6d94d917a13e2140"
+        "ff6-game": "1a2808f8ea08a2d2796b76210e6b974d75faf051da0ce7a9da22bfd277ba1f96",
+        "ff6-inspector": "d894cefe6c3d226575d1e2ddf393430b2c48d37a2ce0462d27d25791d021b835"
       }
     },
     {
@@ -43297,8 +43308,8 @@
         ],
         "load_width": 8,
         "sha256": {
-          "ff6-game": "74c4254053e0e8fcc7de076154691e01db5a747f63f9ec57f389678efbe32052",
-          "ff6-inspector": "7162193ab088bd02dc93a1425a7f981bd3d0836187b0362cd7044845665f467f"
+          "ff6-game": "9990b1dfb36c95cc0abd289753c7a35e48ec4c05006a95b7afd730a17d9bd910",
+          "ff6-inspector": "b4ff30182038103a23f6265eb606bd34f1e27520aac06aff8ac1f3e8290aacaa"
         }
       }
     },
@@ -43307,8 +43318,8 @@
       "start": 5000,
       "size": 4404,
       "sha256": {
-        "ff6-game": "c06644d20d46caa1b7b76a052ccf02d0f04ab9b751bc1321e071a8fdfdc9d833",
-        "ff6-inspector": "c9f4adc10a5f6dca32e579d4d312f9e430506118477217f63a7fa9b0f3e91a78"
+        "ff6-game": "0595886eabbd16aef01c1849f09b78b4e6304bcc1770b36b57af6548242fe3fb",
+        "ff6-inspector": "1a0b596275aa3ecb2e180fd5b74c4a58632f33a848c4096ab2d1eac9720f841e"
       },
       "fields": [
         {
@@ -43370,8 +43381,8 @@
       "start": 120,
       "size": 1072,
       "sha256": {
-        "ff6-game": "b4fc1add37bdc3e4b00b04e486ab7c4acf463af2bbcf51b392d79a5e53b9c8a7",
-        "ff6-inspector": "a577545d81c7d97562fa89d8da0267391759b3cc7448e65040c9ae658ec116cb"
+        "ff6-game": "d5a1d51d09bcaa0983582644b218a1b1b9df9208142001878df8d960cab63e77",
+        "ff6-inspector": "4542ea8367ecf9b1a60310a3c0809ece82849a886a8f6a19e022df180dd06ae2"
       },
       "fields": [
         {
@@ -45679,8 +45690,8 @@
       ]
     },
     {
-      "symbol": "__ZN3ff622publish_battle_cursorsERNS_23BattleCursorPublicationERKNS_18BattleCursorAssetsEhb",
-      "start": 12,
+      "symbol": "__ZN3ff622publish_battle_cursorsERNS_23BattleCursorPublicationERKNS_18BattleCursorAssetsEhbb",
+      "start": 16,
       "size": 36,
       "sha256": {
         "ff6-game": "40c91affc233e4eea09da430bab90b4235bc36e0047db997550b44fb6a2ec8dd",
@@ -45688,7 +45699,7 @@
       },
       "fields": [
         {
-          "offset": 12,
+          "offset": 16,
           "material": "battle_cursor_image_schedule",
           "first": 8,
           "count": 1,
@@ -45701,7 +45712,7 @@
           "projection": "period_mask32"
         },
         {
-          "offset": 16,
+          "offset": 20,
           "material": "battle_cursor_image_schedule",
           "first": 10,
           "count": 1,
@@ -45714,7 +45725,7 @@
           "projection": "sum"
         },
         {
-          "offset": 24,
+          "offset": 28,
           "material": "battle_cursor_image_schedule",
           "first": 9,
           "count": 1,
@@ -45727,7 +45738,7 @@
           "projection": "sum"
         },
         {
-          "offset": 44,
+          "offset": 48,
           "material": "battle_cursor_image_schedule",
           "first": 8,
           "count": 1,
@@ -45746,8 +45757,8 @@
       "start": 92,
       "size": 1128,
       "sha256": {
-        "ff6-game": "61740aab3c66f507700f76bbe67b53ac49da0b69f438409926ff899dc008387a",
-        "ff6-inspector": "7cf096b875c2a98bf5a3fd7c5a85e9ac987d82584827098cfa00820db66f2180"
+        "ff6-game": "79de6df982aa45a3ff94f5950d4089990ddf0e1315544fd382bfd55b51f2bef6",
+        "ff6-inspector": "57d8a9bcfc90ace0b9a71533f670f796e587ada3c0db9e384df9501dfd0c7f0d"
       },
       "fields": [
         {
@@ -46719,8 +46730,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "c0bac9e3e4464b01c2c052563acd52ea6ac5a2b7626b1b3d9d4bedbb7a100412",
-        "ff6-inspector": "ccc1dd7c5de704467d61794339eab1cf051cc3807e7cacf0390f4346307efe3f"
+        "ff6-game": "bfca4cc4a64c60bf2a1387f4a8ac8bf88951c65f6c1845f22bc93606ecfb74b1",
+        "ff6-inspector": "516a4c6b50a3b006e0b171d66f3cde94f425b9decdf2fa4aeb85d58fa406345b"
       }
     },
     {
@@ -46828,8 +46839,8 @@
           2012
         ],
         "sha256": {
-          "ff6-game": "cf39ed8d3b44a687f258c1ffe10731c44a26976cdcf8f460a47ff7608ffe185c",
-          "ff6-inspector": "cba4f09d32bf6114547a6334bf1e55ba6d49b5df8eef2bf1f6e25d035c7bdfe8"
+          "ff6-game": "7446c90bd5d5f265c76171fd368fdb99e9acf1e80e4abb0ce7c7ee7f4d2a8a8f",
+          "ff6-inspector": "881061868582cdf48d292e163625bd2eee617ee0017fc07ca0c6df4a702f9abf"
         }
       }
     },
@@ -46862,8 +46873,8 @@
           2148
         ],
         "sha256": {
-          "ff6-game": "54b31a168a18a3c7c5a9e08d914b272fd68f101ac8c9e4d4312a9392a8b42865",
-          "ff6-inspector": "930e683be8d9c21898921e1826cae4d48370939ce54df5841081cc6f393fb029"
+          "ff6-game": "1d87b1484953830dbef58f77dddbdc7ef93df3ff9c7f0a9e6c806aa29863c2ed",
+          "ff6-inspector": "ee40bc8f39779a09729e87f6b7f67c8cd46f7f78cf64192e7168a6c850e050d9"
         }
       }
     },
@@ -47134,8 +47145,8 @@
       "start": 12,
       "size": 700,
       "sha256": {
-        "ff6-game": "8d8461c7ed4addd1284f1ca069979cc4dc9599b8998dcf4d387adceb19dbd710",
-        "ff6-inspector": "3651a168d564602710b7e585a27d2bbb2f56d9f92d76583f8ce51eeab0bca858"
+        "ff6-game": "70def376bf46b227686dda80620c0d664e421a9cea4b4b71d319f54d97e1dce5",
+        "ff6-inspector": "3946b53e06973cb8904e54810aa69600c72298f19ac34dfe9f8ab949a77ca351"
       }
     },
     {
@@ -47340,8 +47351,8 @@
       "start": 276,
       "size": 1120,
       "sha256": {
-        "ff6-game": "f876e9e2070fa669b1d7e31ce38542c9263783663f6423451258594a0cfa5daf",
-        "ff6-inspector": "2662973890343c1a0ae24e994bd11e04ae7e4820865771bcb912940f9ba7de14"
+        "ff6-game": "a4f2bcd74d5c91465304c7a4cefb8ea5b9a3931d49008df8275788e06d283941",
+        "ff6-inspector": "6f42a6a7f452e5e8bfe9ef0174390be2126463cbc2301207b1dfa30e75b67ecc"
       }
     },
     {
@@ -47373,8 +47384,8 @@
           2092
         ],
         "sha256": {
-          "ff6-game": "62c7cbf8517337a04d66181184281f3c5fd1fd0bfe39fcecef5218bba358b5d9",
-          "ff6-inspector": "b76a3d2c59e5d038e776d3dd7bb1cdf909ff9837493cc812306236c2751d4fa8"
+          "ff6-game": "61c10dde1d962018381b30b75ccb3c3742017783107c053eb373b7aa8a7a146c",
+          "ff6-inspector": "d475a9006fa1738e72c4b5dccff5206e1f76bc78c4e3b3babd9e3dcdc0b1dce1"
         }
       }
     },
@@ -47407,8 +47418,8 @@
           2164
         ],
         "sha256": {
-          "ff6-game": "60268399b9df9439d0bc71cb741bcb0598a75530a62cd9d4eb795d8c2c325ecb",
-          "ff6-inspector": "c7ba2d1bd3e6663653e1b8b94e9397d9a02d7d51c27a5100baa4c73a0dd1e5e2"
+          "ff6-game": "33aa569cfa898353a8903d7077cc156724bf475e659dab2204324a1f66ab8b71",
+          "ff6-inspector": "59f38bbc06ec3e984c1f4be89659e61b94e082cb27cfb6c831d8513870c7d08c"
         }
       }
     },
@@ -48111,8 +48122,8 @@
       "start": 180,
       "size": 1016,
       "sha256": {
-        "ff6-game": "e916d9b35440d6bfd2be3af1428e94230bd92eb022d548fb450da8de58b6691e",
-        "ff6-inspector": "3d1ac06a452ed5bb79cb39f851e1416acd9e7c2cf4c50abc5967230ee7091b60"
+        "ff6-game": "86ee47688885357dcb550e3441a41cecff1cbbf069644f5da099c22cfdb728a5",
+        "ff6-inspector": "96726e62e27406ffc6cf02759e3da74f434e089649c6db3f23e4ce8f886bd515"
       }
     },
     {
@@ -48333,8 +48344,8 @@
           1096
         ],
         "sha256": {
-          "ff6-game": "4fab1d3aeb8821e22b87d90271eb6e1884352bd974c5518920d34078f1e1d3ab",
-          "ff6-inspector": "a2f6dd431a67a5257196338487f63c1eb9449649635f6410fa99aeda3455b4b8"
+          "ff6-game": "686b3f418afa871823c51ac5be7f614222777e5d5ae98399451d2ef213b8c84b",
+          "ff6-inspector": "355c4a93eef2564d72dd8684bee5871b9d85c64a828168544603db3ab879a4e6"
         }
       }
     },
@@ -48343,8 +48354,8 @@
       "start": 988,
       "size": 3352,
       "sha256": {
-        "ff6-game": "fb9b1d6c92c92362c11e0692a7ed5b84daaa7a5f48e568fc65951c42bbe660ef",
-        "ff6-inspector": "941fea7dc20269c5284ff61b1e5f2b5d71d6a5d46793ab72d3ddd3db08e8f729"
+        "ff6-game": "2f922a3bb6afa518011ceaf90cc4db5a94c48e2d1877f131356e871795bc3e6c",
+        "ff6-inspector": "7327d03f256d9c07c80ed2fe935b57057048ff44d9d5791682b64ea396799081"
       },
       "fields": [
         {
@@ -48662,8 +48673,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "7f7839e54376436cfdf04f762a2ab740bb07d6fe84e46e1ac3382d15c447d822",
-        "ff6-inspector": "71f4818164a4f2ab4099700598276af8d7e270a975462855290e1807d34e0fc5"
+        "ff6-game": "ee18dcb4519a2113654083ee36f7b6e86bc4572b192444f007c7f3ce25eced9d",
+        "ff6-inspector": "5511659b3ddb67886ac2950d57466065392babc09f1d9b40e48bde1d0fc961f3"
       },
       "start": 580,
       "size": 1232
@@ -48699,8 +48710,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "898834105a12e0f3a31b7f64552c1040bd22e681b59812eec82407aa139f55fb",
-        "ff6-inspector": "f5c61659202416547eb072bc42e3aae334ea72741344dc22cea11f4bf00b2395"
+        "ff6-game": "2514b01c18e066d056385fbc28919ff672ed5d4d54218c84d959c9dd674cb7aa",
+        "ff6-inspector": "a51beb9b2412d8bcf92127df2f49c00efafc21f47d637ea11a7f4af50579f10c"
       },
       "start": 28,
       "size": 80
@@ -49061,8 +49072,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "8f07695c29960e28c0c56e092f8d359998f30960b426e829bd013fc43e487503",
-        "ff6-inspector": "04534ccf59f3f450d14eab5e8ad8946256126c31837dc8521d88dfcb886313cb"
+        "ff6-game": "f6dfef891aba81e53777a98a84115b91daaa29a91affc7c9826efd7d844b0eea",
+        "ff6-inspector": "1d94fa4584418a59e17a52cade420f22e848f3d87da1ff3bf560f1c424f89d61"
       },
       "start": 3476,
       "size": 7132
@@ -49187,8 +49198,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "df132d0fbe1d5dc0920695ffafa60fcde4f10b02d53b3f46dc12ed3d4344ddf1",
-        "ff6-inspector": "1343011586eaa2d93d4861ac2c3ab14db3605ee2b2fc904726d9840677e5d87a"
+        "ff6-game": "d47b60768f57f17ba50fcbb17a2606f116b1b96d5996092e824e300b5d44a1c4",
+        "ff6-inspector": "aea3e04b329a20c7b1cc16d3cc9daacd3ea0710a52ede294f88f46e7edc7b00c"
       },
       "start": 172,
       "size": 1408
@@ -49339,8 +49350,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "f630e8c59d9f6c755ac26525feee72693fdbe3abba80ae8ca5e03b942fed64a5",
-        "ff6-inspector": "ef0e6f9d32d86934b37da03f9a28d6c179ad35ca09a93026783e573bbe980144"
+        "ff6-game": "d0222dad0c81dd78862f0c597322dbe1dae73ec43140c72651336754b4f6bec0",
+        "ff6-inspector": "95058f64f9e9291fed384a78a68ed6b556950472e0ddfcd8c1e5da837b986b9f"
       },
       "start": 972,
       "size": 352
@@ -49454,8 +49465,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "2b9b87a53fd424a10115b8b3a843a92ce9ea582579610dfedf6261daaa9f04df",
-        "ff6-inspector": "66cc6e8a0b7aef6a1014783c68ab60f6b0496f2e84fd9c899cf079b6dce8b567"
+        "ff6-game": "47cb65e04837e8d69f8fe8d50cb0acd6499ff97a763edb1985fcf255aa7d297d",
+        "ff6-inspector": "158d16ebd523e34d175bbee67d5f13d0f8a63d3b344ff0fe17e34ea69f3b2102"
       },
       "start": 344,
       "size": 1404
@@ -49487,8 +49498,8 @@
           604
         ],
         "sha256": {
-          "ff6-game": "3522b13f79fc85d67a5c399fe94e0164720b115b19f1f9aa5c51530eea3a865d",
-          "ff6-inspector": "86e2e34896e1a439a084f48ad8c1a040cb971cc7edc1eb5882b02e0302300983"
+          "ff6-game": "1a946215312ed140f12f075f56da4d10dca59a71f5dc5b271a2648b94640ce7c",
+          "ff6-inspector": "a89c3e6d89e0255faa8f95efd53f50f150a611430bf328d827b9055d16d70230"
         }
       },
       "start": 0,
@@ -49521,8 +49532,8 @@
           844
         ],
         "sha256": {
-          "ff6-game": "47d0620f47d649afc420590e97a90a8ed173ec44b139507c9c638379a6f5ba5d",
-          "ff6-inspector": "cbb33af0a9f14601d53faeadf0b1b2347fabb11a5f28256240e6fc68b5ec9f6e"
+          "ff6-game": "5a7a17485e6b06330151d6ce1d37642383fc95f3bed8d8d1ac69e81137baa0b3",
+          "ff6-inspector": "00956bc2b82761fc96075235c26484c1bdfd2bee3ae3625764bd96c7d0536382"
         }
       },
       "start": 0,
@@ -49555,8 +49566,8 @@
           1084
         ],
         "sha256": {
-          "ff6-game": "3ef57e5dfb25e951cb0d6b2042b61637d89efc7a975caef7a5199a5528987fe2",
-          "ff6-inspector": "dcf4cdc8d942a8bb22c39d856d64b64195278e0712b26f5e3063fed36328c45f"
+          "ff6-game": "2f36ef947e092dc37d5cb118602455ffc931259ea64696e5a862c320411b8058",
+          "ff6-inspector": "022de03f4841e7adcc5cba09eaa5102c0c562af2efc2f2d98908fe6b9bd100c6"
         }
       },
       "start": 0,
@@ -49617,8 +49628,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "1005bec66752ea153583a6786f6cd22adb5764274fb0dad247912fff0d67d9b5",
-        "ff6-inspector": "9c5feed982ba60c411d665a925b78b8cbaa4a312c08b58b70284e54cfc561f6e"
+        "ff6-game": "53ebd6e1fa8a70c1b900c34401bea581422cc6bcd775ac5c286134bc1460ccfc",
+        "ff6-inspector": "ba09635a137b2a2e5bca8eb4ff3eb7275403211a15c24a35962381eda7b587dc"
       },
       "start": 864,
       "size": 180
@@ -49730,8 +49741,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "721c9b0ed602b95527773eae8d533e9a43f9e91c96ee1685cc7da20660554475",
-        "ff6-inspector": "532cc90c14de4270289bd34658b828fb7d971eb6e2fdf161382305e6686496fe"
+        "ff6-game": "4b767c9914ed275a39c80e2b2706ffe70d716da26b92c26fd57d39fa449f1c23",
+        "ff6-inspector": "2f123b1c7eb25aa34bbd8d661d1d01e06b7bfbd28c670f9715e81d396f8a5271"
       },
       "start": 128,
       "size": 500
@@ -49850,8 +49861,8 @@
           596
         ],
         "sha256": {
-          "ff6-game": "a1782f7694821cdfea1668d2afe96a04f086466ed23b4145c3e47a15d165a16d",
-          "ff6-inspector": "5c19345d547213460c6ecc1a4d8d9cc57c62f818fac60cec5929cba9b98e42b7"
+          "ff6-game": "171fb806a78428957b52aa0ed7e012971a74339ae60075bf725fa9df081eda79",
+          "ff6-inspector": "edce807881e3d246e688ceae3284f709ca53925fcdf5c2e634c4625a0c4b1f1b"
         }
       },
       "start": 0,
@@ -49914,8 +49925,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "30fd7d592a1b98157ad60b1aeab69b1107946efad44b55ecb594107df03e0811",
-        "ff6-inspector": "aa3d7499e2fec1a3a479dd7a38e81e97dbd3df21a2b62f2174fc0c4a22d9fc57"
+        "ff6-game": "37c818f375fd239c5a5a8221b48721e807bbf3a391b3586f248f06e9a4ba71ed",
+        "ff6-inspector": "240cf564453b15aa1f4d3909c06b5681519374e6c8fddcf017aa015963b5633a"
       },
       "start": 300,
       "size": 932
@@ -50185,8 +50196,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "8b0a6f4ed1055cea699dfa11f88ce8ccef9fad4007878acdb5c6f4204a33bf0d",
-        "ff6-inspector": "8d8f0dc813250c52498bf67d3cd75fd12b8244f31fc28331869954ff78234213"
+        "ff6-game": "2e7cc4f52238265a894dbed54d8b7e4b375dac5b67c4ba12c0fcce9797db0093",
+        "ff6-inspector": "c25bdccddb468a216b1b3d89c6ca89b6ff052a6cf4ab35a162516bd8992a1477"
       },
       "start": 400,
       "size": 1940
@@ -51826,8 +51837,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "5869ca72d6fe8d458a4518c9c09386f4d3e90609dc5889ad61c81838a397383f",
-        "ff6-inspector": "082268bfdfe308c4f1452194ef518272aa92933b97344a2ed2c0b1ad5d08735a"
+        "ff6-game": "687036c381a3b0509641d507961d2850328fcb231ab7b4299980776b90945c2f",
+        "ff6-inspector": "ea3d34febcadcfc8d502a2033ebaabc5d1731a287d8920c5a4a88edef9affe94"
       },
       "start": 1756,
       "size": 2712
@@ -51979,7 +51990,7 @@
       ],
       "sha256": {
         "ff6-game": "412aaa603975f2cc454af934b15094b088741bbc06dffb74a721332ddef872fb",
-        "ff6-inspector": "4cc1a666e6718e63c61da9856e14300b35ea85f69fab919f0cf9a7508e0f0573"
+        "ff6-inspector": "91fd1f8e90d12fb9a333363fb64437af0af44522a5e60812616045ade0ac996e"
       },
       "start": 252,
       "size": 588
@@ -52234,8 +52245,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "47c923d897dd937643210bec055ce7d3a7c2ff10f560f03dd0f4c42232817b9c",
-        "ff6-inspector": "4b8b125a15337c11180878c62098f2b99655bd2911e4d4b70563e2bdfa2dd3a3"
+        "ff6-game": "dc3303b5e33c761a67d6b1f2adb5e2efde37df8cfd19c7b12a0f0464996ec0b1",
+        "ff6-inspector": "ae750e24b022d8ab7e1d4a48a513cb5c0f8f640e3c9f5055e3b5b2f9d14f3b2c"
       },
       "start": 192,
       "size": 1372
@@ -52672,7 +52683,7 @@
         }
       ],
       "sha256": {
-        "ff6-game": "67d468bcedb205bd7e5b14821cc1f18e3cb3dd46a3426bcabfdd08b335c25509",
+        "ff6-game": "02aa305b03f6db0549dc855222bdcf9beec3e28e64391f5cf11641298936cbfc",
         "ff6-inspector": "82dea8e75444e004833ca8c5ad34b8578cd96c82e862b2f449b7115fea0b17cc"
       },
       "start": 1220,
@@ -52991,8 +53002,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "8098df58b5519004ad32c49e6932390c93019b858fe6547e6db7192b23d59c4d",
-        "ff6-inspector": "dd64f5ea07a4b8ba83de586dc3ccb97c5e1bc8cafd447e88864cfb50a494eb92"
+        "ff6-game": "da8893df054084278c56c50088f70782067959317996747a72d46884b4844ea7",
+        "ff6-inspector": "f55c10dfecfb21869737e4f78da362b3a825c00d758036769d3d4b307b498a67"
       },
       "start": 112,
       "size": 896
@@ -53369,7 +53380,7 @@
         }
       ],
       "sha256": {
-        "ff6-game": "4ca3e0a3ebb9dfdae2f6989381aef24e61ed739e9745ab188668f87be1468b2d",
+        "ff6-game": "00d395c3aa23a78a7f0bf28bf0cd05eeb393fb9707c2fa58cf7faa193a44cdb8",
         "ff6-inspector": "456a155822a48fc78a74e55bacc1d419f017b36b007b43e967878d46d6a95269"
       },
       "start": 76,
@@ -53816,8 +53827,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "b8a12627b09f613b07fec3527ec7e90d8d5a659e6c7e4fd84c9d63b52e049d7f",
-        "ff6-inspector": "4627585ddd60594e26c3618499d60fff98ac08f86035342d014c0d96c34054a7"
+        "ff6-game": "e82ed52c736eb8f8e6211a1e342c1b8e6b6579ecd49a3076391e1c725146cea2",
+        "ff6-inspector": "7d50cdf717e3bc4f29914a1b61e5b583cbc4204b2d478f3fcf2bb011732290c2"
       },
       "start": 212,
       "size": 216
@@ -53918,8 +53929,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "17647bec7a2246eadb17132adb91fa97ec9a5a7559d7fe26baed7f2540f8241b",
-        "ff6-inspector": "465343139ee51c9f990f75a7826b87395fe748a647ffbc351ff209e155aa843e"
+        "ff6-game": "a502c7dc330c8abb692390d473b916e89f742416ebe9934c4a2874552970ec31",
+        "ff6-inspector": "a759eded1f0157372b0211a3d75e2a6f72d811c352e963cd8a68ebf627535ff7"
       },
       "start": 468,
       "size": 312
@@ -54033,8 +54044,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "bd9e24b4daaa0f34797318598ead1afa1631b833db53ed64bf33e73c56dedf7c",
-        "ff6-inspector": "a162c391ed708d9a9664688ede249348006e00a4498d81309f560a734a8d716f"
+        "ff6-game": "b642dbf4e7b8aa6925a973fbc52eb64ca7aab539c5312226f636f8fd19dafb20",
+        "ff6-inspector": "08c482f458a62173fb2b0ef9dc2ea5d202e4c47856b427e11bd8eed3e0872c40"
       },
       "start": 352,
       "size": 388
@@ -54876,8 +54887,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "ec71b33eb91d4c0f3689e9d4ab6a4fb595b51eaea401102085b4db3b7217ebb8",
-        "ff6-inspector": "af32fb41a1651a3f5973aae106335d7abfda834c398f8d06f72833e4c4152dc2"
+        "ff6-game": "8b2322ee639e9bbc4362fe14086c6130eb10ec0144f0093466fadbe411de6063",
+        "ff6-inspector": "391575fecff6d6295277fbd4fc3130dee3cede1dcdaf36be15446b93f29fb18b"
       },
       "start": 260,
       "size": 3312
@@ -54913,8 +54924,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "9084ae836931959a9b99a0cfddc1d657699bdb9749fb13425923c65918ea4e4d",
-        "ff6-inspector": "69631085c56f5cb4968a26aea5ef151a10757cedd7c272b3f95bd8c6dc2540f0"
+        "ff6-game": "7165a1f219a795361797060dad35f7aac0d0a56f037a1a4cd954c931c556e9b3",
+        "ff6-inspector": "75c5dfc00e529c098ef914d28a0ef18924475219c46f858d6f0e984693fef981"
       },
       "start": 180,
       "size": 940
@@ -55444,8 +55455,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "3000c49c3ed39b21ec38b1875cffded679d99d35ae9795ec4cf3ed741695c35f",
-        "ff6-inspector": "6c9599bb8859595557fbb8928979db6100c9ec8a55e7693e14625fc627f2a057"
+        "ff6-game": "7f0b37399730d5be9cf7cd0df1ce2820615d09d6a8c6d50df3b3eae6f51404fd",
+        "ff6-inspector": "4a92e5e136b401a27b9b45bc4daac7855b97d54e5671b83574ce54e8ce25c2dc"
       },
       "start": 780,
       "size": 3584
@@ -55520,8 +55531,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "ee0956ccc6f24e4c76f4fea2705cb0e37656a07c18d80b6fb1d0ff86e2fbfee8",
-        "ff6-inspector": "ee5d796b8a4d4da4e857d29fe227f7ee0c526dde430ab9540aae75bb1cce746a"
+        "ff6-game": "12ed72325b14d1398780110675947bcbe11891010dc3ada11ac27e6feb831ed4",
+        "ff6-inspector": "31e945c3c5945ebeb56b924abe028d974651e78e076ccd923af1e422478ff3bf"
       },
       "start": 224,
       "size": 684
@@ -56400,8 +56411,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "831a3fba67cdb73e660af3b5e1f8affb25cc42c7e5f48c57a6ebe3559df038c8",
-        "ff6-inspector": "d0d53b80008e93bf3c16e467970c4ffcda7ebc0f89ebeb566522d1417c2521e6"
+        "ff6-game": "2c0a9d0fd6885990bf32333dfc4b923598f724dfaf2cf11e0382f05a594e05f3",
+        "ff6-inspector": "09ff52aded145fd25812d397633b55d901f2a276fae30ab3ddddc05300eecb46"
       },
       "start": 3364,
       "size": 4952
@@ -56671,8 +56682,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "c760d2b352a66ff9b26aaa22b1b58ff41aaac5d986fecf21fd0a0da7a79e94dd",
-        "ff6-inspector": "7b0d7711c3374067ea35467db2791a30c13d2232cb218e89ea2750c29abdf970"
+        "ff6-game": "5a46c251c645da06ddb4bb305a5ce5f7bec79f88adeb522a04c3f40c677806a3",
+        "ff6-inspector": "8ff41112b495dc252bc909ca04501efacfe44d56ce343584708da62d7fba2245"
       },
       "start": 1564,
       "size": 660
@@ -56682,8 +56693,8 @@
       "start": 420,
       "size": 2768,
       "sha256": {
-        "ff6-game": "87fa09a06bb33bd75750e87330eed94c78a1800670fef2a83c497a672b37120e",
-        "ff6-inspector": "a18e1fbece48e0a4abe6723e62c35650fabb391972651292195ea8bc2e89a4e1"
+        "ff6-game": "44d7054394d57f88765a986dbcbdfaaf656ce0f8a0293d97c1308f1b0549eeec",
+        "ff6-inspector": "0d03fcbc2190b801eb5fa81d8fba9f875579c094c9ea46720ad64741e877959b"
       },
       "fields": [
         {
@@ -58167,8 +58178,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "5a29fe7f75731b9a6af22c7da86ec1ca6cf1b0770d6efc7b93c00eadc79419dc",
-        "ff6-inspector": "ae2862a97bc0a2c731b91ce807a09872534d3827bee11790c229ccc019685747"
+        "ff6-game": "11f0af1b37ad17e362f8c0ba3c79dce992ca59577a60fe1f4c8167de57aa97e6",
+        "ff6-inspector": "7f1c6072d93657bf56bb8bc7d1307de9c9c6e11bf29cde04847d00690c8d2058"
       },
       "start": 40,
       "size": 224
@@ -58250,8 +58261,8 @@
           56
         ],
         "sha256": {
-          "ff6-game": "1de91f879637d594dbb7f801b577468f2040ca2ebb3ef5904d01b8e8e375e426",
-          "ff6-inspector": "a67bbdbae9f30de8576dcc22e853f3cdcffafd78e2d6109666fc8c70ffb73025"
+          "ff6-game": "0442b59ac7ae3f7ceb972cd44d679e5f720364573201a5ede82a2f8e23633529",
+          "ff6-inspector": "c48b5a5ba6cf9165bc8a4813c7c868ae3ba1fbab84e47e3e4aad2061dcafcf15"
         }
       },
       "start": 4,
@@ -58284,8 +58295,8 @@
           72
         ],
         "sha256": {
-          "ff6-game": "dbf9fbc3be0b527409ad8804595b8e15aa1586f1423b4711cf82eda8871ff181",
-          "ff6-inspector": "a4823d88e64d3b9603c8a1c3ed3ec0e128c898dc4817e6b0b435f4a6b62cad59"
+          "ff6-game": "724cf92ffe10cf0b5153653cedd1580e6d7a81c0f60205bdac2335ab8db384a8",
+          "ff6-inspector": "b37029bc19a0ff2b6e312d4c11dbdb2cebc4c0c8927b2506b6099c5ad8c9b708"
         }
       },
       "start": 0,
@@ -58398,8 +58409,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "214c8f1f3498f5616cb2086ae35768a9f2a9bec9bcff9ed580e254371bd7202d",
-        "ff6-inspector": "0f9a487eb0c787676bfa904a461ba47e30c55389b77526e6514fe7699326a59b"
+        "ff6-game": "cedb91e20b038f8479c9190bda98f0c73275c0b7787eccf37d08e5002d911f44",
+        "ff6-inspector": "a28bb56bccb7b952d49c45f0f95f23178d6825a83904ce55c7052ff89ec3fa1f"
       },
       "start": 4,
       "size": 564
@@ -58670,8 +58681,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "9a0709da59cff1ed12d94648a22da308eb20582b2d69c06c7133abeacf714a3d",
-        "ff6-inspector": "613698d5abca69774f3efbff556b0cf9a91e8b0ea4294dd08739048da426dee1"
+        "ff6-game": "5cd092d7758391a4474c90a6c8e6c9e55bc5f0a3e8dd48875f6beeb1e9b9ca87",
+        "ff6-inspector": "f97e51df2c48ec09c91ca715a4b89e5d93f3ed9b1f37198cfba4f24fec84d7c2"
       },
       "start": 836,
       "size": 3984
@@ -59834,8 +59845,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "a188a8855e39f1aba8605cd07c4a091a79a8755343a4be7bf7d739ee79fd3255",
-        "ff6-inspector": "65c6adfaa15086f57e7aa73e91c102f8ecb00cbdf69bb5e202327bfd1d21af22"
+        "ff6-game": "28c14ebd42024193ca38a9b77f416cc3f1aa1aec585a6e19aa80e023d3ffabc0",
+        "ff6-inspector": "2e9b5353f851fea635703b7217519429489251fb203a111f2981b098f1def7d2"
       },
       "start": 140,
       "size": 3020
@@ -60469,8 +60480,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "922500a556a436d9c820216f2e0d9ac29ca5727ff167b73936ac79c588a67cfd",
-        "ff6-inspector": "0f2bc86d9b723c33e33c4cb47737a2bb3f641da1eb65c52e1a2982e8eb9afb01"
+        "ff6-game": "e02fcfa0594cd01b7e3d619b3e082b8c691bdcb8a8c729eeb87216eab93b4309",
+        "ff6-inspector": "c2223e0632c01bdcc215412eeb8f73f55b16baf9afc0e2b50f984e2b4fea76f1"
       },
       "start": 216,
       "size": 2668
@@ -60571,8 +60582,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "b105ae8c2f7b11bd472b04fcdf4940414f4d9e4b9a1063067b281b2556b7daf0",
-        "ff6-inspector": "4c84f87174c2abd87353b945bd6124ce84dfa7c6059ee356e32ba8cb3eb12425"
+        "ff6-game": "c8653a86cc7fd6ba978feb060cf3505c0c5b5646e89315656b6d6f1ab21af7bb",
+        "ff6-inspector": "1f2e1a090b7147cf1cba5f96e6955ef0afbd0d4e328ff621f41fb2c6fb1afac1"
       },
       "start": 208,
       "size": 2020
@@ -60647,8 +60658,8 @@
       "start": 640,
       "size": 632,
       "sha256": {
-        "ff6-game": "3c33c9d447f9658c13c74734b8366f88e454a2825a3c37c5ba90de313692c6fd",
-        "ff6-inspector": "520a967d0b07dd5ac31665931199d9d589d534e570cd38f5b59b4de1ee5cf281"
+        "ff6-game": "6b89d0ceab0ad814fb8b70a75fc895e5058310b06fa3303f01a5aba867e8f94b",
+        "ff6-inspector": "c56ad2c8614096b8f1809506e9fb45b26bed83121833aab2a4646c5d965d33db"
       }
     },
     {
@@ -60660,8 +60671,8 @@
         ],
         "load_width": 8,
         "sha256": {
-          "ff6-game": "0bb05e3120d20a3f65b7a9dba8799865967a8afa818d77685b21e185fa87399b",
-          "ff6-inspector": "e177971bf6ee1c2beab05af2a2939324ebc8933b81e9bea347b5ecd9a16dd8a9"
+          "ff6-game": "ed2f8283a2103c687cb395e2addc8fffaf86a0a6514b12d4621ed28c40783905",
+          "ff6-inspector": "2485b3671cbc571f540d55dd9c23793a1f874057e591194528b9837682d78ee3"
         }
       },
       "fields": [
@@ -64908,8 +64919,8 @@
       "start": 720,
       "size": 3184,
       "sha256": {
-        "ff6-game": "2a22ce964395146c2c531b34ab579c5a5465e0bab03120dfc15bb770b5711330",
-        "ff6-inspector": "8d66662d4cef463963f5722e01e8342eb5f4e7c383cbcdf84f37e7298b061d40"
+        "ff6-game": "c62cdd2b37574c3ce9ea5e2b1db990638518ffd18b92721cb720515475ff5ae7",
+        "ff6-inspector": "6a538308ee82f9eb52ff5a92582968b136a503872103169b635dc3814d785194"
       }
     },
     {
@@ -64956,8 +64967,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "05c373d0705e605e360348672accf28547df0a2fcdf85559cf7b29e622391429",
-        "ff6-inspector": "2c57c57095a3189a72333a4e1a864bba043681638d0ec9199a48424a7eae8472"
+        "ff6-game": "90572d445a5068d0a4a479db046aae579b84dff6414e1e0d5b327e5f13602a6c",
+        "ff6-inspector": "1a2e14a0867cec06618b8f40dfc0ce1724cb0df7c88500af1c30b9bd9e1b01f5"
       },
       "start": 220,
       "size": 664
@@ -65003,8 +65014,8 @@
         ],
         "load_width": 8,
         "sha256": {
-          "ff6-game": "0ef24e70b9654f7fa942fd84a519cde5cdc58921cfd08958527567c337e799f1",
-          "ff6-inspector": "b481113a1a97b5d591091365222a205323c3755f02fb4b1774370b0bfffaa82c"
+          "ff6-game": "c86e36cba886a8baeebe579c868be6cb2e69fe0d1bfa903105f81a1713d76492",
+          "ff6-inspector": "8d76a07018a9141838e713461ca7fb5ce6b76ca9a0729f0ca5750b0b06da7226"
         }
       },
       "start": 0,
@@ -65466,8 +65477,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "87c1202f7377d0803f3854ecff0c7488a219d2d762e301455bf8d64287559e1a",
-        "ff6-inspector": "95c2bfbaa9875bb951e6ae1dfacfa072c44cfbfdb8e19f9c3343de03bdc2a816"
+        "ff6-game": "ec71eef3c48737588c6323554240b54fb70289f86f0b2723f9247328c64662e2",
+        "ff6-inspector": "8e620fb3923d34f5ff33016afcc3a0ee872881151c884d11ff7cb97483685cac"
       },
       "start": 532,
       "size": 8216
@@ -65690,8 +65701,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "6e8f4edeee012eb3e86602de9b240a47ec7bb3ddcecfb1b158142fea9f031b3d",
-        "ff6-inspector": "b949efaa173f068444f69acf39a43db1503ebe9390e2d20d1f3d6d230a402ed4"
+        "ff6-game": "ac0611dcf7f5d21970d6e9dc7e85f1d56b6d3e968db6940275b4fa2cf4894625",
+        "ff6-inspector": "dce0f4f306fc1f745febb1fa49eff0bc3a1e13ef0002104f5b12299172059dbf"
       },
       "start": 44,
       "size": 564
@@ -65901,8 +65912,8 @@
       "start": 416,
       "size": 776,
       "sha256": {
-        "ff6-game": "12adab25b5f9168958af58ba705d9b40c85f0e94a53e4a5cea9d506220a0ce2b",
-        "ff6-inspector": "5511c5603e5915875428254e6b4863ce2ca6cc398022b1ab8f98e716a3f24711"
+        "ff6-game": "e771ad56591f709d34c3165f328f2b8cc239b9c7a3e42bf948fa919777752018",
+        "ff6-inspector": "3f165cadff90d3a59184638bd0c8cfc82ee67298792e0a84c8b1bd5d20975154"
       },
       "fields": [
         {
@@ -66055,8 +66066,8 @@
       "start": 144,
       "size": 3708,
       "sha256": {
-        "ff6-game": "cacdc9bc5523e8f4d2b1c1c45542288d1321915c5a83aa4183e3140368659031",
-        "ff6-inspector": "8ee4734e026369c8151f4c8a971e2608ea6eb3fc0e376d38f606d205ff269284"
+        "ff6-game": "aec1b57171e14decee49be28ee8b86410e40bc28089e9f170ff6a077baa00dae",
+        "ff6-inspector": "55015b66d294b0f52ad72fc91cb96741c6dbb90886777a5583342a408702ac15"
       },
       "fields": [
         {
@@ -66213,13 +66224,13 @@
         }
       ],
       "constant_reference": {
-        "page": 1348,
+        "page": 1352,
         "loads": [
-          1352
+          1356
         ],
         "sha256": {
-          "ff6-game": "8f0d2de0301d66f51e4f900b982abb84949a40a147ad9fa95f0fe78745c94246",
-          "ff6-inspector": "5667899be4be97a17d215c112b5279dbfc849180481cb79066ba27d58851e682"
+          "ff6-game": "7038b146239a108e85377ca805be10f56055aaf0966db39a286ab0e4534bd7c7",
+          "ff6-inspector": "5321ba390c58725662304b571b131b2f92b7b5f8732bfff0743d25bdbb111701"
         }
       }
     },
@@ -66356,8 +66367,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "ccd3b5b8c891eba812ec0b4cfa1ac372e33e715fc458b99f4167fdf059b9799e",
-        "ff6-inspector": "becb1d42430d1f114ea57b3093fab33acadd72b45b9ee00bce82070c51d7ebd1"
+        "ff6-game": "e475438b79769ce723b6e218b14530c0f1f57b13c05d829113a32a11470d40eb",
+        "ff6-inspector": "9072a821b5a7a17583fbf6be35500d97c8cc725479c681697076c227533e3223"
       },
       "start": 64,
       "size": 52
@@ -66392,8 +66403,8 @@
         ],
         "load_width": 8,
         "sha256": {
-          "ff6-game": "f1289e8e208e88f0d802a8673a9a65a689457f947bd836c34869f064516923b2",
-          "ff6-inspector": "dcb3b58314d1de8e9149694094da33dd359cff6d9dd997dd2dc236ca16196ff9"
+          "ff6-game": "c3e34df3a127ff61ec0cc54bbe98954149d9511db3d09f3af4f0da2d253073c9",
+          "ff6-inspector": "413139c74f308a8f2b53de28f0c35b77e16d878c05c661f7760907c0c9af9d35"
         }
       }
     },
@@ -66475,8 +66486,8 @@
         ],
         "load_width": 8,
         "sha256": {
-          "ff6-game": "b08dd2f72280f309578664cd85385bb660a9dc787438ffccaf9768682c96d745",
-          "ff6-inspector": "69e5a0e601b3dadf7f05d138b8fe5264b611ae6d41fce32680aac0932c1feace"
+          "ff6-game": "649e5af0e763b33b79860332e294a183a1247eff0ec5c9a61b79f3767bf34f31",
+          "ff6-inspector": "94dcbb63309e04d4f985e3166a1953c501c9de2ac731639eb60bc1a322085845"
         }
       }
     },
@@ -66637,8 +66648,8 @@
     {
       "symbol": "__ZZN3ff619compose_world_sceneERKNS_11WorldAssetsERKNS_10WorldStateEhhhtRKNS_17WorldPresentationEENK3$_4clEjii",
       "sha256": {
-        "ff6-game": "9aa19a918cb7c45508f4b49c6af1715d12a4a8958d76e2725939c5357c01ea7a",
-        "ff6-inspector": "955a305884d4ae473d6061c5d762fa09be63af1e73628742677859dab6d5e304"
+        "ff6-game": "f1a75de019c8978a9a7ebece37645f4c7492d78421f7e1b93b89cd0f37ffac32",
+        "ff6-inspector": "ad6270380be5125bbb6d5dd7912ba24cb117cd8f01d3b8f45197c26780981ad6"
       },
       "start": 240,
       "size": 356,
@@ -68219,8 +68230,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "0e0cb6ba0ee65c4c32962fd383d8cea0849a79217dcc109a4b8309d9b4a591d9",
-        "ff6-inspector": "78bbf500dbd8f2a348c67241a348f62de31dde55f6fbf65b32b526b0e5d31e90"
+        "ff6-game": "20850946c62f2acfdf43a8c31efe6ff43541801dfd775a9a90dff5095a650937",
+        "ff6-inspector": "a726bd37d2ef0e53a8dd40fd116e8ff7fa712d5664e0233b66fd657a8414a93e"
       },
       "start": 1568,
       "size": 18992
@@ -68306,8 +68317,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "5694554a76e760e425784519a1bc52c2b6e80c02fad5dda130ba7be97837bcd4",
-        "ff6-inspector": "ea51f833fb2509aa7ccb5dccd1204744f501f798eb4edf047834e86d30ca4c4c"
+        "ff6-game": "4b5406de03fd2b351e36d5149ccfbdcb60b97a612604231bc2f8bc0b11fa95a6",
+        "ff6-inspector": "7eb864f0c12e081ee8659d2b5722dee8d201578909ed4b4fcfa802d8685833d1"
       },
       "start": 1184,
       "size": 172
@@ -68382,8 +68393,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "9708fc5da84a9d65e0b4e5db064b1c26133858b94998a0308d3fde65bb8eceec",
-        "ff6-inspector": "60106056050e94712f1a0067fcd84359e0fb70bcb0bc737c463dda54eeb490fe"
+        "ff6-game": "b9436063a2462e3149cfb65ba2da4092d17f19c5c71f6a35907a17bbf41fddc3",
+        "ff6-inspector": "d738c07c83139e1f0f6ed7c27359337c8a8350f0b3482478211b4f5cd323d4ad"
       },
       "start": 116,
       "size": 760
@@ -68397,8 +68408,8 @@
         ],
         "load_width": 8,
         "sha256": {
-          "ff6-game": "2bc884441e776d41ba69b91c5cd26c14574d342fff988c8cd616ad31edff3ea0",
-          "ff6-inspector": "d658b39680ae9c5c6d1c2ea597c7d51af6b5c01d96cba9e3e4cd6ed30cbb0fe8"
+          "ff6-game": "77f8078429f672680c56975b068b341043975091ec1da6ac76313ba058ecfbae",
+          "ff6-inspector": "a2feb47429c7c8046f308bd1891d4659063dd4be79eeb0f33adaf353129463b3"
         }
       },
       "fields": [
@@ -68432,8 +68443,8 @@
         ],
         "load_width": 8,
         "sha256": {
-          "ff6-game": "c3bebbf85471f6505adc5c6e047cffbabb94709078694110670fc6e516be26dd",
-          "ff6-inspector": "0a4251e6c01661f0cb86b9eac296a8aea08bcb3f11bb11e353fd15a4b517b6f7"
+          "ff6-game": "8a14a1aff38055a784c2bf82f8671fc05fb31a74a8b3f0393863bd2ac15565ee",
+          "ff6-inspector": "432e368fb9f8b2e3aa876d893c6f9b1497aba13f8de8762ccd1a7e58639f5358"
         }
       },
       "fields": [
@@ -68467,8 +68478,8 @@
         ],
         "load_width": 8,
         "sha256": {
-          "ff6-game": "b47b119596eec4ed2529d7fcbb895d71d867916e1fd36a929fca660cf19db940",
-          "ff6-inspector": "b859b26e8c50f38d915d3f2b94ca408f7ad179690f8db9c14338e5bebfe52cf4"
+          "ff6-game": "6969b99d67ce101e27e70d0b5eed7db87a7667c6126efe77685efcb4e762c597",
+          "ff6-inspector": "a3bca15367556dbe0bfe2e62f7f82f593e4bf942071a25435e11cd747a02292a"
         }
       },
       "fields": [
@@ -69025,8 +69036,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "73a8ff922a049b768372d7ee990693703a28d2741f463291bcd3dee65a2baf1b",
-        "ff6-inspector": "883c66aa4c100a2fa674f9c4ae5f287ab2ea19692c2db2ed134c00a99af22683"
+        "ff6-game": "6b87651ba9d84d4043baeaeb295299110f567c2bcfd846df823ddabcb376bc73",
+        "ff6-inspector": "aff8aeb823df384f89df4ed5c3bb51a33941624ac6de6563740b447749e46a65"
       },
       "start": 492,
       "size": 11736
@@ -69244,8 +69255,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "cd3bf253351fff60b497b38177f286ceebc019e09a7bf4410c8a8199738b6dc5",
-        "ff6-inspector": "2d56c83783b8106143d11c7275991d6703ae312c4a48c67c1b210c5cbedde797"
+        "ff6-game": "f303d719d1779b6ebf7b7262b1ca230a6915578b62f29dad40449c78ab5f5e83",
+        "ff6-inspector": "2664b6083052b13d23810cc882d33701783ce4afc73064718ca57aa519b1e04a"
       },
       "start": 52,
       "size": 4320
@@ -69750,8 +69761,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "1fd515584ca1743625947eade87494f0df17394da9701693e6c351fe22fd64aa",
-        "ff6-inspector": "1fd515584ca1743625947eade87494f0df17394da9701693e6c351fe22fd64aa"
+        "ff6-game": "6da3d4cdfe62e4d4e1b98ef9ad4dc8c954827082a888a40a1ee55ab77cf98072",
+        "ff6-inspector": "6da3d4cdfe62e4d4e1b98ef9ad4dc8c954827082a888a40a1ee55ab77cf98072"
       },
       "start": 480,
       "size": 1196
@@ -69956,8 +69967,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "5a2abc12e9a694263069b90729da17eabf4dd6c281708f73b45464a3350fc8af",
-        "ff6-inspector": "2e0a41a5ce69b8ab339908b8887e25aa85e2d800b85305f2809492829f79c6af"
+        "ff6-game": "6cc731458449108603c4f7e69400af01e5b090a59eecf2637a8d78dd2d09dbdd",
+        "ff6-inspector": "49442dc1a0363a3955a7458dec9953e70a5439b56ad27131ff8ccb07f8d0930e"
       },
       "start": 124,
       "size": 1072
@@ -70160,8 +70171,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "a604f190db53c6ac2752a4f5993ab9f38943925ffd14741d0076c3b822eb68ac",
-        "ff6-inspector": "1d78e8a1a27db059041e67bc4e14bfd3408bd6f454391410983ca30d77e10ecb"
+        "ff6-game": "38de8d950eccb5f4567253bb99eaa5b313c7aa4cbf8204b51ac32cd0fa8fafab",
+        "ff6-inspector": "948ce26c0142e1119fcf0eae746d650f25c6d9704cc883aae0cd63af166d0a1a"
       },
       "start": 20,
       "size": 552
@@ -70195,8 +70206,8 @@
           16
         ],
         "sha256": {
-          "ff6-game": "12f18635be4aba732ed46c192c6e597bde9012740ba9b4b9df0ef00abcc4da68",
-          "ff6-inspector": "1a664d7b6c7d6459cd885abd9b4dad4d69c28265b7b86d12d51e52e3997a955d"
+          "ff6-game": "b616f19feccd76d62ae610cb0df9ca2d2b9cf7032a84f1e1f7b30e4847f5e266",
+          "ff6-inspector": "cfff1c83dbc8ae6631edd84eaee42b4a6f90919a392c7f56ea7c8b16dc2aa5bb"
         }
       }
     },
@@ -70272,8 +70283,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "ffc495dfccc34c1eebd442f012708fae8022ad45fa2a131affd4f21ed83b93cd",
-        "ff6-inspector": "b528617a966be89e80c7469cc8a12275e441d51613ab96dc02d65a75728d5fd9"
+        "ff6-game": "ffdc12c546fbe909ef4374e98779866be533ae21bd3ecf304cbe23d3220088bb",
+        "ff6-inspector": "5338a35e321276babfa9722d90a815201d70e844214a2a0653140457a3e4c05d"
       }
     },
     {
@@ -70585,8 +70596,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "03a2888881b9b49a11cc1127b67c68146dabda80419822bf792ea139ef787b63",
-        "ff6-inspector": "a8b3143bef88971aa8eb923301844215ffdd723d4bfc91b4fcd57f7171690db8"
+        "ff6-game": "e85529f8b4b1314c3e255649f5297d5d99554e1480b03a84328c2336cd4e33bd",
+        "ff6-inspector": "1f7803760c797509aeeca575cc584685b2f31f2997e8e17fa692dbd7a15b629c"
       }
     },
     {
@@ -70687,8 +70698,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "115e6257675170d807cf2c948bf829abd5f4e4332be160b8afb24c567c6804d2",
-        "ff6-inspector": "826d0a29d586108d969d6d315e484a457d9e57305837dfa720fa71e8efaa3975"
+        "ff6-game": "08f7342c83475ae495c05c69e4dd9d70e091ab8dd266c8597bcf2b89979c0d03",
+        "ff6-inspector": "bc2b50d4bd92ae4ed9ac4f683f2a11e863c55300669777f8a8c35823b8656be2"
       }
     },
     {
@@ -70696,8 +70707,8 @@
       "start": 104,
       "size": 2700,
       "sha256": {
-        "ff6-game": "1b381ee508805c5b00a8d8fad8a59b5c676db533cecbf695372af42e79cedaab",
-        "ff6-inspector": "bb0f733e08a30c094aa225f97191491bf118144a1fe1304a74e0c078500b17e5"
+        "ff6-game": "74f3394c8c52bdfa1e446369a9d9f54fcaa6e5e4d138977eebe0108d3a095ffc",
+        "ff6-inspector": "789ee337354ddc8bafa1246e4071f2eb4f7a4f932308988a4cf8517f60e496a2"
       },
       "fields": [
         {
@@ -70950,8 +70961,8 @@
       "start": 692,
       "size": 1628,
       "sha256": {
-        "ff6-game": "17e4437af3bd96ea64c80d94b29607753d5f6eeba76a1db7ae3f9bd99d73ae99",
-        "ff6-inspector": "ad81a7c3595ad5a33e17a594d9b0d8d8f26a08a0152ad175dbddffaae35e0f13"
+        "ff6-game": "52fe7ea91d423636c9227020ded9e1b7940b44960c690fc69285b178b2695d12",
+        "ff6-inspector": "623e3cc15ae97dfde2dd887ad084270333c4a0f6b4196ac8842e0fe6015e57fe"
       },
       "fields": [
         {
@@ -70985,8 +70996,8 @@
     {
       "symbol": "__ZN3ff69FieldMenu10item_sceneEv",
       "sha256": {
-        "ff6-game": "e903858053913df1df467be82022047b3025b7cbd6b91fbffc433fe21695f59f",
-        "ff6-inspector": "d6ac7578c2b66bf2870763e4b0acbaa13513ea5c85e7cca8b30e4ff95470ab30"
+        "ff6-game": "2b1056829b9ddb0a49af638e174df9a0878293b2fda444c91ff7bc7f2847907a",
+        "ff6-inspector": "8385ac8e1268955f040b14af3dc3578c6954deace8b498941f57eff2ffca3f90"
       },
       "fields": [
         {
@@ -72596,7 +72607,7 @@
       "symbol": "__ZN3ff69FieldMenu10enter_pageEv",
       "sha256": {
         "ff6-game": "462c0f0859c06bcedd209e242dc41e1a9eb2322f6366fc073bab0425cb303d8b",
-        "ff6-inspector": "c8b2028ef05b48065b4259d76fd4144413c81e1d8c73e2a9cb07d606e36650a6"
+        "ff6-inspector": "bbded0b59dd9d4e09d1332c02a352b8940cd6e95a68b721565b73f41db675f26"
       },
       "fields": [
         {
@@ -72634,8 +72645,8 @@
       "start": 48,
       "size": 1284,
       "sha256": {
-        "ff6-game": "f53a881f2fdfcd4e36c58a00dd2b8351573f98468d9f7024857045b234c1a960",
-        "ff6-inspector": "5cfd4b3e17e1e5e42386b32d397a96c613bf0033bebd558a9377c4fbe5001b3a"
+        "ff6-game": "64397bb047de4a5863f8a9e8b563dd81032d0b191963b509b3319c60faa5e79c",
+        "ff6-inspector": "c7d402744c0b7bdebecf725ffbb637e4928db51f816341b6f28a7d1372ae2cfe"
       },
       "fields": [
         {
@@ -73774,8 +73785,8 @@
       "start": 548,
       "size": 428,
       "sha256": {
-        "ff6-game": "3c287f6a55899363e35b1179de27cc1c767068883939e8366d942f64450cd05a",
-        "ff6-inspector": "0fbe437c38d708d0a0989ba3258822058091620776607a5b004d9240774d9af4"
+        "ff6-game": "5ee6ce92a1125d675c976e700487fcef48318715a1c2371c85ccae67cbcea3b2",
+        "ff6-inspector": "b190f2b3eb13232ab15e6c34169e4596c626d03bf8fde1241f0924076affc618"
       },
       "fields": [
         {
@@ -74784,8 +74795,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "f7412f773f21160f01d37c0daf23df134a82067b945f4d895b131a68afa0ac93",
-        "ff6-inspector": "7f846d4502fb40e2184a1f7f7b072ccafdab15c18576e033294aebac614f6786"
+        "ff6-game": "a70a00bb3c0583c85da12afeb371cd8758ea8fdf5f3ad70dbfefa46c6c2f3a80",
+        "ff6-inspector": "16eb20772218abc9502314465ba2798a5a1f4cdf43954157623998491263b2ec"
       },
       "start": 728,
       "size": 636
@@ -74834,8 +74845,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "36afd9f7ae36d9cb96628aa7b5cc31e0d206dc7a8a65c9a5e0356145f6d192b9",
-        "ff6-inspector": "5b73b5bac88071df0c3863a92b9dfc155c9ef66ab459d7b8dbf8c59f561ee87a"
+        "ff6-game": "b1e3e11c151543c07e0dcffc93b90a1cb461a53e657db374c7a28c523514e416",
+        "ff6-inspector": "5775a1092e56d7346e9dee9449b02eb5933898bd91aa310bda95c85fc26d4bf2"
       },
       "start": 508,
       "size": 100
@@ -74897,8 +74908,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "c552740daa396905855721cd174f3bf6f9b249dd8fc6c0418a024506f79b2cdd",
-        "ff6-inspector": "c084ec40a964d242ebe451a9a484e9665003dfdd007b83401d675c4015876c49"
+        "ff6-game": "1c3ba8b54d00b5aa23c8ea19c9bd53d22dfdf1bc4b2049e178a52aaea51289a0",
+        "ff6-inspector": "1dbdb319d58c71e18c48394339a84bc4d702fee99cf322026179eafba8528151"
       },
       "start": 768,
       "size": 228
@@ -74917,8 +74928,8 @@
           712
         ],
         "sha256": {
-          "ff6-game": "49f3a3feaa9d91ddd7e5bd469dab09a82ceea59ed44d1044ccb740a56cea243d",
-          "ff6-inspector": "eb608a063017547ab1ef1afbac55d1ad06460707bdd309644ae91f3d8fbef7a5"
+          "ff6-game": "268329354a13067feb8cc7f0bcad2f820242827e32517e03641eef9c27a9d703",
+          "ff6-inspector": "ebf08ec6ad83dc1caa918c51c723bfc5dc58cea6fc5e110b7dca897f7470d5ee"
         }
       },
       "fields": [
@@ -74951,8 +74962,8 @@
           1320
         ],
         "sha256": {
-          "ff6-game": "3982be6ce708f9f5732a61f186502c33770d4040810f6df907ea981ce0bf5503",
-          "ff6-inspector": "75ded3f7323cda1512a988eab7df52f2b4a2385b7011f5e35cb393bdde2a6a33"
+          "ff6-game": "166e32ee16370885a66e4ba21461ff76930b5d5e7ac7787accc20850e9fb6ae6",
+          "ff6-inspector": "1161cf13e1a8408b2e68f05ddbf11a6255ac1095f71a6c93b2e9d195cfc4ded3"
         }
       },
       "fields": [
@@ -74985,8 +74996,8 @@
           1344
         ],
         "sha256": {
-          "ff6-game": "3335ee0ce02eebf8cbfbbbe567231dc5ab798ae4178e949d1bd2add8b31e2f88",
-          "ff6-inspector": "9e5b151c98a0fefe2ff7b84cd030f7a212cc9458db16a4f6c14e40b53c3ded36"
+          "ff6-game": "2f885e304aae2ad43562c91a510fa57c1400fc03c6315db9c472ff92ebb8f05b",
+          "ff6-inspector": "82182ca72d8f1209ec9d9668993c602366f2872c1997d52083b457fff0e6de0a"
         }
       },
       "fields": [
@@ -75441,8 +75452,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "68b7b4b07996184497a05b4294bd59f10e5f41b57607c312c8a1bce3c155458c",
-        "ff6-inspector": "5273e7c6c1bfb88259afec68a33ebf0970474e3b5103b01051b40f5a9ac0e024"
+        "ff6-game": "be5ec05bbebe61dc48484564aaf43af8955607fa0510f7afd85280740e59d7c5",
+        "ff6-inspector": "f63053e06c39af5c1f86de31f819516609f9d31302457457fb27e4dfdff0beda"
       }
     },
     {
@@ -75695,15 +75706,15 @@
     },
     {
       "symbol": "__ZN3ff621BattleActionAnimation4stepERKNS_22BattleActorSceneAssetsERNS_16BattleActorSceneERNS_21BattleActorSceneRulesENSt3__18optionalINS_24BattleEffectRasterTimingEEENS9_INS_23BattleEffectPictureWorkEEE",
-      "start": 2912,
+      "start": 1752,
       "size": 236,
       "sha256": {
-        "ff6-game": "7360ed9fe7cd1cf7b08a14c0e2b17d15a0f2130325309395861a33ce7a183ce8",
-        "ff6-inspector": "7360ed9fe7cd1cf7b08a14c0e2b17d15a0f2130325309395861a33ce7a183ce8"
+        "ff6-game": "fb01678ad0a5b2f42fd093e95f3de5df11d7bca6c6a3b2aebf3e4d4e3ae31a64",
+        "ff6-inspector": "fb01678ad0a5b2f42fd093e95f3de5df11d7bca6c6a3b2aebf3e4d4e3ae31a64"
       },
       "fields": [
         {
-          "offset": 2912,
+          "offset": 1752,
           "material": "attack_normal_return_step",
           "first": 0,
           "count": 1,
@@ -75716,7 +75727,7 @@
           "projection": "sum"
         },
         {
-          "offset": 2916,
+          "offset": 1756,
           "material": "attack_armor_return_step",
           "first": 0,
           "count": 1,
@@ -75729,7 +75740,7 @@
           "projection": "zero_register"
         },
         {
-          "offset": 2988,
+          "offset": 1828,
           "material": "attack_normal_return_step",
           "first": 0,
           "count": 1,
@@ -75742,7 +75753,7 @@
           "projection": "sum"
         },
         {
-          "offset": 2992,
+          "offset": 1832,
           "material": "attack_armor_return_step",
           "first": 0,
           "count": 1,
@@ -75755,7 +75766,7 @@
           "projection": "zero_register"
         },
         {
-          "offset": 3064,
+          "offset": 1904,
           "material": "attack_normal_return_step",
           "first": 0,
           "count": 1,
@@ -75768,7 +75779,7 @@
           "projection": "sum"
         },
         {
-          "offset": 3068,
+          "offset": 1908,
           "material": "attack_armor_return_step",
           "first": 0,
           "count": 1,
@@ -75781,7 +75792,7 @@
           "projection": "zero_register"
         },
         {
-          "offset": 3140,
+          "offset": 1980,
           "material": "attack_normal_return_step",
           "first": 0,
           "count": 1,
@@ -75794,7 +75805,7 @@
           "projection": "sum"
         },
         {
-          "offset": 3144,
+          "offset": 1984,
           "material": "attack_armor_return_step",
           "first": 0,
           "count": 1,
@@ -75813,8 +75824,8 @@
       "start": 636,
       "size": 656,
       "sha256": {
-        "ff6-game": "4c75b97eb4f00bccdfd6f5517cc1a4f60ecf4061839c219901cf52a7a1f2c327",
-        "ff6-inspector": "1defa645e48cb597d19017b2031c7f50b07cc4c8b5c1ffd7993b1039a5f91997"
+        "ff6-game": "f3f0a87d1707e6e6d76f815760cdfbf47c0590f421864055df70f2b1f5f80db2",
+        "ff6-inspector": "f148e5a7d81c7bd38327ec00a2bcad6f450db757984f9ee040c78f0d5ca6e190"
       },
       "fields": [
         {
@@ -76132,16 +76143,16 @@
       ]
     },
     {
-      "symbol": "__ZN3ff617BattleMenuSession7advanceERNS_11BattleStateERKNS_17BattleMenuContextEtt",
-      "start": 472,
+      "symbol": "__ZN3ff617BattleMenuSession7advanceERNS_11BattleStateERKNS_17BattleMenuContextEttNSt3__18optionalIhEE",
+      "start": 500,
       "size": 112,
       "sha256": {
-        "ff6-game": "5cc6ab98df696b9cbdc3c98563982510a7456ca7d21348532194e96e9e6adc8b",
-        "ff6-inspector": "bc3f13e59d4f7f68516577500f5a1a5ab52d177bb9925c7d0ec58184af5f9469"
+        "ff6-game": "5190fcc68e8f9c95ce1030ec8806713504e972b383aa4e5d88b1257767cf5327",
+        "ff6-inspector": "428b85119dcee89f6be09e7bf356bc7e11b01aea2835782621f3157252ee0c19"
       },
       "fields": [
         {
-          "offset": 472,
+          "offset": 500,
           "material": "battle_menu_active_cue",
           "first": 0,
           "count": 1,
@@ -76154,7 +76165,7 @@
           "projection": "sum"
         },
         {
-          "offset": 572,
+          "offset": 600,
           "material": "battle_menu_active_cue",
           "first": 0,
           "count": 1,
@@ -76167,7 +76178,7 @@
           "projection": "sum"
         },
         {
-          "offset": 580,
+          "offset": 608,
           "material": "battle_menu_move_cue_difference",
           "first": 0,
           "count": 1,
@@ -76195,8 +76206,8 @@
           2852
         ],
         "sha256": {
-          "ff6-game": "674d78865a19771a33a96a66cc4e90b31848913ce570502f3c59108289f57fe8",
-          "ff6-inspector": "48ab2a0ce339f35a6ca7b2dbff188307e89b1a8dd6c44015223c10fc4c99f3f7"
+          "ff6-game": "0a6b3743e3daf089440f7c3459c0e17d51202c21501e351eba6ee49815e4374a",
+          "ff6-inspector": "e9e37721965c6fee47b84ff1fb91bd71b35460610b97d840ee417bf1e4a271ac"
         }
       },
       "fields": [
@@ -76322,8 +76333,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "179ba34da4e3bd9f1824e1cb8bd0ade02d82316d9e1ca5c7767585c342ecb018",
-        "ff6-inspector": "55a7bd58716b01261eca7ae99057e7271508085a54290de41e1792083eb2f591"
+        "ff6-game": "60fe2d25214d89bf1f3ba2bd9d418342567ea7f9f9829031b8ea143ddb89f7cb",
+        "ff6-inspector": "ca0e0ef0af11582c6ed878d1b6c0a730f16f4035bfd9a4ce7164d4b28b8bcc1e"
       },
       "start": 916,
       "size": 788
@@ -76342,8 +76353,8 @@
           2084
         ],
         "sha256": {
-          "ff6-game": "a2805c2d756af7abb5e61b3db9e84008099494700cccf2773ea345835d70887e",
-          "ff6-inspector": "87298d73a299bc29b431b6352ca90c4c20fcb25b6a26df21dc297fc6577fc970"
+          "ff6-game": "8224126947b4a109e8d274148249a8f3229aca3b29e76e14e275e1addf3bc15d",
+          "ff6-inspector": "ff1c77a2207f6efe8e6a128b13355aa94a70c8b688c1d40a4e507dca1df95a53"
         }
       },
       "fields": [
@@ -76376,8 +76387,8 @@
           2104
         ],
         "sha256": {
-          "ff6-game": "225c375ced8a3026c9f42471a63e84d9179606afbfbcbfa95ad0645e4697cee5",
-          "ff6-inspector": "283bc9bd9fad5324274fb44d965c7a46bbae91de258810a13f85e54eb3b1443c"
+          "ff6-game": "bfae62bec2792b18b961604086b3b8a02ee43c9d7af2ba6ed1f2a28e694948dc",
+          "ff6-inspector": "ecb3898714914d885c7dfb29d35e2aac65220bb6e7d98e0c0e56601042465d20"
         }
       },
       "fields": [
@@ -76514,8 +76525,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "e847c10e8eb2dccd7462946d00de4a825576db0084b371768b9ef5f9c8726a3f",
-        "ff6-inspector": "f4f9b413c6041629ac25bdc751932670c5f15b71dfd0bb5765dccbf4ffbb995e"
+        "ff6-game": "fe9a1192e8d9158abe4ec610b7fde8becc3671141643c182f07c66cac719ff2b",
+        "ff6-inspector": "11823a30a431ab4a8cef2d339b50d430e9158018ed34bafe495e6b9ede4f6e51"
       },
       "start": 152,
       "size": 632
@@ -76743,8 +76754,8 @@
       "start": 2252,
       "size": 6948,
       "sha256": {
-        "ff6-game": "65f31e3cb89e96858340bf074ea28f89fa99fd80b94d9a1e98a2b1f362d62968",
-        "ff6-inspector": "843c4e6db03703230c09389b45d3c8abe791c6e549d7242af86312d463b71960"
+        "ff6-game": "d7e7e8358bf18fd3f644c7315506a267bf3ae8e0f84a4f7b276227c459b3ad74",
+        "ff6-inspector": "e34d8e3c083132bb717dd4beddc64a186f0b8b5fa8dc33ccfafc2983799a2dcc"
       },
       "fields": [
         {
@@ -76948,8 +76959,8 @@
         ],
         "load_width": 16,
         "sha256": {
-          "ff6-game": "041b5e4915c1e46c523012cb4dffafd15792fd80281f0ce83d6da7940d46daf3",
-          "ff6-inspector": "dc3b11cf079a3a2aeb97f2ede0b238932509bc297c897c63de6ebd410187ec9b"
+          "ff6-game": "e0e3857f6b3b0c71cb49714bc72af387c9062eddf292532a5299c4a889542290",
+          "ff6-inspector": "ac7986fbd15859d2b85024e2ebcdefb3e72eff1dd44cfac8349712c5d9c4cc8e"
         }
       }
     },
@@ -76958,8 +76969,8 @@
       "start": 888,
       "size": 4548,
       "sha256": {
-        "ff6-game": "f2295694bce1792b75831f75f2da4563b2caf5e6c2bdd23712a6230454bb3488",
-        "ff6-inspector": "65b110244c3b64f485e798c1210f267a764115eb85549c52048fc721f8e09678"
+        "ff6-game": "d25f5b2d11491288570d7b9f0602abc8f75346d3455db844956992b4e90663e3",
+        "ff6-inspector": "c6a38e4eb4f7578f68daaa0426001d7649c37eeb545ddf60589ab6f8f37beb13"
       },
       "fields": [
         {
@@ -77156,7 +77167,7 @@
         }
       ],
       "sha256": {
-        "ff6-inspector": "c728f2714344be099eb396907e3df1c79264eb4fb9eb61ee741bb3542ed9d56e"
+        "ff6-inspector": "3472b25d4a66a16fa0f20187ee4fdf64de04a89066d12c123717ea9eb5fc87fb"
       },
       "binary": "ff6-inspector",
       "start": 5892,
@@ -77192,8 +77203,8 @@
         ],
         "load_width": 8,
         "sha256": {
-          "ff6-game": "8952109bce17da36fafe7347b5d1f5e78000465d3da415b05096433110d52d69",
-          "ff6-inspector": "528ac7f0260ffd87a7fe323cc884b29f260dc9eb16ef687be3304267e27a64dd"
+          "ff6-game": "5b2d450ec7fff876e6f339290c9bd049f06d127c37c3d236d05a496782dcf6db",
+          "ff6-inspector": "d3d8d1f3d974e70f56e351fafa74e6973121cfefa12f5ab41363a1a7f83e08f2"
         }
       }
     },
@@ -77380,8 +77391,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "19c425363959c1e59fc3bb4d0798e35a953d747240a21855f5048baa98d42eec",
-        "ff6-inspector": "4496193c530d9b5c8f9be64ee1ad9788377af6c9aefb24c3a1528d34ffe0f744"
+        "ff6-game": "97474b5a524c06d2b69f9bd61e9eadca41ce9f86dad77d97995e40003f277642",
+        "ff6-inspector": "32761635ec37aea8929b1c2ce87efe61a9a8556c1f306b58f7eab166f8f9bd25"
       }
     },
     {
@@ -77643,8 +77654,8 @@
         }
       ],
       "sha256": {
-        "ff6-game": "c2e0d23c29b06d032d1ccb95a79cf7f5bc11a01c82a5ef78a262c39d82433d48",
-        "ff6-inspector": "f57dd29403646658c0733733e346facf2f93bb8afb48e08dd492d2eac4cbc704"
+        "ff6-game": "37036c48c5083341742f91d6ee5c7677fc5c93d3b49463a93d0275e380502328",
+        "ff6-inspector": "cc8c386d9d190e68e3cd10925c4fd90f8e3c850c769661130b8e452ab2e273a2"
       },
       "start": 3296,
       "size": 5212
@@ -78339,8 +78350,8 @@
         "ff6-inspector": "credits_gray_native_inspector"
       },
       "sha256": {
-        "ff6-game": "91a307e99bbc634c05b957ad2db587f0771128fe77627ae679b92e10cea2a9f6",
-        "ff6-inspector": "7f2ca5ec6aa538d4e590bfbe65803c80a25c94527e6058568bddb01161d692e8"
+        "ff6-game": "0061cda4b475c26baa9c7602427bc794f79f884cb771d1c087983ea2b0647344",
+        "ff6-inspector": "2d993c32b2dfe499a91fe2922ce0c4b66501a180e55a6d6d96cd6890269c6b87"
       },
       "inputs": [
         "credits_gray_lengths",
@@ -79210,8 +79221,8 @@
         "ff6-inspector": "config_color_caption_0_native_inspector"
       },
       "sha256": {
-        "ff6-game": "2b49683368516752be928d891399e7b7a96f790771a0cf376528fde9e4d8b8dd",
-        "ff6-inspector": "05330442299501d498678d2165efc9b23d01a2c7e3b3b8023b224d200df50bb7"
+        "ff6-game": "8ebc89023eb7b72e8fc399b7303f736ef1229b969a1ec9929a7169d3561a62ce",
+        "ff6-inspector": "3e8e12e77bb890a631cb11c28baabeb8a2514bd6a9c8bcef9948696b5b5a7fdf"
       }
     },
     {
@@ -79228,8 +79239,8 @@
         "ff6-inspector": "config_color_caption_1_native_inspector"
       },
       "sha256": {
-        "ff6-game": "de31b3ded85f7f0ed2484c43dde1e8f4c060b6b0b51bf3b654753747e9c7f565",
-        "ff6-inspector": "a0a6ead9ac9f39a0d73ab37600be562c6966e6a9d80d71be8c70e3df6b954929"
+        "ff6-game": "6810f6b630193adbd0b536e641ccd41e3e0117936e177ebd206053ff015f53a9",
+        "ff6-inspector": "9c16110216df378a436073910191bcc895378e249eca54c5dfce3592565de467"
       }
     },
     {
@@ -79396,8 +79407,8 @@
         "ff6-inspector": "title_initial_rows_native_inspector"
       },
       "sha256": {
-        "ff6-game": "3fe10e468809409e4a497f967f393174e97268a10a3926645622da9ed0a88ec3",
-        "ff6-inspector": "471afd2d63645a6d785a812d0d43ef16cc7e64a54b07966f5e08abeefd74c43c"
+        "ff6-game": "3ebe807324fa63e0408ed4fcc9d81bb813abd4a4e4372338d66d5bbe19f8b6e5",
+        "ff6-inspector": "fc285fb04bb7f33e1d4b86d0f6443ac74af0c9b5f8a7a1673293c04fa2e06fec"
       }
     },
     {
@@ -79539,7 +79550,7 @@
       },
       "sha256": {
         "ff6-game": "c091bef987dca7a33aa781b6c84411276174aa8a7bae8b964b368ae5fe50ad11",
-        "ff6-inspector": "c65a78990cc9f1fdcfeb827e48cdc28180ab5bcb222d3dea68465a0f3aeac0e0"
+        "ff6-inspector": "67a0c2064d83a5c8d68958713992b97a440872298b0c84eec0121c0c0ab33925"
       },
       "inputs": [
         "world_castle_particle_strip"
@@ -79833,7 +79844,7 @@
         "ff6-inspector": "config_cue_publication_6_native_inspector"
       },
       "sha256": {
-        "ff6-game": "ccefbc66f1c72f9e58acef42d2ec7bbcf3badeab1a63593c9ad918a601fc5559",
+        "ff6-game": "4ffdb1e47c91fc1e219c308948c82b208bf6bd517e2815ab6247dfd8c924ce69",
         "ff6-inspector": "3708bad23149564268ff349955a7d13aa0a9ff67c04416e0d3004d46cce2fedc"
       }
     },
@@ -79849,7 +79860,7 @@
         "ff6-inspector": "config_cue_publication_7_native_inspector"
       },
       "sha256": {
-        "ff6-game": "ebc5e1e916cf9b118e9fee331e09d952d6b5a70cf7d0ee2e26980ed22d75fae7",
+        "ff6-game": "30654cdf2f09f1a864e4eaf59c62a38afb193119acd01aeeea39665e2126140a",
         "ff6-inspector": "ab8f05a21c886ad5912acbb6ea597d5a8e1ee5200ba8712075c3a802e1b125e6"
       }
     },
@@ -79865,7 +79876,7 @@
         "ff6-inspector": "config_cue_publication_8_native_inspector"
       },
       "sha256": {
-        "ff6-game": "fbb2633e7692fca09361cbe1203cbe7e0c25d475a36393ad03c9a807fffc38c6",
+        "ff6-game": "9793228d2c2705df46d6f16feed97eda027c20866e589cde712640357a22e6cd",
         "ff6-inspector": "02d6b6b36c917dc7f0f3ee5c424f32fc2bb48b526847d0a3da8772043a2f3cdf"
       }
     },
@@ -79897,7 +79908,7 @@
         "ff6-inspector": "skills_cue_publication_0_native_inspector"
       },
       "sha256": {
-        "ff6-game": "fddb120bc328f591dc0d8b13e62d28afa27de91adf5b45a1dc073f0cfd57f1d6",
+        "ff6-game": "b96baa3fb6171a29bf437c726d5803899ebcb59c1927370417e23c502c922b72",
         "ff6-inspector": "1fe3a86ac19c2c32846a8e034a875b4109f6bbf7c95c41d5a262467c79f430bd"
       }
     },
@@ -79913,7 +79924,7 @@
         "ff6-inspector": "skills_cue_publication_1_native_inspector"
       },
       "sha256": {
-        "ff6-game": "2c895f8afa20b31dc813e288a22ee1a3e8d0832d250d55dc021cda992739a5e5",
+        "ff6-game": "ade5384d599d78daa2baa62f8ee9244e284de7264ca1b2499c275be15de92b6d",
         "ff6-inspector": "2fc9cb986efdbf9632a12d74e196a6f6d1953d3ab10d39886682346a766c51a7"
       }
     },
@@ -79929,7 +79940,7 @@
         "ff6-inspector": "skills_cue_publication_2_native_inspector"
       },
       "sha256": {
-        "ff6-game": "fce4f1a2084bf274f66e73224f3b63c2aae61fb22fd058b8e9c6bc0dcd341646",
+        "ff6-game": "9fcd23ab9b1aeeea9f824a1d1c14993a45e0aff297a8daf740908b5d5b240552",
         "ff6-inspector": "1dcdeed02c4792d28d3289a5e116c49885e6ba161f283c798d320f380c362a06"
       }
     },
@@ -79945,7 +79956,7 @@
         "ff6-inspector": "skills_cue_publication_3_native_inspector"
       },
       "sha256": {
-        "ff6-game": "6cdb91eac31ee2d926f7603f315db259033b975cb01578994f77bc2997ce3d53",
+        "ff6-game": "35877884360107abe24e7f100a073239855639c7c6f0a4f25c2d3b652fa4c6ec",
         "ff6-inspector": "895df0b8660c7e7a8615628af276682506390720ed0a178ca85f287650abab39"
       }
     },
@@ -79961,7 +79972,7 @@
         "ff6-inspector": "skills_cue_publication_4_native_inspector"
       },
       "sha256": {
-        "ff6-game": "73e456840d30ee04ca0b2302e18e63fbbd22b7c83fc853a900183f1451493724",
+        "ff6-game": "d4fb8e629ee579efa18c4b3e168f332a97fc8b76b3b553cc3ddc41fd0c6974bc",
         "ff6-inspector": "2d9716801dcb09d3f5920fd4860e1836b040539be66f48b2472829b6704c43a1"
       }
     },
@@ -80685,8 +80696,8 @@
       }
     },
     {
-      "symbol": "__ZN3ff617BattleMenuSession7advanceERNS_11BattleStateERKNS_17BattleMenuContextEtt",
-      "start": 624,
+      "symbol": "__ZN3ff617BattleMenuSession7advanceERNS_11BattleStateERKNS_17BattleMenuContextEttNSt3__18optionalIhEE",
+      "start": 652,
       "size": 4,
       "inputs": [
         "battle_menu_error_cue"
@@ -80701,8 +80712,8 @@
       }
     },
     {
-      "symbol": "__ZN3ff617BattleMenuSession7advanceERNS_11BattleStateERKNS_17BattleMenuContextEtt",
-      "start": 668,
+      "symbol": "__ZN3ff617BattleMenuSession7advanceERNS_11BattleStateERKNS_17BattleMenuContextEttNSt3__18optionalIhEE",
+      "start": 696,
       "size": 4,
       "inputs": [
         "battle_menu_confirm_cue"

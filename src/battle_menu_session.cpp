@@ -193,7 +193,7 @@ void BattleMenuSession::start_text(BattleTextCanvas destination) {
         published_.text[index(destination)] = std::move(blank);
     }
 }
-void BattleMenuSession::publish(std::uint8_t clock) {
+void BattleMenuSession::publish(std::uint8_t clock, bool active) {
     transfers_.clear();
     append_battle_menu_transfers(transfers_, {style_rows_left_ != 0, text_rows_left_ != 0,
                                               pending_list_row_.has_value(), true});
@@ -219,7 +219,7 @@ void BattleMenuSession::publish(std::uint8_t clock) {
     }
     published_.mp = work_.mp;
     visible_transition_ = transition_;
-    publish_battle_cursors(cursors_, assets_.cursors, clock, false);
+    publish_battle_cursors(cursors_, assets_.cursors, clock, false, active);
 }
 void BattleMenuSession::wait(BattleMenuPhase next) {
     phase_ = BattleMenuPhase::wait;
@@ -1033,13 +1033,24 @@ void BattleMenuSession::input_step(BattleState& battle, const BattleMenuContext&
         break;
     }
 }
+void BattleMenuSession::sample_buttons(Buttons first, Buttons second) {
+    sample_input(input_, input_settings_, InputContext::battle, first, second,
+                 {options_.multiplayer, options_.second_player_characters, active_.value_or(0)});
+}
+void BattleMenuSession::advance_suspended(Buttons first, Buttons second, std::uint8_t clock) {
+    // Already prepared rows may finish publishing. Window tasks, cursor
+    // animation, command decisions and sounds retain their active-frame state.
+    publish(clock, false);
+    sample_buttons(first, second);
+}
 std::vector<MusicPlayerCommand> BattleMenuSession::advance(BattleState& battle,
                                                            const BattleMenuContext& context,
-                                                           Buttons first, Buttons second) {
+                                                           Buttons first, Buttons second,
+                                                           std::optional<std::uint8_t> display_clock) {
     for (const auto request : battle.menu_requests)
         request_battle_menu(order_, request, !battle.menus_disabled);
     battle.menu_requests.clear();
-    publish(context.clock);
+    publish(display_clock.value_or(context.clock));
     if (active_ && !order_.ranks[*active_])
         closing_ = true;
     // DrawCursorSprites sees the previous menu decision, before UpdateMenuInput.
@@ -1074,8 +1085,7 @@ std::vector<MusicPlayerCommand> BattleMenuSession::advance(BattleState& battle,
         audio.push_back(SystemSoundEffect{FF6_ROM_VALUE_BATTLE_MENU_CONFIRM_CUE_0});
         sounds_.select = 0;
     }
-    sample_input(input_, input_settings_, InputContext::battle, first, second,
-                 {options_.multiplayer, options_.second_player_characters, active_.value_or(0)});
+    sample_buttons(first, second);
     if (active_ && (choice_kind_ == 2 || choice_kind_ == 12)) {
         const auto cursor = list_cursor();
         const auto& spell = choice_kind_ == 12
@@ -1200,6 +1210,7 @@ void BattleMenuPreview::connect_combat(const BattleFormationEntry& formation,
                                        const BattlePreparation& preparation,
                                        const std::array<std::uint8_t, 20>& global_variables,
                                        bool continue_field_music, bool gau_recruited) {
+    flashback_ = formation.selection.battle_identity == 0x01e5;
     joker_doom_ = formation.formation.joker_doom;
     for (unsigned i = 0; i < 6; ++i)
         background_monsters_[i] = formation.formation.monsters[i].background_one;
@@ -1312,6 +1323,7 @@ BattleMenuPreview::BattleMenuPreview(const ContentPack& pack, const BattleEntran
             transitions_[side][i] = read16(programs, at + 2) / 14;
         }
     require(entrance.complete(), "Battle menu preview requires a completed entrance");
+    display_clock_ = picture_clock_ = wrap8(seed_.actors.clock);
     message_speed_ = options.message_speed;
     victory_assets_ = std::make_shared<BattleVictoryAssets>(load_battle_victory_assets(pack));
 }
@@ -2809,9 +2821,44 @@ void BattleMenuPreview::refresh_equipment(BattleState& battle) {
     for (unsigned slot = 0; slot < 4; ++slot)
         if (changed[slot]) physical_environment_.block_graphics[slot] = battle.block_graphics[slot][0];
 }
+BattlePauseDecision BattleMenuPreview::pause_decision(bool audio_ready) const {
+    BattlePauseState state{paused_, !audio_ready, flashback_, rewards_.has_value(),
+                           menus_.input().pressed};
+    return update_battle_pause(state);
+}
+void BattleMenuPreview::advance_background() {
+    std::uint8_t random = 0;
+    if (assets_.background.identity == 44) {
+        const auto index = menus_.graphics_random_index();
+        random = magic_.random[index];
+        menus_.set_graphics_random_index(wrap8(unsigned{index} + 1U));
+    }
+    advance_battle_background_motion(background_motion_, assets_.background.identity, random);
+}
 std::vector<MusicPlayerCommand> BattleMenuPreview::advance(BattleState& battle,
                                                            const BattleParty& party,
-                                                           Buttons buttons, Buttons second) {
+                                                           Buttons buttons, Buttons second, bool audio_ready) {
+    const bool dimmed = paused_; // Brightness is published before CheckPause.
+    const auto pause = pause_decision(audio_ready);
+    if (pause.music_pause) paused_ = *pause.music_pause;
+    if (pause.skip_active_updates) {
+        // BattleNMI's pre-pause work can finish already prepared image and
+        // palette transfers. Only image-slot selection continues; animation
+        // commands, poses, status resolution and sound dispatch stay stopped.
+        if (!event_ && animation_)
+            animation_->publish_suspended(assets_.actors, seed_.actors, seed_.rules);
+        else {
+            publish_suspended_battle_actor_scene(seed_.actors, assets_.actors,
+                                                 seed_.rules.hide_characters);
+            if (event_) event_->publish_suspended(seed_.actors.publication);
+        }
+        menus_.advance_suspended(buttons, second, display_clock_++);
+        advance_background();
+        compose_picture();
+        if (dimmed) for (auto& intensity : visible_.intensity) intensity >>= 1U;
+        if (pause.music_pause) return {PauseMusic{*pause.music_pause}};
+        return {};
+    }
     refresh_equipment(battle);
     if (!battle.terrain_background) battle.terrain_background = assets_.background.identity;
     if (dance_transition_ && dance_transition_->age == FF6_ROM_VALUE_BATTLE_DANCE_FADE_TOTAL_0 / 2) dance_transition_.reset();
@@ -2844,8 +2891,11 @@ std::vector<MusicPlayerCommand> BattleMenuPreview::advance(BattleState& battle,
     if (event_) {
         if (menus_.complete())
             menus_.acknowledge_command();
-        if (!menus_.active_character() && menus_.phase() == BattleMenuPhase::idle)
+        if (!menus_.active_character() && menus_.phase() == BattleMenuPhase::idle) {
+            event_->update_graphics_random_index(menus_.graphics_random_index());
             event_audio = event_->advance(actor, seed_.rules, party, buttons, assets_.actors);
+            menus_.set_graphics_random_index(event_->graphics_random_index());
+        }
         apply_battle_actor_appearance_changes(assets_.actors, seed_.rules,
                                               event_->take_appearance_changes(), actor);
         for (const auto change : event_->take_character_changes()) {
@@ -2866,6 +2916,7 @@ std::vector<MusicPlayerCommand> BattleMenuPreview::advance(BattleState& battle,
     for (unsigned i = 0; i < 4; ++i)
         seed_.rules.condemned[i] = battle.turns[i].condemned;
     const auto clock = wrap8(actor.clock);
+    picture_clock_ = clock;
     std::optional<GameSoundEffect> death_sound;
     if (animation_ && animation_->phase() == BattleActionAnimationPhase::outcomes &&
         outcome_waits_) {
@@ -2981,6 +3032,9 @@ std::vector<MusicPlayerCommand> BattleMenuPreview::advance(BattleState& battle,
     std::optional<PlaybackVolumeRamp> transition_volume;
     std::optional<SystemSoundEffect> interception_sound;
     if (advancing_action) {
+        // The train background consumes the same graphics stream outside the
+        // pause gate. A retained action must resume from its current index.
+        animation_->update_graphics_random_index(menus_.graphics_random_index());
         const auto frame = animation_->advance(assets_.actors, actor, seed_.rules);
         attack_sound = frame.sound;
         transition_volume = frame.volume;
@@ -3035,7 +3089,7 @@ std::vector<MusicPlayerCommand> BattleMenuPreview::advance(BattleState& battle,
         if (automatic_roulette_->complete) automatic_roulette_.reset();
     }
     prepare_battle_menu_targets(context, seed_.enemy_character_proxy, battle.entry.approach);
-    auto audio = menus_.advance(battle, context, buttons, second);
+    auto audio = menus_.advance(battle, context, buttons, second, display_clock_++);
     refresh_equipment(battle);
     audio.insert(audio.end(), event_audio.begin(), event_audio.end());
     // UpdateSfx gives the one pending animation cue priority over menu sounds.
@@ -3058,6 +3112,19 @@ std::vector<MusicPlayerCommand> BattleMenuPreview::advance(BattleState& battle,
         audio.push_back(*death_sound);
     }
     if (transition_volume) audio.push_back(*transition_volume);
+    if (!actor.animation.fixed_draw_order)
+        stage_battle_draw_order(actor.order, actor.anchors);
+    advance_background();
+    if (dance_transition_) picture_dance_age_ = dance_transition_->age;
+    compose_picture();
+    if (dance_transition_) ++dance_transition_->age;
+    if (message_) message_->advance(buttons);
+    if (attack_name_) attack_name_->advance(buttons);
+    return audio;
+}
+void BattleMenuPreview::compose_picture() {
+    const auto& actor = seed_.actors;
+    const auto clock = picture_clock_;
     auto groups = make_battle_actor_sprite_groups(assets_.actors, actor.publication,
                                                   event_       ? event_->actor_palettes()
                                                   : animation_ ? animation_->actor_palettes()
@@ -3068,10 +3135,11 @@ std::vector<MusicPlayerCommand> BattleMenuPreview::advance(BattleState& battle,
         numbers_->add_to(groups);
     visible_ = compose_battle_scene(assets_.background, assets_.readouts, seed_.readout, {},
                                   {0, 1, 256, (FF6_ROM_VALUE_FINAL_BATTLE_VIEWPORT_0 + FF6_ROM_VALUE_FINAL_BATTLE_VIEWPORT_1)}, clock);
+    apply_battle_background_motion(visible_, background_motion_);
     if (dance_transition_) {
         // ChangeDanceBattleBG C1/BAC6 subtracts 0..30 then 30..2 from each
         // terrain color component. Actors and menu colors remain untouched.
-        const auto age = dance_transition_->age++;
+        const auto age = picture_dance_age_;
         const unsigned amount = age < FF6_ROM_VALUE_BATTLE_DANCE_FADE_LIMIT_0 / 2 ? age * 2 : (FF6_ROM_VALUE_BATTLE_DANCE_FADE_TOTAL_0 / 2 - age) * 2;
         for (auto& palette : visible_.layers.front().palettes) for (auto& color : palette) {
             const auto darken = [&](unsigned shift) {
@@ -3096,8 +3164,6 @@ std::vector<MusicPlayerCommand> BattleMenuPreview::advance(BattleState& battle,
         apply_battle_effect_display(display_, visible_);
     if (death_)
         death_->compose(visible_);
-    if (!actor.animation.fixed_draw_order)
-        stage_battle_draw_order(actor.order, actor.anchors);
     auto cursors = menus_.cursor_sprites();
     if (automatic_roulette_ && automatic_roulette_->target)
         if (const auto sprite = menus_.roulette_sprite(*automatic_roulette_->target,
@@ -3124,15 +3190,12 @@ std::vector<MusicPlayerCommand> BattleMenuPreview::advance(BattleState& battle,
     if (message_) {
         compose_battle_message(visible_, assets_.readouts, seed_.readout, victory_assets_->messages,
                                message_->message(), false, message_->scroll());
-        message_->advance(buttons);
     }
     if (attack_name_) {
         compose_battle_message(visible_, assets_.readouts, seed_.readout, victory_assets_->messages,
                                attack_name_->message());
-        attack_name_->advance(buttons);
     }
     if (event_)
         event_->compose(visible_, assets_.readouts, seed_.readout, victory_assets_->messages);
-    return audio;
 }
 } // namespace ff6

@@ -78,6 +78,12 @@ class BattleActionAnimation {
     BattleEffectFrame advance(const BattleActorSceneAssets& assets, BattleActorScene& actors,
                               BattleActorSceneRules& rules,
                               std::optional<BattleEffectRasterTiming> timing = {});
+    void publish_suspended(const BattleActorSceneAssets& assets, BattleActorScene& actors,
+                           BattleActorSceneRules& rules);
+    void update_graphics_random_index(std::uint8_t index) {
+        context_.random_index = index;
+        if (animation_) animation_->update_graphics_random_index(index);
+    }
     // Bounded integration entry for an explicit elapsed picture plan. Only
     // active bodies accept one; loading/cleanup keep their separate owners.
     BattleEffectFrame advance_scheduled(const BattleActorSceneAssets& assets,
@@ -118,6 +124,8 @@ class BattleActionAnimation {
     }
 
   private:
+    void publish_picture(const BattleActorSceneAssets&, BattleActorScene&,
+                         BattleActorSceneRules&, bool suspended);
     std::optional<BattleMonsterTransition> monster_transition_;
     std::shared_ptr<const BattleEffectLibrary> library_;
     BattleActionAnimationRequest request_;

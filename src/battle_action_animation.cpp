@@ -549,17 +549,9 @@ void BattleActionAnimation::finish_boundary() {
         break;
     }
 }
-BattleEffectFrame BattleActionAnimation::step(const BattleActorSceneAssets& assets,
-                                              BattleActorScene& actors,
-                                              BattleActorSceneRules& rules,
-                                              std::optional<BattleEffectRasterTiming> timing,
-                                              std::optional<BattleEffectPictureWork> work) {
-    require((!timing && !work) || phase_ == BattleActionAnimationPhase::pre_cast ||
-                phase_ == BattleActionAnimationPhase::attack,
-            "Raster deadlines require an active animation body");
-    require(!timing || !work, "Cannot mix row deadlines and elapsed picture work");
-    if (complete())
-        return {{}, true, {}};
+void BattleActionAnimation::publish_picture(const BattleActorSceneAssets& assets,
+                                             BattleActorScene& actors,
+                                             BattleActorSceneRules& rules, bool suspended) {
     // Screen brightness and mosaic publish before this boundary executes tasks.
     visible_display_ = context_.display;
     // OdinDeath's palette writes and post-battlefield scroll changes affect
@@ -587,7 +579,8 @@ BattleEffectFrame BattleActionAnimation::step(const BattleActorSceneAssets& asse
     // resume. Preparing after the new commands samples the next position too
     // early and publishes actor palette flashes ahead of terrain colors.
     apply_battle_effect_actor_state(context_, actors, rules);
-    publish_battle_actor_scene(actors, assets, rules.hide_characters);
+    if (suspended) publish_suspended_battle_actor_scene(actors, assets, rules.hide_characters);
+    else publish_battle_actor_scene(actors, assets, rules.hide_characters);
     visible_sprites_ = prepared_sprites_;
     if (animation_) {
         for (unsigned i = 0; i < visible_effect_colors_.size(); ++i)
@@ -598,6 +591,33 @@ BattleEffectFrame BattleActionAnimation::step(const BattleActorSceneAssets& asse
         visible_actor_palettes_ = animation_->actor_palettes(
             visible_sprites_ ? &*visible_sprites_ : nullptr);
     } else visible_actor_palettes_ = {};
+}
+void BattleActionAnimation::publish_suspended(const BattleActorSceneAssets& assets,
+                                               BattleActorScene& actors,
+                                               BattleActorSceneRules& rules) {
+    publish_picture(assets, actors, rules, true);
+    context_.published_character_frames = actors.publication.character_frames;
+    context_.published_status_tiles = actors.publication.status_tiles;
+    context_.control.force_character_frame = actors.animation.force_character_frame;
+    if (animation_) {
+        animation_->update_character_frames(*context_.published_character_frames);
+        animation_->update_status_tiles(*context_.published_status_tiles);
+        animation_->update_forced_character_frame(context_.control.force_character_frame);
+        animation_->publish_suspended();
+    }
+}
+BattleEffectFrame BattleActionAnimation::step(const BattleActorSceneAssets& assets,
+                                              BattleActorScene& actors,
+                                              BattleActorSceneRules& rules,
+                                              std::optional<BattleEffectRasterTiming> timing,
+                                              std::optional<BattleEffectPictureWork> work) {
+    require((!timing && !work) || phase_ == BattleActionAnimationPhase::pre_cast ||
+                phase_ == BattleActionAnimationPhase::attack,
+            "Raster deadlines require an active animation body");
+    require(!timing || !work, "Cannot mix row deadlines and elapsed picture work");
+    if (complete())
+        return {{}, true, {}};
+    publish_picture(assets, actors, rules, false);
     prepare_battle_actor_scene(assets, rules, actors);
     prepared_sprites_ = animation_;
     update_battle_character_status(assets.graphics, rules.appearance, actors.characters);

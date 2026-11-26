@@ -1,4 +1,5 @@
 #pragma once
+#include "ff6/battle_pause.hpp"
 #include "rom-materials/battle_row_movement_parameters.macros.inc"
 #include "rom-materials/battle_defeat_message_waits.macros.inc"
 #include "rom-materials/battle_slot_fade_steps.macros.inc"
@@ -80,7 +81,9 @@ class BattleMenuSession {
     BattleMenuSession(BattleMenuSessionAssets assets, const BattleReadoutView& readout,
                       GameMenuState options = {}, InputState input = {});
     std::vector<MusicPlayerCommand> advance(BattleState& battle, const BattleMenuContext& context,
-                                            Buttons first, Buttons second = 0);
+                                            Buttons first, Buttons second = 0,
+                                            std::optional<std::uint8_t> display_clock = {});
+    void advance_suspended(Buttons first, Buttons second, std::uint8_t display_clock);
     std::vector<TileLayer> layers() const;
     BattleCursorSprites cursor_sprites() const;
     std::optional<RasterSprite> roulette_sprite(std::uint8_t target,
@@ -229,7 +232,8 @@ class BattleMenuSession {
          wait_for_menu_ = false;
     std::string notice_;
     void publish_readout_region(const TileLayer& fresh, BattleReadoutRectangle region);
-    void publish(std::uint8_t clock);
+    void publish(std::uint8_t clock, bool active = true);
+    void sample_buttons(Buttons first, Buttons second);
     void window_step(const BattleState& battle, const BattleMenuContext& context);
     void input_step(BattleState& battle, const BattleMenuContext& context);
     void wait(BattleMenuPhase next);
@@ -248,7 +252,9 @@ class BattleMenuPreview {
     BattleMenuPreview(const ContentPack& pack, const BattleEntrance& entrance,
                       GameMenuState options, InputState input);
     std::vector<MusicPlayerCommand> advance(BattleState& battle, const BattleParty& party,
-                                            Buttons buttons, Buttons second = 0);
+                                            Buttons buttons, Buttons second = 0, bool audio_ready = true);
+    BattlePauseDecision pause_decision(bool audio_ready = true) const;
+    bool paused() const { return paused_; }
     void connect_combat(const BattleFormationEntry& formation,
                         const BattlePreparation& preparation,
                         const std::array<std::uint8_t, 20>& global_variables = {},
@@ -328,6 +334,8 @@ class BattleMenuPreview {
         unsigned waits = FF6_ROM_VALUE_BATTLE_ROW_MOVEMENT_PARAMETERS_0;
     };
     std::optional<RowMotion> row_motion_;
+    void advance_background();
+    void compose_picture();
     BattleEntranceAssets assets_;
     BattleEntranceSeed seed_;
     BattleGaugePublication gauges_;
@@ -423,5 +431,9 @@ class BattleMenuPreview {
     };
     std::optional<SketchContinuation> sketch_;
     std::optional<BattleQueuedCommand> item_continuation_;
+    bool paused_ = false, flashback_ = false;
+    std::uint8_t display_clock_ = 0, picture_clock_ = 0;
+    unsigned picture_dance_age_ = 0;
+    BattleBackgroundMotion background_motion_;
 };
 } // namespace ff6

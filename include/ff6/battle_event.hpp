@@ -30,6 +30,14 @@ class BattleScriptedEvent {
                  const BattleReadoutView& readout, const BattleMessageAssets& font) const;
     BattleActorPaletteOverrides actor_palettes() const;
     void compose_effects(RasterScene& scene, std::span<const BattleActorSpriteGroup> groups) const;
+    void publish_suspended(const BattleActorPublication& actors);
+    void update_graphics_random_index(std::uint8_t index) {
+        animation_->update_graphics_random_index(index);
+        if (attack_) attack_->update_graphics_random_index(index);
+    }
+    std::uint8_t graphics_random_index() const {
+        return attack_ ? attack_->context().random_index : animation_->context().random_index;
+    }
     BattleEffectDisplay display() const { return attack_ ? attack_->context().display : animation_->context().display; }
     bool menus_disabled() const { return attack_ ? attack_->context().menus_disabled : animation_->context().menus_disabled; }
     std::vector<BattleEventCharacterChange> take_character_changes();

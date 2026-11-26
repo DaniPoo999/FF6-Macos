@@ -52,9 +52,11 @@ struct BattleCursorPublication {
     std::array<Tile, 4> indicator_image{};
 };
 // Publish the prior descriptions before preparing new input. Status-image
-// cadence is independent: the indicator's halves update on phases 6 and 7.
+// cadence is independent: the indicator's halves update on phases 6 and 7,
+// including during pause when cursor positions/visibility are retained.
 void publish_battle_cursors(BattleCursorPublication& state, const BattleCursorAssets& assets,
-                            std::uint8_t clock, bool hide_characters);
+                            std::uint8_t clock, bool hide_characters,
+                            bool publish_descriptions = true);
 struct BattleCursorSprites {
     // Preserve object-plane order: target hands, indicator, actors, menu hand.
     std::vector<RasterSprite> before_actors, after_actors;

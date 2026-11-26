@@ -3675,6 +3675,15 @@ BattleAttackAnimation::advance_presentation(std::size_t budget,
     *this = std::move(next);
     return frame;
 }
+void BattleAttackAnimation::publish_suspended() {
+    // Production uses semantic picture boundaries. A paused picture samples
+    // retained gradient/mask writes and scroll buffers; it must not repeat the
+    // previous picture's partially sampled rows or resume a script writer.
+    require(!raster_timeline_, "Paused scheduled diagnostics require an explicit picture plan");
+    if (presentation_timing_) raster_picture_.begin_picture();
+    picture_scrolling_.reset();
+    publish_backgrounds();
+}
 BattleEffectFrame BattleAttackAnimation::advance_scheduled(BattleEffectPictureWork work,
                                                            std::size_t budget) {
     auto next = *this;

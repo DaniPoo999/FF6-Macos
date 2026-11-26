@@ -83,6 +83,10 @@ FieldSessionTick FieldSession::advance(const ContentPack& pack, Buttons buttons,
             return tick;
         }
         if (final_transition_) {
+            sample_input(scene_.owned_.input, scene_.owned_.settings, InputContext::battle,
+                         buttons, second, {scene_.owned_.menu.multiplayer,
+                                           scene_.owned_.menu.second_player_characters, 0});
+            tick.input_sampled = true;
             tick.audio = final_transition_->advance();
             visible_ = render_scene(final_transition_->scene());
             tick.complete = true; ++ticks_;
@@ -305,17 +309,24 @@ FieldSessionTick FieldSession::advance(const ContentPack& pack, Buttons buttons,
             return tick;
         }
         if (battle_menus_) {
-            if (scene_.owned_.timers[0].visible_menu_battle)
-                battle_timer_display_.advance(scene_.owned_.timers[0].remaining);
-            battle_state_->event_timer_expired = scene_.advance_external_timers();
-            tick.audio = battle_menus_->advance(*battle_state_, *battle_party_, buttons, second);
-            if (battle_menus_->battle_change()) change_battle(pack);
-            if (battle_menus_->scripted_event_active()) battle_state_->time.previous_clock = battle_menus_->clock();
-            else if (!battle_menus_->ending()) service_battle_time(
-                *battle_state_,
-                {battle_menus_->clock(), battle_menus_->menus().wait_for_menu(),
-                 battle_menus_->escape_held() && !battle_state_->menus_disabled},
-                battle_submission_data_);
+            // Decide before any external timer/ATB/play-time mutation. The
+            // preview consumes the same preceding input sample below.
+            const bool active = !battle_menus_->pause_decision(audio_ready).skip_active_updates;
+            if (active) {
+                if (scene_.owned_.timers[0].visible_menu_battle)
+                    battle_timer_display_.advance(scene_.owned_.timers[0].remaining);
+                battle_state_->event_timer_expired = scene_.advance_external_timers();
+            }
+            tick.audio = battle_menus_->advance(*battle_state_, *battle_party_, buttons, second, audio_ready);
+            if (active) {
+                if (battle_menus_->battle_change()) change_battle(pack);
+                if (battle_menus_->scripted_event_active()) battle_state_->time.previous_clock = battle_menus_->clock();
+                else if (!battle_menus_->ending()) service_battle_time(
+                    *battle_state_,
+                    {battle_menus_->clock(), battle_menus_->menus().wait_for_menu(),
+                     battle_menus_->escape_held() && !battle_state_->menus_disabled},
+                    battle_submission_data_);
+            }
             auto battle_picture = battle_menus_->visible();
             if (scene_.owned_.timers[0].visible_menu_battle)
                 draw_battle_event_timer(battle_picture, scene_.assets_.timer_graphics,
@@ -323,7 +334,8 @@ FieldSessionTick FieldSession::advance(const ContentPack& pack, Buttons buttons,
             visible_ = render_scene(battle_picture);
             tick.complete = tick.input_sampled = true;
             ++ticks_;
-            advance_game_time(scene_.owned_.menu.time, scene_.owned_.menu.time_frames);
+            if (active) advance_game_time(scene_.owned_.menu.time, scene_.owned_.menu.time_frames);
+            if (!active) return tick;
             notice_ = battle_menus_->menus().notice();
             if (single_action_study_ && battle_menus_->action_complete()) {
                 stopped_ = true;
@@ -367,6 +379,10 @@ FieldSessionTick FieldSession::advance(const ContentPack& pack, Buttons buttons,
             tick.audio = result.audio;
             tick.complete = result.interval;
             if (result.interval) {
+                sample_input(scene_.owned_.input, scene_.owned_.settings, InputContext::battle,
+                             buttons, second, {scene_.owned_.menu.multiplayer,
+                                               scene_.owned_.menu.second_player_characters, 0});
+                tick.input_sampled = true;
                 scene_.advance_external_timers();
                 ++ticks_;
             }

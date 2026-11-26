@@ -422,6 +422,10 @@ class BattleAttackAnimation {
     // this suspends a task during resource loading, without ticking other tasks.
     BattleEffectFrame advance_presentation(std::size_t command_budget = 16384,
                                            std::optional<BattleEffectRasterTiming> timing = {});
+    // Publish completed writes into a new picture without running scripts,
+    // advancing resource waits, clocks or sound requests during battle pause.
+    void publish_suspended();
+    void update_graphics_random_index(std::uint8_t index) { context_.random_index = index; }
     // Executes the real task caller through one picture, retaining a command
     // interrupted by that boundary. Plans are mandatory on subsequent calls;
     // no incomplete elapsed schedule is silently replaced with normalized time.

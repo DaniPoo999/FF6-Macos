@@ -205,6 +205,15 @@ void publish_battle_actor_scene(BattleActorScene& state, const BattleActorSceneA
     out.visible = std::move(visible);
     out.transfers = std::move(transfers);
 }
+void publish_suspended_battle_actor_scene(BattleActorScene& state,
+                                         const BattleActorSceneAssets& assets,
+                                         bool hide_characters) {
+    publish_battle_actor_scene(state, assets, hide_characters);
+    // This byte represents z98's image/palette slot, not the stopped actor
+    // clock. Advancing it also preserves the correct slot when play resumes.
+    auto& phase = state.characters.layout.palette_phase;
+    phase = wrap8(unsigned{phase} + 1U);
+}
 void prepare_battle_actor_scene(const BattleActorSceneAssets& assets,
                                 const BattleActorSceneRules& rules, BattleActorScene& state) {
     auto next = state;
