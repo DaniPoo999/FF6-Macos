@@ -4,13 +4,13 @@ A native C++20 port of the SNES game for **Apple Silicon and macOS 13 or later**
 using SDL3 for input, audio and display. It runs native game logic rather than a
 SNES emulator. This is an unofficial fan project, not affiliated with Square Enix.
 
-**Version 0.5.1 is a prerelease.** Stability is not established. Bugs, incomplete
+**Version 0.5.2 is a prerelease.** Stability is not established. Bugs, incomplete
 behavior and audiovisual differences remain; keep backups of your saves.
 
 ## Build your game
 
-1. Download **FFVI-Builder-0.5.1-macOS-arm64.zip** from the
-   [0.5.1 prerelease](https://github.com/DaniPoo999/FF6-Macos/releases/tag/v0.5.1).
+1. Download **FFVI-Builder-0.5.2-macOS-arm64.zip** from the
+   [0.5.2 prerelease](https://github.com/DaniPoo999/FF6-Macos/releases/tag/v0.5.2).
 2. Unzip it and open **FFVI Builder.app**.
 3. Select your legally obtained **Final Fantasy III (USA) (Rev 1)** SNES ROM.
 4. Choose an empty output folder and click **Build Apps**.
@@ -48,6 +48,17 @@ payload. Other revisions, translations and patched ROMs are rejected.
 
 ### Controls
 
+Open **Final Fantasy VI → Settings…** (**⌘,**) to enable **CRT SDR** or
+**CRT HDR** and optionally a screen curved on both axes. **Advanced** offers 8:7 / 4:3 aspect
+ratio, curvature, sharpness, scanlines, phosphor size/strength, glass glow and
+brightness, plus **Restore Defaults**. Changes apply immediately and persist;
+disabling shaders retains the selected preset and tuning. HDR falls back to SDR
+when unavailable. New installations default to enabled HDR, a curved screen at
+25% strength and 4:3 television aspect. **Restore Defaults** applies this complete
+profile; existing saved preferences are retained until changed. The optional 8:7
+aspect preserves original pixel proportions. The Content Inspector retains its
+diagnostic renderer.
+
 Use an SDL-compatible controller, including a Nintendo Switch Pro Controller,
 or the keyboard:
 
@@ -70,7 +81,7 @@ transitions retain their restrictions.
 
 Developer builds require an Apple Silicon Mac, Git, **CMake 3.25+**, **Python
 3.9+**, full **Xcode 27.2 (27B52)** with Apple Clang **21.0.0
-(clang-2100.4.1.1)**, and Apple Metal **32023.921 (metalfe-32023.921.3)**.
+(clang-2100.4.1.1)**, and Apple Metal **32023.922 (metalfe-32023.922.4)**.
 These pins preserve the expected game executable and shader output. Other
 compiler versions may be rejected; do not disable the identity checks.
 
@@ -90,24 +101,18 @@ required to compile. Generated files remain in ignored `build/` or `.local/`.
 <details>
 <summary>Installing the pinned Metal component</summary>
 
-Xcode updates can select a different Metal version. Obtain the matching component
-using Apple's Xcode tools, then select it for this build:
+Use Xcode 27.2's Metal Toolchain component (Apple Metal 32023.922). Install it
+from Xcode's Components settings, or with Apple's tool:
 
 ```sh
-mkdir -p .local/toolchains
-xcodebuild -downloadComponent metalToolchain -buildVersion 27A5237l \
-  -exportPath "$PWD/.local/toolchains"
-diskutil image attach --readOnly --nobrowse \
-  --mountPoint "$PWD/.local/toolchains/metal-27A5237l" \
-  "$PWD/.local/toolchains/MetalToolchain-27A5237l.exportedBundle/Restore/022-22115-084.dmg"
-export FF6_METAL_COMPILER="$PWD/.local/toolchains/metal-27A5237l/Metal.xctoolchain/usr/bin/metal"
-./build.sh --rom "/absolute/path/to/Final Fantasy III (USA) (Rev 1).sfc"
+xcodebuild -downloadComponent metalToolchain
 ```
 
-Keep the read-only mount available until the build finishes, then run
-`diskutil eject "$PWD/.local/toolchains/metal-27A5237l"` and unset
-`FF6_METAL_COMPILER`. Set `DEVELOPER_DIR` to your full Xcode's `Contents/Developer`
-directory if necessary. Apple toolchains are not included in this repository.
+The build verifies the compiler version, source hash and compiled shader hash.
+If multiple Metal components are installed, set `FF6_METAL_COMPILER` to the
+matching component's `usr/bin/metal` executable. Set `DEVELOPER_DIR` to your
+full Xcode's `Contents/Developer` directory if necessary. Apple toolchains are
+not included in this repository.
 
 </details>
 

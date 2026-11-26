@@ -4,6 +4,9 @@
 #include "field_session_host.hpp"
 #include "sdl_input.hpp"
 #include "game_presenter.hpp"
+#ifdef __APPLE__
+#include "macos_settings.hpp"
+#endif
 #include <algorithm>
 #include <filesystem>
 #include <iostream>
@@ -68,6 +71,9 @@ int main(int argc, char** argv) {
         std::unique_ptr<SDL_Window, decltype(&SDL_DestroyWindow)> window(raw_window, SDL_DestroyWindow);
         presentation::GamePresenter presenter(window.get(),std::filesystem::path(base)/"crt.metallib",
                                                preferences_folder,crt_mode,!smoke);
+#ifdef __APPLE__
+        auto settings = presentation::make_settings_window(presenter);
+#endif
         std::vector<std::unique_ptr<SDL_Gamepad, decltype(&SDL_CloseGamepad)>> controllers;
         auto host = std::make_unique<FieldSessionHost>(pack, std::nullopt);
         host->set_save_folder(save_folder);
@@ -88,8 +94,6 @@ int main(int argc, char** argv) {
                     host->taps = host->second_taps = 0;
                 }
                 if (smoke)
-                    continue;
-                if (presenter.handle_event(event))
                     continue;
                 if (event.type == SDL_EVENT_KEY_DOWN && !event.key.repeat) {
                     if (event.key.key == SDLK_ESCAPE)

@@ -7,9 +7,9 @@
 // Objective-C++ only. The game core never includes this header.
 namespace presentation {
 struct MetalFrame {
-    id<MTLTexture> raw, linear;
+    id<MTLTexture> raw, linear, blur, diffuse;
     std::uint64_t generation{};
-    bool prepared{};
+    bool prepared{}, diffused{};
 };
 class MetalPipeline {
   public:
@@ -22,7 +22,7 @@ class MetalPipeline {
     void encode(id<MTLCommandBuffer> commands, MetalFrame& frame,
                 id<MTLTexture> output, const Uniforms& uniforms) const;
   private:
-    id<MTLRenderPipelineState> prepare_;
+    id<MTLRenderPipelineState> prepare_, diffuse_;
     std::array<std::array<id<MTLRenderPipelineState>,2>,3> present_;
 };
 } // namespace presentation

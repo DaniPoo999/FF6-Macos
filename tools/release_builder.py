@@ -13,8 +13,8 @@ import zipfile
 from audit_builder_payload import inspect, private_pack
 from check_repository import ROOT
 
-VERSION = '0.5.1'
-BUILD = '6'
+VERSION = '0.5.2'
+BUILD = '7'
 NOTICES = 'FFVI Dependency Notices.txt'
 
 def sha(path):
@@ -147,7 +147,7 @@ def main():
         if args.smoke:
             run_logged([str(output / 'Final Fantasy VI.app/Contents/MacOS/ff6-game'),
                         '--smoke-test', '--save-folder', str(work / 'saves'),
-                        '--preferences-folder', str(work / 'preferences'), '--crt', 'off'],
+                        '--preferences-folder', str(work / 'preferences')],
                        private / 'game-smoke.log')
             run_logged([str(output / 'FFVI Content Inspector.app/Contents/MacOS/ff6-inspector'),
                         '--smoke-test'], private / 'inspector-smoke.log')

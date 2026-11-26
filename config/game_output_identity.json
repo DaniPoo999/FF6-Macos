@@ -1,28 +1,28 @@
 {
   "schema": 1,
-  "scope": "Expected generated app file hashes for the main/public battle-pause publication correction (2026-11-26). Hashes only; no game data.",
+  "scope": "Expected generated app file hashes for main/public HDR television defaults (2026-11-26). Hashes only; no game data.",
   "bundles": {
     "FFVI Content Inspector.app": {
       "Contents/Info.plist": "bede9bee205a6ef6f0e72eebc7ea96dc0b93596f8e9be7e0a61b601fce2dfd94",
-      "Contents/_CodeSignature/CodeResources": "6cde1ef66799c2f2d8595c8c7fef8a9356270835b7bf78fa501b8ca081954a22",
-      "Contents/Resources/THIRD_PARTY.md": "b873cdf1fd10d96c95f1d0d9f20939c0f3401b1b6462ffc588ad090dbcd0881b",
-      "Contents/Resources/content.ff6pack": "23c3688c654ed0306b03505b61e28051bddf126ec021b96430ea5ea0f0f5fbc2",
-      "Contents/Resources/content-manifest.json": "e8e600f376c126aa05149fba83a1ea96c7aabbf1fe4c3a97f26f48276465ba07",
+      "Contents/MacOS/ff6-inspector": "1b30319dc03e2623c003566154bc5012880ecf7370a4b39e8e9cf36b50a36b43",
       "Contents/Resources/LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
       "Contents/Resources/SDL-LICENSE.txt": "1c040b8271b37e5076359f8fd54240e371114112924d2df81ef87c7d6a1dfdfd",
-      "Contents/MacOS/ff6-inspector": "1b30319dc03e2623c003566154bc5012880ecf7370a4b39e8e9cf36b50a36b43"
+      "Contents/Resources/THIRD_PARTY.md": "b873cdf1fd10d96c95f1d0d9f20939c0f3401b1b6462ffc588ad090dbcd0881b",
+      "Contents/Resources/content-manifest.json": "e8e600f376c126aa05149fba83a1ea96c7aabbf1fe4c3a97f26f48276465ba07",
+      "Contents/Resources/content.ff6pack": "23c3688c654ed0306b03505b61e28051bddf126ec021b96430ea5ea0f0f5fbc2",
+      "Contents/_CodeSignature/CodeResources": "6cde1ef66799c2f2d8595c8c7fef8a9356270835b7bf78fa501b8ca081954a22"
     },
     "Final Fantasy VI.app": {
       "Contents/Info.plist": "6082e80a29dc6645d57ef0cbe2082db7ccff23af1308cd5fd161725a154ebc51",
-      "Contents/_CodeSignature/CodeResources": "60ecedc843fc4db770c8bbb33a1676fb00eb25ec3eca4d30bedc1e27a460efd1",
-      "Contents/Resources/THIRD_PARTY.md": "b873cdf1fd10d96c95f1d0d9f20939c0f3401b1b6462ffc588ad090dbcd0881b",
-      "Contents/Resources/content.ff6pack": "23c3688c654ed0306b03505b61e28051bddf126ec021b96430ea5ea0f0f5fbc2",
-      "Contents/Resources/content-manifest.json": "e8e600f376c126aa05149fba83a1ea96c7aabbf1fe4c3a97f26f48276465ba07",
+      "Contents/MacOS/ff6-game": "5be8cdd037ee3c48e443cd94a6cc91d60ec75f0c2477f55223f8bb7730056b32",
+      "Contents/Resources/GameIcon.icns": "4b29a99f34cc56b05eacd1511d905a72db87d12446673f52b43f294bb160bb9a",
       "Contents/Resources/LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
       "Contents/Resources/SDL-LICENSE.txt": "1c040b8271b37e5076359f8fd54240e371114112924d2df81ef87c7d6a1dfdfd",
-      "Contents/Resources/crt.metallib": "210e7063ede33fcaf45e4254561b18df0737d2bc2ffee40ea42b4176281fda27",
-      "Contents/Resources/GameIcon.icns": "4b29a99f34cc56b05eacd1511d905a72db87d12446673f52b43f294bb160bb9a",
-      "Contents/MacOS/ff6-game": "e7cd1879049945b56a4ee14b042a649d02fc0bf06496774402f0c06058d5ab3a"
+      "Contents/Resources/THIRD_PARTY.md": "b873cdf1fd10d96c95f1d0d9f20939c0f3401b1b6462ffc588ad090dbcd0881b",
+      "Contents/Resources/content-manifest.json": "e8e600f376c126aa05149fba83a1ea96c7aabbf1fe4c3a97f26f48276465ba07",
+      "Contents/Resources/content.ff6pack": "23c3688c654ed0306b03505b61e28051bddf126ec021b96430ea5ea0f0f5fbc2",
+      "Contents/Resources/crt.metallib": "c48398f32963cd7fd10bf7e39e9c78fc784b2162dca36f8eac6e9015e83d300f",
+      "Contents/_CodeSignature/CodeResources": "30b518d9aa9e4513e142e823284c4e0a8d62af3786fbaa01228207199357b48d"
     }
   }
 }

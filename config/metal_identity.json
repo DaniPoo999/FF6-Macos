@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "compiler": "Apple metal version 32023.921 (metalfe-32023.921.3)",
-  "sdk": "27.0",
-  "source_sha256": "38d45d94eac15684a1447040d64f4af49a9080703bb5299f2e8136bf4c1fb757",
-  "output_sha256": "210e7063ede33fcaf45e4254561b18df0737d2bc2ffee40ea42b4176281fda27"
+  "compiler": "Apple metal version 32023.922 (metalfe-32023.922.4)",
+  "sdk": "27.2",
+  "source_sha256": "8d130b1b7715a4331439d673a226fc215773307c9eb5c0104f550971f8b154ce",
+  "output_sha256": "c48398f32963cd7fd10bf7e39e9c78fc784b2162dca36f8eac6e9015e83d300f"
 }

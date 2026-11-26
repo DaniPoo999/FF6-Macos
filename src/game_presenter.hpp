@@ -17,7 +17,7 @@ struct Status {
 class Backend {
   public:
     virtual ~Backend() = default;
-    virtual void present(const ff6::FrameBuffer& frame, Mode requested) = 0;
+    virtual void present(const ff6::FrameBuffer& frame, Settings settings) = 0;
     virtual void overlay(const std::string& text) = 0;
     virtual Status status() const = 0;
 };
@@ -31,14 +31,16 @@ class GamePresenter {
                   std::filesystem::path preferences, std::optional<Mode> initial = {},
                   bool persist = true, std::unique_ptr<Backend> backend = {});
     ~GamePresenter();
-    bool handle_event(const SDL_Event& event);
     void select(Mode mode, bool save = false);
+    Settings settings() const { return settings_; }
+    void configure(Settings settings, bool save = true);
     void present(const ff6::FrameBuffer& frame, const std::string& notice = {});
     Status status() const;
   private:
     SDL_Window* window_;
     std::filesystem::path preferences_;
     std::unique_ptr<Backend> backend_;
+    Settings settings_;
     Mode requested_{}, effective_{};
     bool persist_;
     std::uint64_t notice_until_{};

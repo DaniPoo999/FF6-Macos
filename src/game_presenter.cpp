@@ -22,8 +22,10 @@ class SDLBackend final : public Backend {
     }
     void overlay(const std::string& text) override { overlay_ = text; }
     Status status() const override { return status_; }
-    void present(const ff6::FrameBuffer& frame, Mode requested) override {
-        status_.requested = requested;
+    void present(const ff6::FrameBuffer& frame, Settings settings) override {
+        status_.requested = settings.mode();
+        check(SDL_SetRenderLogicalPresentation(renderer_.get(),settings.aspect_4_3 ? 896 : 768,672,
+                                               SDL_LOGICAL_PRESENTATION_LETTERBOX));
         check(SDL_UpdateTexture(texture_.get(),nullptr,frame.rgba.data(),frame.width*4));
         check(SDL_SetRenderDrawColor(renderer_.get(),0,0,0,255));
         check(SDL_RenderClear(renderer_.get()));
@@ -42,7 +44,12 @@ GamePresenter::GamePresenter(SDL_Window* window, const std::filesystem::path& li
                              bool persist, std::unique_ptr<Backend> backend)
     : window_(window), preferences_(std::move(preferences)),
       backend_(std::move(backend)),
-      requested_(initial.value_or(persist ? load_preference(preferences_) : Mode::off)), persist_(persist) {
+      settings_(persist ? load_settings(preferences_) : Settings{}), persist_(persist) {
+    if (initial) {
+        settings_.enabled = *initial != Mode::off;
+        if (settings_.enabled) settings_.shader = *initial;
+    }
+    requested_ = settings_.mode();
 #ifdef __APPLE__
     if (!backend_ && std::string_view(SDL_GetCurrentVideoDriver()) == "cocoa") {
         try { backend_ = make_metal_backend(window,library); }
@@ -62,17 +69,20 @@ void GamePresenter::fallback(const std::string& error) {
     if (!error.empty()) std::cerr << "Presentation fallback: " << error << '\n';
     notice_until_ = SDL_GetTicks() + 4000;
 }
-bool GamePresenter::handle_event(const SDL_Event& event) {
-    if (event.type != SDL_EVENT_KEY_DOWN || event.key.scancode != SDL_SCANCODE_1) return false;
-    if (!event.key.repeat) select(next(requested_),true);
-    return true;
-}
 void GamePresenter::select(Mode mode, bool save) {
-    if (mode == requested_) return;
-    requested_ = mode;
+    auto settings = settings_;
+    settings.enabled = mode != Mode::off;
+    if (settings.enabled) settings.shader = mode;
+    configure(settings, save);
+}
+void GamePresenter::configure(Settings settings, bool save) {
+    settings = sanitized(settings);
+    if (settings == settings_) return;
+    settings_ = settings;
+    requested_ = settings_.mode();
     notice_until_ = SDL_GetTicks() + 3000;
     if (save && persist_) {
-        try { save_preference(preferences_,mode); }
+        try { save_settings(preferences_,settings_); }
         catch (const std::exception& e) {
             // A failed host preference write must never stop a gameplay session.
             std::cerr << "Cannot save CRT preference: " << e.what() << '\n';
@@ -91,11 +101,11 @@ void GamePresenter::present(const ff6::FrameBuffer& frame, const std::string& no
     auto state = backend_->status();
     if (state.metal && !state.error.empty()) fallback(state.error);
     // Backend display queries and rendering never receive a game-state reference.
-    try { backend_->present(frame,requested_); }
+    try { backend_->present(frame,settings_); }
     catch (const std::exception& e) {
         if (!backend_->status().metal) throw;
         fallback(e.what());
-        backend_->present(frame,requested_);
+        backend_->present(frame,settings_);
     }
     state = backend_->status();
     if (state.effective != effective_) {

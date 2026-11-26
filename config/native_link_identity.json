@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "scope": "Expected native output for the main/public battle-pause publication correction (2026-11-26). Only SDK/linker/dependency versions and build UUID may normalize; every other runtime and structural byte must match. Hashes and link metadata only; no game content.",
+  "scope": "Expected native output for main/public HDR television defaults (2026-11-26). Only SDK/linker/dependency versions and build UUID may normalize; every other runtime and structural byte must match. Hashes and link metadata only; no game content.",
   "images": {
     "ff6-game": {
-      "image_size": 7443824,
-      "signed_prefix_size": 7429024,
-      "masked_prefix_sha256": "afe7f5b728e4533981ffee887ceef7f5c6ccd4b9108f3ad804fe1017b8159ec1",
-      "restored_prefix_sha256": "9109f33fb362f0e61365798a7ee0f9a76e570273c1a9a8a993ecbd2a8e02a120",
+      "image_size": 7467088,
+      "signed_prefix_size": 7452256,
+      "masked_prefix_sha256": "8a9f38508408e1ced36902f0592b4238050f2531edb1c0f3c684a8be8410b66d",
+      "restored_prefix_sha256": "27298a23f17fa350e2b04194048c38546fd9dc0fefe32c7b62ea6107f29c2894",
       "fields": {
-        "uuid": "f47ee29b752f3432a7d438f55c6d9d69",
+        "uuid": "cd731c6d92be3608902cf1e1a67c44d6",
         "sdk": 1769984,
         "linker": 1776419072,
         "dependency:/usr/lib/libSystem.B.dylib": 89073667,

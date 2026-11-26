@@ -10,17 +10,18 @@
 
 namespace presentation {
 namespace {
-struct Settings {
+struct RenderSettings {
+    Settings profile;
     Mode requested{}, effective{};
     float current{1}, gain{1};
     bool active{}, edr{};
     int width{}, height{};
-    bool operator==(const Settings&) const = default;
+    bool operator==(const RenderSettings&) const = default;
 };
 struct Packet {
     std::shared_ptr<const std::vector<std::uint32_t>> pixels;
     std::uint64_t generation{};
-    Settings settings;
+    RenderSettings settings;
 };
 struct Shared {
     std::mutex mutex;
@@ -43,7 +44,7 @@ class MetalBackend final : public Backend {
     std::shared_ptr<Shared> shared_ = std::make_shared<Shared>();
     std::thread worker_;
     Status status_;
-    Settings previous_;
+    RenderSettings previous_;
     std::shared_ptr<const std::vector<std::uint32_t>> pixels_;
     std::uint64_t generation_{}, time_{};
     float gain_{1};
@@ -100,15 +101,14 @@ class MetalBackend final : public Backend {
                         auto& frame = frames[slot];
                         pipeline_.upload(frame,*packet.pixels,packet.generation);
                         const auto viewport = fit(static_cast<int>(drawable.texture.width),
-                                                   static_cast<int>(drawable.texture.height));
+                                                   static_cast<int>(drawable.texture.height),packet.settings.profile.aspect_4_3);
                         const float scale = viewport.height/224.0F;
-                        const float gain = std::min(packet.settings.gain,target_gain(scale,packet.settings.current));
-                        Uniforms uniforms{viewport,static_cast<std::uint32_t>(packet.settings.effective),
-                                          gain,packet.settings.current,
-                                          packet.settings.effective == Mode::hdr ? hdr_detail(scale,gain) : detail(scale)};
+                        const float gain = std::min(packet.settings.gain,target_gain(scale,packet.settings.current,packet.settings.profile));
+                        const auto parameters = uniforms(viewport,packet.settings.effective,
+                            packet.settings.current,gain,packet.settings.profile);
                         id<MTLCommandBuffer> commands = [pipeline_.queue commandBuffer];
                         if (!commands) throw std::runtime_error("Cannot create presentation commands");
-                        pipeline_.encode(commands,frame,drawable.texture,uniforms);
+                        pipeline_.encode(commands,frame,drawable.texture,parameters);
                         [commands presentDrawable:drawable];
                         auto shared = shared_;
                         [commands addCompletedHandler:^(id<MTLCommandBuffer> completed) {
@@ -194,7 +194,8 @@ class MetalBackend final : public Backend {
             if (view_) SDL_Metal_DestroyView(view_);
         }
     }
-    void present(const ff6::FrameBuffer& frame, Mode requested) override {
+    void present(const ff6::FrameBuffer& frame, Settings profile) override {
+        const auto requested = profile.mode();
         @autoreleasepool {
             auto* view = (__bridge NSView*)view_;
             NSScreen* screen = view.window.screen;
@@ -206,16 +207,16 @@ class MetalBackend final : public Backend {
             status_.effective = effective(requested,true,status_.potential,status_.current);
             int width = 0, height = 0;
             SDL_GetWindowSizeInPixels(window_,&width,&height);
-            const auto viewport = fit(width,height);
+            const auto viewport = fit(width,height,profile.aspect_4_3);
             const auto now = SDL_GetTicksNS();
             const float seconds = time_ == 0 ? 0 : static_cast<float>(now-time_)/1e9F;
             time_ = now;
             const float target = status_.effective == Mode::hdr ?
-                target_gain(viewport.height/224.0F,status_.current) : 1.0F;
+                target_gain(viewport.height/224.0F,status_.current,profile) : 1.0F;
             gain_ = approach_gain(gain_,target,seconds);
             if (std::abs(gain_-target) < 0.0001F) gain_ = target;
             const auto flags = SDL_GetWindowFlags(window_);
-            Settings settings{requested,status_.effective,status_.current,gain_,
+            RenderSettings settings{profile,requested,status_.effective,status_.current,gain_,
                               width > 0 && height > 0 && !(flags & (SDL_WINDOW_MINIMIZED|SDL_WINDOW_HIDDEN)),
                               requested == Mode::hdr && status_.potential > 1,width,height};
             // Request EDR even before current headroom rises above one.
@@ -225,7 +226,13 @@ class MetalBackend final : public Backend {
                 pixels_ = std::make_shared<const std::vector<std::uint32_t>>(frame.rgba);
                 ++generation_;
             }
-            if (changed || settings != previous_) {
+            // Cache unchanged source textures, not the visible EDR presentation.
+            // Once gain settles, deduplicating whole HDR frames leaves Core
+            // Animation with an idle drawable even while the game is running.
+            // Keep presenting the retained image while HDR is requested on an
+            // EDR screen (including warmup); hidden/minimized windows stay idle.
+            const bool refresh_hdr = settings.active && settings.edr;
+            if (changed || settings != previous_ || refresh_hdr) {
                 std::lock_guard lock(shared_->mutex);
                 if (shared_->ready) ++shared_->coalesced;
                 shared_->pending = {pixels_,generation_,settings};
